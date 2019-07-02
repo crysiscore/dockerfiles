@@ -1,0 +1,9 @@
+Sat 13/Apr/2019 16:00:23 CAT | Report Requested by user12 12
+Sat 13/Apr/2019 16:00:23 CAT | Report in queue at position 1
+Sat 13/Apr/2019 16:00:23 CAT | Starting to process report...
+Sat 13/Apr/2019 16:00:24 CAT | Evaluating Report Data....
+Sat 13/Apr/2019 16:00:24 CAT | Evaluating LISTA DE PACIENTES INSCRITOS NO SERVICO TARV
+Sat 13/Apr/2019 16:00:24 CAT | Evaluating PACIENTES INSCRITOS NO SERVICO TARV
+Sat 13/Apr/2019 16:00:24 CAT | Generating Rendered Report....
+Sat 13/Apr/2019 16:00:34 CAT | Writing the report output to disk
+Sat 13/Apr/2019 16:00:35 CAT | Report Generation Completed in 0:00:11.350

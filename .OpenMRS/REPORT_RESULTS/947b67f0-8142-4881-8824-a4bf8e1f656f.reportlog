@@ -1,0 +1,453 @@
+Thu 18/Apr/2019 16:08:16 CAT | Report Requested by Super User
+Thu 18/Apr/2019 16:08:16 CAT | Report in queue at position 1
+Thu 18/Apr/2019 16:31:58 CAT | Starting to process report...
+Thu 18/Apr/2019 16:31:58 CAT | Evaluating Report Data....
+Thu 18/Apr/2019 16:31:58 CAT | Evaluating PEPFAR MER 2.3 Semi-Annual
+Thu 18/Apr/2019 16:31:58 CAT | Evaluating baseCohort
+Thu 18/Apr/2019 16:31:58 CAT | Evaluating Tx_Ml Data Set
+Thu 18/Apr/2019 16:31:59 CAT | Evaluating gender
+Thu 18/Apr/2019 16:31:59 CAT | Evaluating FemaleCohort
+Thu 18/Apr/2019 16:31:59 CAT | Evaluating MaleCohort
+Thu 18/Apr/2019 16:31:59 CAT | Evaluating age dimension
+Thu 18/Apr/2019 16:31:59 CAT | Evaluating patients with age between 1 and 4
+Thu 18/Apr/2019 16:31:59 CAT | Evaluating patients with age between 10 and 14
+Thu 18/Apr/2019 16:31:59 CAT | Evaluating patients with age over 15
+Thu 18/Apr/2019 16:31:59 CAT | Evaluating patients with age between 15 and 19
+Thu 18/Apr/2019 16:31:59 CAT | Evaluating patients with age between 20 and 24
+Thu 18/Apr/2019 16:31:59 CAT | Evaluating patients with age between 25 and 29
+Thu 18/Apr/2019 16:31:59 CAT | Evaluating patients with age between 30 and 34
+Thu 18/Apr/2019 16:32:00 CAT | Evaluating patients with age between 35 and 39
+Thu 18/Apr/2019 16:32:00 CAT | Evaluating patients with age between 40 and 44
+Thu 18/Apr/2019 16:32:00 CAT | Evaluating patients with age between 45 and 49
+Thu 18/Apr/2019 16:32:00 CAT | Evaluating patients with age between 5 and 9
+Thu 18/Apr/2019 16:32:00 CAT | Evaluating patients with age over 50
+Thu 18/Apr/2019 16:32:00 CAT | Evaluating patients with age bellow 1
+Thu 18/Apr/2019 16:32:00 CAT | Evaluating patients with age below 15
+Thu 18/Apr/2019 16:32:00 CAT | Evaluating unknownAge
+Thu 18/Apr/2019 16:32:00 CAT | Evaluating totals missed
+Thu 18/Apr/2019 16:32:00 CAT | Evaluating Get patients who missed appointment and are NOT transferred out
+Thu 18/Apr/2019 16:32:00 CAT | Evaluating Missed Next appointment
+Thu 18/Apr/2019 16:32:06 CAT | Evaluating Transfer out
+Thu 18/Apr/2019 16:32:06 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 16:32:06 CAT | Evaluating Age and Gender
+Thu 18/Apr/2019 16:32:06 CAT | Evaluating Get patients who missed appointment and are NOT transferred out
+Thu 18/Apr/2019 16:32:06 CAT | Evaluating Missed Next appointment
+Thu 18/Apr/2019 16:32:06 CAT | Evaluating Transfer out
+Thu 18/Apr/2019 16:32:06 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 16:32:06 CAT | Evaluating Age and Gender
+Thu 18/Apr/2019 16:32:06 CAT | Evaluating Get patients who missed appointment and are NOT transferred out
+Thu 18/Apr/2019 16:32:06 CAT | Evaluating Missed Next appointment
+Thu 18/Apr/2019 16:32:06 CAT | Evaluating Transfer out
+Thu 18/Apr/2019 16:32:06 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 16:32:06 CAT | Evaluating missed and dead
+Thu 18/Apr/2019 16:32:06 CAT | Evaluating Get patients who missed appointment and are NOT transferred out, but died during reporting period
+Thu 18/Apr/2019 16:32:06 CAT | Evaluating Get patients who missed appointment and are NOT transferred out
+Thu 18/Apr/2019 16:32:06 CAT | Evaluating Missed Next appointment
+Thu 18/Apr/2019 16:32:06 CAT | Evaluating Transfer out
+Thu 18/Apr/2019 16:32:06 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 16:32:06 CAT | Evaluating Get deceased patients based on patient states and person object
+Thu 18/Apr/2019 16:32:06 CAT | Evaluating Patient states based on end of reporting period
+Thu 18/Apr/2019 16:32:06 CAT | Evaluating deceased
+Thu 18/Apr/2019 16:32:06 CAT | Evaluating missed and dead
+Thu 18/Apr/2019 16:32:06 CAT | Evaluating Get patients who missed appointment and are NOT transferred out, but died during reporting period
+Thu 18/Apr/2019 16:32:06 CAT | Evaluating Get patients who missed appointment and are NOT transferred out
+Thu 18/Apr/2019 16:32:06 CAT | Evaluating Missed Next appointment
+Thu 18/Apr/2019 16:32:06 CAT | Evaluating Transfer out
+Thu 18/Apr/2019 16:32:06 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 16:32:06 CAT | Evaluating Get deceased patients based on patient states and person object
+Thu 18/Apr/2019 16:32:06 CAT | Evaluating Patient states based on end of reporting period
+Thu 18/Apr/2019 16:32:06 CAT | Evaluating deceased
+Thu 18/Apr/2019 16:32:06 CAT | Evaluating Not consistent
+Thu 18/Apr/2019 16:32:06 CAT | Evaluating Get patients who missed appointment and are NOT transferred out, and NOT consistent during reporting period
+Thu 18/Apr/2019 16:32:06 CAT | Evaluating Get patients who missed appointment and are NOT transferred out
+Thu 18/Apr/2019 16:32:06 CAT | Evaluating Missed Next appointment
+Thu 18/Apr/2019 16:32:06 CAT | Evaluating Transfer out
+Thu 18/Apr/2019 16:32:06 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 16:32:06 CAT | Evaluating Not Consistent and Not dead
+Thu 18/Apr/2019 16:32:06 CAT | Evaluating Non consistent patients
+Thu 18/Apr/2019 16:32:07 CAT | Evaluating Get deceased patients based on patient states and person object
+Thu 18/Apr/2019 16:32:07 CAT | Evaluating Patient states based on end of reporting period
+Thu 18/Apr/2019 16:32:07 CAT | Evaluating deceased
+Thu 18/Apr/2019 16:32:07 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 16:32:07 CAT | Evaluating Not consistent
+Thu 18/Apr/2019 16:32:07 CAT | Evaluating Get patients who missed appointment and are NOT transferred out, and NOT consistent during reporting period
+Thu 18/Apr/2019 16:32:07 CAT | Evaluating Get patients who missed appointment and are NOT transferred out
+Thu 18/Apr/2019 16:32:07 CAT | Evaluating Missed Next appointment
+Thu 18/Apr/2019 16:32:07 CAT | Evaluating Transfer out
+Thu 18/Apr/2019 16:32:07 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 16:32:07 CAT | Evaluating Not Consistent and Not dead
+Thu 18/Apr/2019 16:32:07 CAT | Evaluating Non consistent patients
+Thu 18/Apr/2019 16:32:07 CAT | Evaluating Get deceased patients based on patient states and person object
+Thu 18/Apr/2019 16:32:07 CAT | Evaluating Patient states based on end of reporting period
+Thu 18/Apr/2019 16:32:07 CAT | Evaluating deceased
+Thu 18/Apr/2019 16:32:07 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 16:32:07 CAT | Evaluating TX_TB Data Set
+Thu 18/Apr/2019 16:32:07 CAT | Evaluating gender
+Thu 18/Apr/2019 16:32:07 CAT | Evaluating FemaleCohort
+Thu 18/Apr/2019 16:32:07 CAT | Evaluating MaleCohort
+Thu 18/Apr/2019 16:32:07 CAT | Evaluating age dimension
+Thu 18/Apr/2019 16:32:07 CAT | Evaluating patients with age between 1 and 4
+Thu 18/Apr/2019 16:32:07 CAT | Evaluating patients with age between 10 and 14
+Thu 18/Apr/2019 16:32:07 CAT | Evaluating patients with age over 15
+Thu 18/Apr/2019 16:32:07 CAT | Evaluating patients with age between 15 and 19
+Thu 18/Apr/2019 16:32:07 CAT | Evaluating patients with age between 20 and 24
+Thu 18/Apr/2019 16:32:07 CAT | Evaluating patients with age between 25 and 29
+Thu 18/Apr/2019 16:32:07 CAT | Evaluating patients with age between 30 and 34
+Thu 18/Apr/2019 16:32:07 CAT | Evaluating patients with age between 35 and 39
+Thu 18/Apr/2019 16:32:07 CAT | Evaluating patients with age between 40 and 44
+Thu 18/Apr/2019 16:32:07 CAT | Evaluating patients with age between 45 and 49
+Thu 18/Apr/2019 16:32:07 CAT | Evaluating patients with age between 5 and 9
+Thu 18/Apr/2019 16:32:07 CAT | Evaluating patients with age over 50
+Thu 18/Apr/2019 16:32:07 CAT | Evaluating patients with age bellow 1
+Thu 18/Apr/2019 16:32:07 CAT | Evaluating patients with age below 15
+Thu 18/Apr/2019 16:32:07 CAT | Evaluating unknownAge
+Thu 18/Apr/2019 16:32:07 CAT | Evaluating NUMERATOR
+Thu 18/Apr/2019 16:32:07 CAT | Evaluating CompositionCohortDefinition[compositionString=A NOT started-tb-treatment-previous-period,searches=A -> CompositionCohortDefinition [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],started-tb-treatment-previous-period -> SQL Cohort Query: [select person_id from obs where concept_id = 1113 and encounter_id in(select distinct encounter_id from encounter where encounter_type in(6,9)) and location_id = :location and value_datetime >= :startDate and value_datetime <= :endDate and voided=0] [endDate -> ${startDate-1d},location -> ${location},startDate -> ${startDate-6m}]]
+Thu 18/Apr/2019 16:32:07 CAT | Evaluating CompositionCohortDefinition[compositionString=(i OR ii) AND artList,searches=ii -> SQL Cohort Query: [select pg.patient_id from patient p inner join patient_program pg on p.patient_id=pg.patient_id where pg.voided=0 and p.voided=0 and program_id=5 AND pg.date_completed is null   and date_enrolled between :startDate and :endDate and location_id=:location] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],i -> SQL Cohort Query: [select person_id from obs where concept_id = 1113 and encounter_id in(select distinct encounter_id from encounter where encounter_type in(6,9)) and location_id = :location and value_datetime >= :startDate and value_datetime <= :endDate and voided=0] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],artList -> CompositionCohortDefinition [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}]]
+Thu 18/Apr/2019 16:32:07 CAT | Evaluating onTbTreatment
+Thu 18/Apr/2019 16:32:09 CAT | Evaluating TBPROGRAMA
+Thu 18/Apr/2019 16:32:09 CAT | Evaluating CompositionCohortDefinition[compositionString=started-by-end-reporting-period,searches=started-by-end-reporting-period -> Art start date [onOrBefore -> ${endDate},location -> ${location}]]
+Thu 18/Apr/2019 16:32:09 CAT | Evaluating Art start date
+Thu 18/Apr/2019 16:33:17 CAT | Evaluating startedTbTreatment
+Thu 18/Apr/2019 16:33:20 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 16:33:20 CAT | Evaluating patientsPreviouslyOnARTNumerator
+Thu 18/Apr/2019 16:33:20 CAT | Evaluating CompositionCohortDefinition[compositionString=NUM AND started-before-start-reporting-period,searches=started-before-start-reporting-period -> Art start date [onOrBefore -> ${startDate-1d},location -> ${location}],NUM -> CompositionCohortDefinition [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}]]
+Thu 18/Apr/2019 16:33:20 CAT | Evaluating CompositionCohortDefinition[compositionString=A NOT started-tb-treatment-previous-period,searches=A -> CompositionCohortDefinition [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],started-tb-treatment-previous-period -> SQL Cohort Query: [select person_id from obs where concept_id = 1113 and encounter_id in(select distinct encounter_id from encounter where encounter_type in(6,9)) and location_id = :location and value_datetime >= :startDate and value_datetime <= :endDate and voided=0] [endDate -> ${startDate-1d},location -> ${location},startDate -> ${startDate-6m}]]
+Thu 18/Apr/2019 16:33:20 CAT | Evaluating CompositionCohortDefinition[compositionString=(i OR ii) AND artList,searches=ii -> SQL Cohort Query: [select pg.patient_id from patient p inner join patient_program pg on p.patient_id=pg.patient_id where pg.voided=0 and p.voided=0 and program_id=5 AND pg.date_completed is null   and date_enrolled between :startDate and :endDate and location_id=:location] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],i -> SQL Cohort Query: [select person_id from obs where concept_id = 1113 and encounter_id in(select distinct encounter_id from encounter where encounter_type in(6,9)) and location_id = :location and value_datetime >= :startDate and value_datetime <= :endDate and voided=0] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],artList -> CompositionCohortDefinition [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}]]
+Thu 18/Apr/2019 16:33:20 CAT | Evaluating onTbTreatment
+Thu 18/Apr/2019 16:33:20 CAT | Evaluating TBPROGRAMA
+Thu 18/Apr/2019 16:33:20 CAT | Evaluating CompositionCohortDefinition[compositionString=started-by-end-reporting-period,searches=started-by-end-reporting-period -> Art start date [onOrBefore -> ${endDate},location -> ${location}]]
+Thu 18/Apr/2019 16:33:20 CAT | Evaluating Art start date
+Thu 18/Apr/2019 16:33:20 CAT | Evaluating startedTbTreatment
+Thu 18/Apr/2019 16:33:20 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 16:33:20 CAT | Evaluating Art start date
+Thu 18/Apr/2019 16:34:08 CAT | Evaluating patientsPreviouslyOnARTNumerator
+Thu 18/Apr/2019 16:34:08 CAT | Evaluating CompositionCohortDefinition[compositionString=NUM AND started-before-start-reporting-period,searches=started-before-start-reporting-period -> Art start date [onOrBefore -> ${startDate-1d},location -> ${location}],NUM -> CompositionCohortDefinition [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}]]
+Thu 18/Apr/2019 16:34:08 CAT | Evaluating CompositionCohortDefinition[compositionString=A NOT started-tb-treatment-previous-period,searches=A -> CompositionCohortDefinition [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],started-tb-treatment-previous-period -> SQL Cohort Query: [select person_id from obs where concept_id = 1113 and encounter_id in(select distinct encounter_id from encounter where encounter_type in(6,9)) and location_id = :location and value_datetime >= :startDate and value_datetime <= :endDate and voided=0] [endDate -> ${startDate-1d},location -> ${location},startDate -> ${startDate-6m}]]
+Thu 18/Apr/2019 16:34:08 CAT | Evaluating CompositionCohortDefinition[compositionString=(i OR ii) AND artList,searches=ii -> SQL Cohort Query: [select pg.patient_id from patient p inner join patient_program pg on p.patient_id=pg.patient_id where pg.voided=0 and p.voided=0 and program_id=5 AND pg.date_completed is null   and date_enrolled between :startDate and :endDate and location_id=:location] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],i -> SQL Cohort Query: [select person_id from obs where concept_id = 1113 and encounter_id in(select distinct encounter_id from encounter where encounter_type in(6,9)) and location_id = :location and value_datetime >= :startDate and value_datetime <= :endDate and voided=0] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],artList -> CompositionCohortDefinition [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}]]
+Thu 18/Apr/2019 16:34:08 CAT | Evaluating onTbTreatment
+Thu 18/Apr/2019 16:34:08 CAT | Evaluating TBPROGRAMA
+Thu 18/Apr/2019 16:34:08 CAT | Evaluating CompositionCohortDefinition[compositionString=started-by-end-reporting-period,searches=started-by-end-reporting-period -> Art start date [onOrBefore -> ${endDate},location -> ${location}]]
+Thu 18/Apr/2019 16:34:09 CAT | Evaluating Art start date
+Thu 18/Apr/2019 16:34:09 CAT | Evaluating startedTbTreatment
+Thu 18/Apr/2019 16:34:09 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 16:34:09 CAT | Evaluating Art start date
+Thu 18/Apr/2019 16:34:09 CAT | Evaluating patientsNewOnARTNumerator
+Thu 18/Apr/2019 16:34:09 CAT | Evaluating CompositionCohortDefinition[compositionString=NUM AND started-during-reporting-period,searches=NUM -> CompositionCohortDefinition [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],started-during-reporting-period -> Art start date [onOrBefore -> ${endDate},location -> ${location},onOrAfter -> ${startDate}]]
+Thu 18/Apr/2019 16:34:09 CAT | Evaluating CompositionCohortDefinition[compositionString=A NOT started-tb-treatment-previous-period,searches=A -> CompositionCohortDefinition [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],started-tb-treatment-previous-period -> SQL Cohort Query: [select person_id from obs where concept_id = 1113 and encounter_id in(select distinct encounter_id from encounter where encounter_type in(6,9)) and location_id = :location and value_datetime >= :startDate and value_datetime <= :endDate and voided=0] [endDate -> ${startDate-1d},location -> ${location},startDate -> ${startDate-6m}]]
+Thu 18/Apr/2019 16:34:09 CAT | Evaluating CompositionCohortDefinition[compositionString=(i OR ii) AND artList,searches=ii -> SQL Cohort Query: [select pg.patient_id from patient p inner join patient_program pg on p.patient_id=pg.patient_id where pg.voided=0 and p.voided=0 and program_id=5 AND pg.date_completed is null   and date_enrolled between :startDate and :endDate and location_id=:location] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],i -> SQL Cohort Query: [select person_id from obs where concept_id = 1113 and encounter_id in(select distinct encounter_id from encounter where encounter_type in(6,9)) and location_id = :location and value_datetime >= :startDate and value_datetime <= :endDate and voided=0] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],artList -> CompositionCohortDefinition [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}]]
+Thu 18/Apr/2019 16:34:09 CAT | Evaluating onTbTreatment
+Thu 18/Apr/2019 16:34:09 CAT | Evaluating TBPROGRAMA
+Thu 18/Apr/2019 16:34:09 CAT | Evaluating CompositionCohortDefinition[compositionString=started-by-end-reporting-period,searches=started-by-end-reporting-period -> Art start date [onOrBefore -> ${endDate},location -> ${location}]]
+Thu 18/Apr/2019 16:34:09 CAT | Evaluating Art start date
+Thu 18/Apr/2019 16:34:09 CAT | Evaluating startedTbTreatment
+Thu 18/Apr/2019 16:34:09 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 16:34:09 CAT | Evaluating Art start date
+Thu 18/Apr/2019 16:34:57 CAT | Evaluating patientsNewOnARTNumerator
+Thu 18/Apr/2019 16:34:57 CAT | Evaluating CompositionCohortDefinition[compositionString=NUM AND started-during-reporting-period,searches=NUM -> CompositionCohortDefinition [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],started-during-reporting-period -> Art start date [onOrBefore -> ${endDate},location -> ${location},onOrAfter -> ${startDate}]]
+Thu 18/Apr/2019 16:34:58 CAT | Evaluating CompositionCohortDefinition[compositionString=A NOT started-tb-treatment-previous-period,searches=A -> CompositionCohortDefinition [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],started-tb-treatment-previous-period -> SQL Cohort Query: [select person_id from obs where concept_id = 1113 and encounter_id in(select distinct encounter_id from encounter where encounter_type in(6,9)) and location_id = :location and value_datetime >= :startDate and value_datetime <= :endDate and voided=0] [endDate -> ${startDate-1d},location -> ${location},startDate -> ${startDate-6m}]]
+Thu 18/Apr/2019 16:34:58 CAT | Evaluating CompositionCohortDefinition[compositionString=(i OR ii) AND artList,searches=ii -> SQL Cohort Query: [select pg.patient_id from patient p inner join patient_program pg on p.patient_id=pg.patient_id where pg.voided=0 and p.voided=0 and program_id=5 AND pg.date_completed is null   and date_enrolled between :startDate and :endDate and location_id=:location] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],i -> SQL Cohort Query: [select person_id from obs where concept_id = 1113 and encounter_id in(select distinct encounter_id from encounter where encounter_type in(6,9)) and location_id = :location and value_datetime >= :startDate and value_datetime <= :endDate and voided=0] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],artList -> CompositionCohortDefinition [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}]]
+Thu 18/Apr/2019 16:34:58 CAT | Evaluating onTbTreatment
+Thu 18/Apr/2019 16:34:58 CAT | Evaluating TBPROGRAMA
+Thu 18/Apr/2019 16:34:58 CAT | Evaluating CompositionCohortDefinition[compositionString=started-by-end-reporting-period,searches=started-by-end-reporting-period -> Art start date [onOrBefore -> ${endDate},location -> ${location}]]
+Thu 18/Apr/2019 16:34:58 CAT | Evaluating Art start date
+Thu 18/Apr/2019 16:34:58 CAT | Evaluating startedTbTreatment
+Thu 18/Apr/2019 16:34:58 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 16:34:58 CAT | Evaluating Art start date
+Thu 18/Apr/2019 16:34:58 CAT | Evaluating Denominator Total
+Thu 18/Apr/2019 16:34:58 CAT | Evaluating TxTB - Denominator
+Thu 18/Apr/2019 16:34:58 CAT | Evaluating Art start date
+Thu 18/Apr/2019 16:34:58 CAT | Evaluating CompositionCohortDefinition[compositionString=S OR N,searches=S -> has obs between dates [locationList -> ${location},onOrBefore -> ${endDate},onOrAfter -> ${startDate}],N -> has obs between dates [locationList -> ${location},onOrBefore -> ${endDate},onOrAfter -> ${startDate}]]
+Thu 18/Apr/2019 16:34:58 CAT | Evaluating has obs between dates
+Thu 18/Apr/2019 16:35:00 CAT | Evaluating has obs between dates
+Thu 18/Apr/2019 16:35:03 CAT | Evaluating CompositionCohortDefinition[compositionString=P,searches=P -> has obs between dates [locationList -> ${location},onOrBefore -> ${endDate},onOrAfter -> ${startDate}]]
+Thu 18/Apr/2019 16:35:03 CAT | Evaluating has obs between dates
+Thu 18/Apr/2019 16:35:03 CAT | Evaluating startedTbTreatment
+Thu 18/Apr/2019 16:35:03 CAT | Evaluating TBPROGRAMA
+Thu 18/Apr/2019 16:35:03 CAT | Evaluating Patient states based on end of reporting period
+Thu 18/Apr/2019 16:35:04 CAT | Evaluating startedTbTreatment
+Thu 18/Apr/2019 16:35:04 CAT | Evaluating TBPROGRAMA
+Thu 18/Apr/2019 16:35:04 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 16:35:04 CAT | Evaluating startedTbTreatment
+Thu 18/Apr/2019 16:35:04 CAT | Evaluating TBPROGRAMA
+Thu 18/Apr/2019 16:35:04 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 16:35:04 CAT | Evaluating newOnARTPositiveScreening
+Thu 18/Apr/2019 16:35:04 CAT | Evaluating newOnARTPositiveScreening()
+Thu 18/Apr/2019 16:35:04 CAT | Evaluating TxTB - Denominator
+Thu 18/Apr/2019 16:35:04 CAT | Evaluating Art start date
+Thu 18/Apr/2019 16:35:04 CAT | Evaluating CompositionCohortDefinition[compositionString=S OR N,searches=S -> has obs between dates [locationList -> ${location},onOrBefore -> ${endDate},onOrAfter -> ${startDate}],N -> has obs between dates [locationList -> ${location},onOrBefore -> ${endDate},onOrAfter -> ${startDate}]]
+Thu 18/Apr/2019 16:35:04 CAT | Evaluating has obs between dates
+Thu 18/Apr/2019 16:35:04 CAT | Evaluating has obs between dates
+Thu 18/Apr/2019 16:35:04 CAT | Evaluating CompositionCohortDefinition[compositionString=P,searches=P -> has obs between dates [locationList -> ${location},onOrBefore -> ${endDate},onOrAfter -> ${startDate}]]
+Thu 18/Apr/2019 16:35:04 CAT | Evaluating has obs between dates
+Thu 18/Apr/2019 16:35:04 CAT | Evaluating startedTbTreatment
+Thu 18/Apr/2019 16:35:05 CAT | Evaluating TBPROGRAMA
+Thu 18/Apr/2019 16:35:05 CAT | Evaluating Patient states based on end of reporting period
+Thu 18/Apr/2019 16:35:05 CAT | Evaluating startedTbTreatment
+Thu 18/Apr/2019 16:35:05 CAT | Evaluating TBPROGRAMA
+Thu 18/Apr/2019 16:35:05 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 16:35:05 CAT | Evaluating startedTbTreatment
+Thu 18/Apr/2019 16:35:05 CAT | Evaluating TBPROGRAMA
+Thu 18/Apr/2019 16:35:05 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 16:35:05 CAT | Evaluating TxTB New on ART
+Thu 18/Apr/2019 16:35:05 CAT | Evaluating Art start date
+Thu 18/Apr/2019 16:35:05 CAT | Evaluating CompositionCohortDefinition[compositionString=A OR B OR C OR D,searches=A -> has obs between dates [locationList -> ${location},onOrBefore -> ${endDate},onOrAfter -> ${startDate}],B -> CompositionCohortDefinition [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],C -> SQL Cohort Query: [select person_id from obs where concept_id = 1113 and encounter_id in(select distinct encounter_id from encounter where encounter_type in(6,9)) and location_id = :location and value_datetime >= :startDate and value_datetime <= :endDate and voided=0] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],D -> SQL Cohort Query: [select pg.patient_id from patient p inner join patient_program pg on p.patient_id=pg.patient_id where pg.voided=0 and p.voided=0 and program_id=5 AND pg.date_completed is null   and date_enrolled between :startDate and :endDate and location_id=:location] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}]]
+Thu 18/Apr/2019 16:35:05 CAT | Evaluating has obs between dates
+Thu 18/Apr/2019 16:35:05 CAT | Evaluating CompositionCohortDefinition[compositionString=P,searches=P -> has obs between dates [locationList -> ${location},onOrBefore -> ${endDate},onOrAfter -> ${startDate}]]
+Thu 18/Apr/2019 16:35:05 CAT | Evaluating has obs between dates
+Thu 18/Apr/2019 16:35:05 CAT | Evaluating startedTbTreatment
+Thu 18/Apr/2019 16:35:05 CAT | Evaluating TBPROGRAMA
+Thu 18/Apr/2019 16:35:05 CAT | Evaluating newOnARTPositiveScreening
+Thu 18/Apr/2019 16:35:05 CAT | Evaluating newOnARTPositiveScreening()
+Thu 18/Apr/2019 16:35:05 CAT | Evaluating TxTB - Denominator
+Thu 18/Apr/2019 16:35:06 CAT | Evaluating Art start date
+Thu 18/Apr/2019 16:35:06 CAT | Evaluating CompositionCohortDefinition[compositionString=S OR N,searches=S -> has obs between dates [locationList -> ${location},onOrBefore -> ${endDate},onOrAfter -> ${startDate}],N -> has obs between dates [locationList -> ${location},onOrBefore -> ${endDate},onOrAfter -> ${startDate}]]
+Thu 18/Apr/2019 16:35:06 CAT | Evaluating has obs between dates
+Thu 18/Apr/2019 16:35:06 CAT | Evaluating has obs between dates
+Thu 18/Apr/2019 16:35:06 CAT | Evaluating CompositionCohortDefinition[compositionString=P,searches=P -> has obs between dates [locationList -> ${location},onOrBefore -> ${endDate},onOrAfter -> ${startDate}]]
+Thu 18/Apr/2019 16:35:06 CAT | Evaluating has obs between dates
+Thu 18/Apr/2019 16:35:06 CAT | Evaluating startedTbTreatment
+Thu 18/Apr/2019 16:35:06 CAT | Evaluating TBPROGRAMA
+Thu 18/Apr/2019 16:35:06 CAT | Evaluating Patient states based on end of reporting period
+Thu 18/Apr/2019 16:35:06 CAT | Evaluating startedTbTreatment
+Thu 18/Apr/2019 16:35:06 CAT | Evaluating TBPROGRAMA
+Thu 18/Apr/2019 16:35:06 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 16:35:06 CAT | Evaluating startedTbTreatment
+Thu 18/Apr/2019 16:35:06 CAT | Evaluating TBPROGRAMA
+Thu 18/Apr/2019 16:35:06 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 16:35:06 CAT | Evaluating TxTB New on ART
+Thu 18/Apr/2019 16:35:06 CAT | Evaluating Art start date
+Thu 18/Apr/2019 16:35:06 CAT | Evaluating CompositionCohortDefinition[compositionString=A OR B OR C OR D,searches=A -> has obs between dates [locationList -> ${location},onOrBefore -> ${endDate},onOrAfter -> ${startDate}],B -> CompositionCohortDefinition [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],C -> SQL Cohort Query: [select person_id from obs where concept_id = 1113 and encounter_id in(select distinct encounter_id from encounter where encounter_type in(6,9)) and location_id = :location and value_datetime >= :startDate and value_datetime <= :endDate and voided=0] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],D -> SQL Cohort Query: [select pg.patient_id from patient p inner join patient_program pg on p.patient_id=pg.patient_id where pg.voided=0 and p.voided=0 and program_id=5 AND pg.date_completed is null   and date_enrolled between :startDate and :endDate and location_id=:location] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}]]
+Thu 18/Apr/2019 16:35:06 CAT | Evaluating has obs between dates
+Thu 18/Apr/2019 16:35:07 CAT | Evaluating CompositionCohortDefinition[compositionString=P,searches=P -> has obs between dates [locationList -> ${location},onOrBefore -> ${endDate},onOrAfter -> ${startDate}]]
+Thu 18/Apr/2019 16:35:07 CAT | Evaluating has obs between dates
+Thu 18/Apr/2019 16:35:07 CAT | Evaluating startedTbTreatment
+Thu 18/Apr/2019 16:35:07 CAT | Evaluating TBPROGRAMA
+Thu 18/Apr/2019 16:35:07 CAT | Evaluating newOnARTNegativeScreening
+Thu 18/Apr/2019 16:35:07 CAT | Evaluating newOnARTPositiveScreening()
+Thu 18/Apr/2019 16:35:07 CAT | Evaluating TxTB - Denominator
+Thu 18/Apr/2019 16:35:07 CAT | Evaluating Art start date
+Thu 18/Apr/2019 16:35:07 CAT | Evaluating CompositionCohortDefinition[compositionString=S OR N,searches=S -> has obs between dates [locationList -> ${location},onOrBefore -> ${endDate},onOrAfter -> ${startDate}],N -> has obs between dates [locationList -> ${location},onOrBefore -> ${endDate},onOrAfter -> ${startDate}]]
+Thu 18/Apr/2019 16:35:07 CAT | Evaluating has obs between dates
+Thu 18/Apr/2019 16:35:07 CAT | Evaluating has obs between dates
+Thu 18/Apr/2019 16:35:07 CAT | Evaluating CompositionCohortDefinition[compositionString=P,searches=P -> has obs between dates [locationList -> ${location},onOrBefore -> ${endDate},onOrAfter -> ${startDate}]]
+Thu 18/Apr/2019 16:35:07 CAT | Evaluating has obs between dates
+Thu 18/Apr/2019 16:35:07 CAT | Evaluating startedTbTreatment
+Thu 18/Apr/2019 16:35:07 CAT | Evaluating TBPROGRAMA
+Thu 18/Apr/2019 16:35:07 CAT | Evaluating Patient states based on end of reporting period
+Thu 18/Apr/2019 16:35:07 CAT | Evaluating startedTbTreatment
+Thu 18/Apr/2019 16:35:07 CAT | Evaluating TBPROGRAMA
+Thu 18/Apr/2019 16:35:08 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 16:35:08 CAT | Evaluating startedTbTreatment
+Thu 18/Apr/2019 16:35:08 CAT | Evaluating TBPROGRAMA
+Thu 18/Apr/2019 16:35:08 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 16:35:08 CAT | Evaluating TxTB New on ART
+Thu 18/Apr/2019 16:35:08 CAT | Evaluating Art start date
+Thu 18/Apr/2019 16:35:08 CAT | Evaluating CompositionCohortDefinition[compositionString=A OR B OR C OR D,searches=A -> has obs between dates [locationList -> ${location},onOrBefore -> ${endDate},onOrAfter -> ${startDate}],B -> CompositionCohortDefinition [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],C -> SQL Cohort Query: [select person_id from obs where concept_id = 1113 and encounter_id in(select distinct encounter_id from encounter where encounter_type in(6,9)) and location_id = :location and value_datetime >= :startDate and value_datetime <= :endDate and voided=0] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],D -> SQL Cohort Query: [select pg.patient_id from patient p inner join patient_program pg on p.patient_id=pg.patient_id where pg.voided=0 and p.voided=0 and program_id=5 AND pg.date_completed is null   and date_enrolled between :startDate and :endDate and location_id=:location] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}]]
+Thu 18/Apr/2019 16:35:08 CAT | Evaluating has obs between dates
+Thu 18/Apr/2019 16:35:08 CAT | Evaluating CompositionCohortDefinition[compositionString=P,searches=P -> has obs between dates [locationList -> ${location},onOrBefore -> ${endDate},onOrAfter -> ${startDate}]]
+Thu 18/Apr/2019 16:35:08 CAT | Evaluating has obs between dates
+Thu 18/Apr/2019 16:35:08 CAT | Evaluating startedTbTreatment
+Thu 18/Apr/2019 16:35:08 CAT | Evaluating TBPROGRAMA
+Thu 18/Apr/2019 16:35:08 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 16:35:08 CAT | Evaluating newOnARTNegativeScreening
+Thu 18/Apr/2019 16:35:08 CAT | Evaluating newOnARTPositiveScreening()
+Thu 18/Apr/2019 16:35:08 CAT | Evaluating TxTB - Denominator
+Thu 18/Apr/2019 16:35:08 CAT | Evaluating Art start date
+Thu 18/Apr/2019 16:35:08 CAT | Evaluating CompositionCohortDefinition[compositionString=S OR N,searches=S -> has obs between dates [locationList -> ${location},onOrBefore -> ${endDate},onOrAfter -> ${startDate}],N -> has obs between dates [locationList -> ${location},onOrBefore -> ${endDate},onOrAfter -> ${startDate}]]
+Thu 18/Apr/2019 16:35:09 CAT | Evaluating has obs between dates
+Thu 18/Apr/2019 16:35:09 CAT | Evaluating has obs between dates
+Thu 18/Apr/2019 16:35:09 CAT | Evaluating CompositionCohortDefinition[compositionString=P,searches=P -> has obs between dates [locationList -> ${location},onOrBefore -> ${endDate},onOrAfter -> ${startDate}]]
+Thu 18/Apr/2019 16:35:09 CAT | Evaluating has obs between dates
+Thu 18/Apr/2019 16:35:09 CAT | Evaluating startedTbTreatment
+Thu 18/Apr/2019 16:35:09 CAT | Evaluating TBPROGRAMA
+Thu 18/Apr/2019 16:35:09 CAT | Evaluating Patient states based on end of reporting period
+Thu 18/Apr/2019 16:35:09 CAT | Evaluating startedTbTreatment
+Thu 18/Apr/2019 16:35:09 CAT | Evaluating TBPROGRAMA
+Thu 18/Apr/2019 16:35:09 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 16:35:09 CAT | Evaluating startedTbTreatment
+Thu 18/Apr/2019 16:35:09 CAT | Evaluating TBPROGRAMA
+Thu 18/Apr/2019 16:35:09 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 16:35:09 CAT | Evaluating TxTB New on ART
+Thu 18/Apr/2019 16:35:09 CAT | Evaluating Art start date
+Thu 18/Apr/2019 16:35:09 CAT | Evaluating CompositionCohortDefinition[compositionString=A OR B OR C OR D,searches=A -> has obs between dates [locationList -> ${location},onOrBefore -> ${endDate},onOrAfter -> ${startDate}],B -> CompositionCohortDefinition [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],C -> SQL Cohort Query: [select person_id from obs where concept_id = 1113 and encounter_id in(select distinct encounter_id from encounter where encounter_type in(6,9)) and location_id = :location and value_datetime >= :startDate and value_datetime <= :endDate and voided=0] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],D -> SQL Cohort Query: [select pg.patient_id from patient p inner join patient_program pg on p.patient_id=pg.patient_id where pg.voided=0 and p.voided=0 and program_id=5 AND pg.date_completed is null   and date_enrolled between :startDate and :endDate and location_id=:location] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}]]
+Thu 18/Apr/2019 16:35:09 CAT | Evaluating has obs between dates
+Thu 18/Apr/2019 16:35:10 CAT | Evaluating CompositionCohortDefinition[compositionString=P,searches=P -> has obs between dates [locationList -> ${location},onOrBefore -> ${endDate},onOrAfter -> ${startDate}]]
+Thu 18/Apr/2019 16:35:10 CAT | Evaluating has obs between dates
+Thu 18/Apr/2019 16:35:10 CAT | Evaluating startedTbTreatment
+Thu 18/Apr/2019 16:35:10 CAT | Evaluating TBPROGRAMA
+Thu 18/Apr/2019 16:35:10 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 16:35:10 CAT | Evaluating previouslyOnARTPostiveScreening
+Thu 18/Apr/2019 16:35:10 CAT | Evaluating newOnARTPositiveScreening()
+Thu 18/Apr/2019 16:35:10 CAT | Evaluating TxTB - Denominator
+Thu 18/Apr/2019 16:35:10 CAT | Evaluating Art start date
+Thu 18/Apr/2019 16:35:10 CAT | Evaluating CompositionCohortDefinition[compositionString=S OR N,searches=S -> has obs between dates [locationList -> ${location},onOrBefore -> ${endDate},onOrAfter -> ${startDate}],N -> has obs between dates [locationList -> ${location},onOrBefore -> ${endDate},onOrAfter -> ${startDate}]]
+Thu 18/Apr/2019 16:35:10 CAT | Evaluating has obs between dates
+Thu 18/Apr/2019 16:35:10 CAT | Evaluating has obs between dates
+Thu 18/Apr/2019 16:35:10 CAT | Evaluating CompositionCohortDefinition[compositionString=P,searches=P -> has obs between dates [locationList -> ${location},onOrBefore -> ${endDate},onOrAfter -> ${startDate}]]
+Thu 18/Apr/2019 16:35:10 CAT | Evaluating has obs between dates
+Thu 18/Apr/2019 16:35:10 CAT | Evaluating startedTbTreatment
+Thu 18/Apr/2019 16:35:10 CAT | Evaluating TBPROGRAMA
+Thu 18/Apr/2019 16:35:10 CAT | Evaluating Patient states based on end of reporting period
+Thu 18/Apr/2019 16:35:10 CAT | Evaluating startedTbTreatment
+Thu 18/Apr/2019 16:35:11 CAT | Evaluating TBPROGRAMA
+Thu 18/Apr/2019 16:35:11 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 16:35:11 CAT | Evaluating startedTbTreatment
+Thu 18/Apr/2019 16:35:11 CAT | Evaluating TBPROGRAMA
+Thu 18/Apr/2019 16:35:11 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 16:35:11 CAT | Evaluating CompositionCohortDefinition[compositionString=A OR B OR C OR D,searches=A -> has obs between dates [locationList -> ${location},onOrBefore -> ${endDate},onOrAfter -> ${startDate}],B -> CompositionCohortDefinition [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],C -> SQL Cohort Query: [select person_id from obs where concept_id = 1113 and encounter_id in(select distinct encounter_id from encounter where encounter_type in(6,9)) and location_id = :location and value_datetime >= :startDate and value_datetime <= :endDate and voided=0] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],D -> SQL Cohort Query: [select pg.patient_id from patient p inner join patient_program pg on p.patient_id=pg.patient_id where pg.voided=0 and p.voided=0 and program_id=5 AND pg.date_completed is null   and date_enrolled between :startDate and :endDate and location_id=:location] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}]]
+Thu 18/Apr/2019 16:35:11 CAT | Evaluating has obs between dates
+Thu 18/Apr/2019 16:35:11 CAT | Evaluating CompositionCohortDefinition[compositionString=P,searches=P -> has obs between dates [locationList -> ${location},onOrBefore -> ${endDate},onOrAfter -> ${startDate}]]
+Thu 18/Apr/2019 16:35:11 CAT | Evaluating has obs between dates
+Thu 18/Apr/2019 16:35:11 CAT | Evaluating startedTbTreatment
+Thu 18/Apr/2019 16:35:11 CAT | Evaluating TBPROGRAMA
+Thu 18/Apr/2019 16:35:11 CAT | Evaluating TxTB New on ART
+Thu 18/Apr/2019 16:35:11 CAT | Evaluating Art start date
+Thu 18/Apr/2019 16:35:11 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 16:35:11 CAT | Evaluating previouslyOnARTPostiveScreening
+Thu 18/Apr/2019 16:35:11 CAT | Evaluating newOnARTPositiveScreening()
+Thu 18/Apr/2019 16:35:12 CAT | Evaluating TxTB - Denominator
+Thu 18/Apr/2019 16:35:12 CAT | Evaluating Art start date
+Thu 18/Apr/2019 16:35:12 CAT | Evaluating CompositionCohortDefinition[compositionString=S OR N,searches=S -> has obs between dates [locationList -> ${location},onOrBefore -> ${endDate},onOrAfter -> ${startDate}],N -> has obs between dates [locationList -> ${location},onOrBefore -> ${endDate},onOrAfter -> ${startDate}]]
+Thu 18/Apr/2019 16:35:12 CAT | Evaluating has obs between dates
+Thu 18/Apr/2019 16:35:12 CAT | Evaluating has obs between dates
+Thu 18/Apr/2019 16:35:12 CAT | Evaluating CompositionCohortDefinition[compositionString=P,searches=P -> has obs between dates [locationList -> ${location},onOrBefore -> ${endDate},onOrAfter -> ${startDate}]]
+Thu 18/Apr/2019 16:35:12 CAT | Evaluating has obs between dates
+Thu 18/Apr/2019 16:35:12 CAT | Evaluating startedTbTreatment
+Thu 18/Apr/2019 16:35:12 CAT | Evaluating TBPROGRAMA
+Thu 18/Apr/2019 16:35:12 CAT | Evaluating Patient states based on end of reporting period
+Thu 18/Apr/2019 16:35:12 CAT | Evaluating startedTbTreatment
+Thu 18/Apr/2019 16:35:12 CAT | Evaluating TBPROGRAMA
+Thu 18/Apr/2019 16:35:12 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 16:35:12 CAT | Evaluating startedTbTreatment
+Thu 18/Apr/2019 16:35:12 CAT | Evaluating TBPROGRAMA
+Thu 18/Apr/2019 16:35:12 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 16:35:12 CAT | Evaluating CompositionCohortDefinition[compositionString=A OR B OR C OR D,searches=A -> has obs between dates [locationList -> ${location},onOrBefore -> ${endDate},onOrAfter -> ${startDate}],B -> CompositionCohortDefinition [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],C -> SQL Cohort Query: [select person_id from obs where concept_id = 1113 and encounter_id in(select distinct encounter_id from encounter where encounter_type in(6,9)) and location_id = :location and value_datetime >= :startDate and value_datetime <= :endDate and voided=0] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],D -> SQL Cohort Query: [select pg.patient_id from patient p inner join patient_program pg on p.patient_id=pg.patient_id where pg.voided=0 and p.voided=0 and program_id=5 AND pg.date_completed is null   and date_enrolled between :startDate and :endDate and location_id=:location] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}]]
+Thu 18/Apr/2019 16:35:12 CAT | Evaluating has obs between dates
+Thu 18/Apr/2019 16:35:13 CAT | Evaluating CompositionCohortDefinition[compositionString=P,searches=P -> has obs between dates [locationList -> ${location},onOrBefore -> ${endDate},onOrAfter -> ${startDate}]]
+Thu 18/Apr/2019 16:35:13 CAT | Evaluating has obs between dates
+Thu 18/Apr/2019 16:35:13 CAT | Evaluating startedTbTreatment
+Thu 18/Apr/2019 16:35:13 CAT | Evaluating TBPROGRAMA
+Thu 18/Apr/2019 16:35:13 CAT | Evaluating TxTB New on ART
+Thu 18/Apr/2019 16:35:13 CAT | Evaluating Art start date
+Thu 18/Apr/2019 16:35:13 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 16:35:13 CAT | Evaluating previouslyOnARTNegativeScreening
+Thu 18/Apr/2019 16:35:13 CAT | Evaluating previouslyOnARTNegativeScreening()
+Thu 18/Apr/2019 16:35:13 CAT | Evaluating TxTB - Denominator
+Thu 18/Apr/2019 16:35:13 CAT | Evaluating Art start date
+Thu 18/Apr/2019 16:35:13 CAT | Evaluating CompositionCohortDefinition[compositionString=S OR N,searches=S -> has obs between dates [locationList -> ${location},onOrBefore -> ${endDate},onOrAfter -> ${startDate}],N -> has obs between dates [locationList -> ${location},onOrBefore -> ${endDate},onOrAfter -> ${startDate}]]
+Thu 18/Apr/2019 16:35:13 CAT | Evaluating has obs between dates
+Thu 18/Apr/2019 16:35:13 CAT | Evaluating has obs between dates
+Thu 18/Apr/2019 16:35:13 CAT | Evaluating CompositionCohortDefinition[compositionString=P,searches=P -> has obs between dates [locationList -> ${location},onOrBefore -> ${endDate},onOrAfter -> ${startDate}]]
+Thu 18/Apr/2019 16:35:13 CAT | Evaluating has obs between dates
+Thu 18/Apr/2019 16:35:13 CAT | Evaluating startedTbTreatment
+Thu 18/Apr/2019 16:35:13 CAT | Evaluating TBPROGRAMA
+Thu 18/Apr/2019 16:35:14 CAT | Evaluating Patient states based on end of reporting period
+Thu 18/Apr/2019 16:35:14 CAT | Evaluating startedTbTreatment
+Thu 18/Apr/2019 16:35:14 CAT | Evaluating TBPROGRAMA
+Thu 18/Apr/2019 16:35:14 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 16:35:14 CAT | Evaluating startedTbTreatment
+Thu 18/Apr/2019 16:35:14 CAT | Evaluating TBPROGRAMA
+Thu 18/Apr/2019 16:35:14 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 16:35:14 CAT | Evaluating TxTB New on ART
+Thu 18/Apr/2019 16:35:14 CAT | Evaluating Art start date
+Thu 18/Apr/2019 16:35:14 CAT | Evaluating CompositionCohortDefinition[compositionString=A OR B OR C OR D,searches=A -> has obs between dates [locationList -> ${location},onOrBefore -> ${endDate},onOrAfter -> ${startDate}],B -> CompositionCohortDefinition [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],C -> SQL Cohort Query: [select person_id from obs where concept_id = 1113 and encounter_id in(select distinct encounter_id from encounter where encounter_type in(6,9)) and location_id = :location and value_datetime >= :startDate and value_datetime <= :endDate and voided=0] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],D -> SQL Cohort Query: [select pg.patient_id from patient p inner join patient_program pg on p.patient_id=pg.patient_id where pg.voided=0 and p.voided=0 and program_id=5 AND pg.date_completed is null   and date_enrolled between :startDate and :endDate and location_id=:location] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}]]
+Thu 18/Apr/2019 16:35:14 CAT | Evaluating has obs between dates
+Thu 18/Apr/2019 16:35:14 CAT | Evaluating CompositionCohortDefinition[compositionString=P,searches=P -> has obs between dates [locationList -> ${location},onOrBefore -> ${endDate},onOrAfter -> ${startDate}]]
+Thu 18/Apr/2019 16:35:14 CAT | Evaluating has obs between dates
+Thu 18/Apr/2019 16:35:14 CAT | Evaluating startedTbTreatment
+Thu 18/Apr/2019 16:35:14 CAT | Evaluating TBPROGRAMA
+Thu 18/Apr/2019 16:35:14 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 16:35:14 CAT | Evaluating previouslyOnARTNegativeScreening
+Thu 18/Apr/2019 16:35:14 CAT | Evaluating previouslyOnARTNegativeScreening()
+Thu 18/Apr/2019 16:35:15 CAT | Evaluating TxTB - Denominator
+Thu 18/Apr/2019 16:35:15 CAT | Evaluating Art start date
+Thu 18/Apr/2019 16:35:15 CAT | Evaluating CompositionCohortDefinition[compositionString=S OR N,searches=S -> has obs between dates [locationList -> ${location},onOrBefore -> ${endDate},onOrAfter -> ${startDate}],N -> has obs between dates [locationList -> ${location},onOrBefore -> ${endDate},onOrAfter -> ${startDate}]]
+Thu 18/Apr/2019 16:35:15 CAT | Evaluating has obs between dates
+Thu 18/Apr/2019 16:35:15 CAT | Evaluating has obs between dates
+Thu 18/Apr/2019 16:35:15 CAT | Evaluating CompositionCohortDefinition[compositionString=P,searches=P -> has obs between dates [locationList -> ${location},onOrBefore -> ${endDate},onOrAfter -> ${startDate}]]
+Thu 18/Apr/2019 16:35:15 CAT | Evaluating has obs between dates
+Thu 18/Apr/2019 16:35:15 CAT | Evaluating startedTbTreatment
+Thu 18/Apr/2019 16:35:15 CAT | Evaluating TBPROGRAMA
+Thu 18/Apr/2019 16:35:15 CAT | Evaluating Patient states based on end of reporting period
+Thu 18/Apr/2019 16:35:15 CAT | Evaluating startedTbTreatment
+Thu 18/Apr/2019 16:35:15 CAT | Evaluating TBPROGRAMA
+Thu 18/Apr/2019 16:35:15 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 16:35:15 CAT | Evaluating startedTbTreatment
+Thu 18/Apr/2019 16:35:15 CAT | Evaluating TBPROGRAMA
+Thu 18/Apr/2019 16:35:15 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 16:35:15 CAT | Evaluating TxTB New on ART
+Thu 18/Apr/2019 16:35:15 CAT | Evaluating Art start date
+Thu 18/Apr/2019 16:35:16 CAT | Evaluating CompositionCohortDefinition[compositionString=A OR B OR C OR D,searches=A -> has obs between dates [locationList -> ${location},onOrBefore -> ${endDate},onOrAfter -> ${startDate}],B -> CompositionCohortDefinition [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],C -> SQL Cohort Query: [select person_id from obs where concept_id = 1113 and encounter_id in(select distinct encounter_id from encounter where encounter_type in(6,9)) and location_id = :location and value_datetime >= :startDate and value_datetime <= :endDate and voided=0] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],D -> SQL Cohort Query: [select pg.patient_id from patient p inner join patient_program pg on p.patient_id=pg.patient_id where pg.voided=0 and p.voided=0 and program_id=5 AND pg.date_completed is null   and date_enrolled between :startDate and :endDate and location_id=:location] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}]]
+Thu 18/Apr/2019 16:35:16 CAT | Evaluating has obs between dates
+Thu 18/Apr/2019 16:35:16 CAT | Evaluating CompositionCohortDefinition[compositionString=P,searches=P -> has obs between dates [locationList -> ${location},onOrBefore -> ${endDate},onOrAfter -> ${startDate}]]
+Thu 18/Apr/2019 16:35:16 CAT | Evaluating has obs between dates
+Thu 18/Apr/2019 16:35:16 CAT | Evaluating startedTbTreatment
+Thu 18/Apr/2019 16:35:16 CAT | Evaluating TBPROGRAMA
+Thu 18/Apr/2019 16:35:16 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 16:35:16 CAT | Evaluating TB PREV Data Set
+Thu 18/Apr/2019 16:35:16 CAT | Evaluating gender
+Thu 18/Apr/2019 16:35:16 CAT | Evaluating FemaleCohort
+Thu 18/Apr/2019 16:35:16 CAT | Evaluating MaleCohort
+Thu 18/Apr/2019 16:35:16 CAT | Evaluating ART-status Dimension
+Thu 18/Apr/2019 16:35:16 CAT | Evaluating TB-PREV New on ART
+Thu 18/Apr/2019 16:35:16 CAT | Evaluating Art start date
+Thu 18/Apr/2019 16:36:05 CAT | Evaluating TB-PREV Previously on ART
+Thu 18/Apr/2019 16:36:05 CAT | Evaluating Art start date
+Thu 18/Apr/2019 16:36:05 CAT | Evaluating Art start date
+Thu 18/Apr/2019 16:36:05 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 16:36:05 CAT | Evaluating age dimension
+Thu 18/Apr/2019 16:36:05 CAT | Evaluating patients with age between 1 and 4
+Thu 18/Apr/2019 16:36:05 CAT | Evaluating patients with age between 10 and 14
+Thu 18/Apr/2019 16:36:05 CAT | Evaluating patients with age over 15
+Thu 18/Apr/2019 16:36:05 CAT | Evaluating patients with age between 15 and 19
+Thu 18/Apr/2019 16:36:05 CAT | Evaluating patients with age between 20 and 24
+Thu 18/Apr/2019 16:36:05 CAT | Evaluating patients with age between 25 and 29
+Thu 18/Apr/2019 16:36:06 CAT | Evaluating patients with age between 30 and 34
+Thu 18/Apr/2019 16:36:06 CAT | Evaluating patients with age between 35 and 39
+Thu 18/Apr/2019 16:36:06 CAT | Evaluating patients with age between 40 and 44
+Thu 18/Apr/2019 16:36:06 CAT | Evaluating patients with age between 45 and 49
+Thu 18/Apr/2019 16:36:06 CAT | Evaluating patients with age between 5 and 9
+Thu 18/Apr/2019 16:36:06 CAT | Evaluating patients with age over 50
+Thu 18/Apr/2019 16:36:06 CAT | Evaluating patients with age bellow 1
+Thu 18/Apr/2019 16:36:06 CAT | Evaluating patients with age below 15
+Thu 18/Apr/2019 16:36:06 CAT | Evaluating unknownAge
+Thu 18/Apr/2019 16:36:06 CAT | Evaluating Numerator Total
+Thu 18/Apr/2019 16:36:06 CAT | Evaluating TB-PREV Numerator Query
+Thu 18/Apr/2019 16:36:06 CAT | Evaluating Art start date
+Thu 18/Apr/2019 16:36:06 CAT | Evaluating Patients that completed Isoniazid prophylatic treatment
+Thu 18/Apr/2019 16:37:24 CAT | Evaluating Denominator Total
+Thu 18/Apr/2019 16:37:25 CAT | Evaluating TB-PREV Denominator Query
+Thu 18/Apr/2019 16:37:25 CAT | Evaluating Art start date
+Thu 18/Apr/2019 16:37:25 CAT | Evaluating Patient states based on end of reporting period
+Thu 18/Apr/2019 16:37:27 CAT | Evaluating Patient states based on end of reporting period
+Thu 18/Apr/2019 16:37:27 CAT | Evaluating Patients that completed Isoniazid prophylatic treatment
+Thu 18/Apr/2019 16:37:27 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 16:37:27 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 16:37:27 CAT | Evaluating Numerator Disaggregations
+Thu 18/Apr/2019 16:37:27 CAT | Evaluating TB-PREV Numerator Query
+Thu 18/Apr/2019 16:37:27 CAT | Evaluating Art start date
+Thu 18/Apr/2019 16:37:27 CAT | Evaluating Patients that completed Isoniazid prophylatic treatment
+Thu 18/Apr/2019 16:37:27 CAT | Evaluating Numerator Disaggregations
+Thu 18/Apr/2019 16:37:27 CAT | Evaluating TB-PREV Numerator Query
+Thu 18/Apr/2019 16:37:27 CAT | Evaluating Art start date
+Thu 18/Apr/2019 16:37:27 CAT | Evaluating Patients that completed Isoniazid prophylatic treatment
+Thu 18/Apr/2019 16:37:27 CAT | Evaluating Denominator Disaggregations
+Thu 18/Apr/2019 16:37:27 CAT | Evaluating TB-PREV Denominator Query
+Thu 18/Apr/2019 16:37:27 CAT | Evaluating Art start date
+Thu 18/Apr/2019 16:37:27 CAT | Evaluating Patient states based on end of reporting period
+Thu 18/Apr/2019 16:37:28 CAT | Evaluating Patient states based on end of reporting period
+Thu 18/Apr/2019 16:37:28 CAT | Evaluating Patients that completed Isoniazid prophylatic treatment
+Thu 18/Apr/2019 16:37:28 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 16:37:28 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 16:37:28 CAT | Evaluating Denominator Disaggregations
+Thu 18/Apr/2019 16:37:28 CAT | Evaluating TB-PREV Denominator Query
+Thu 18/Apr/2019 16:37:28 CAT | Evaluating Art start date
+Thu 18/Apr/2019 16:37:28 CAT | Evaluating Patient states based on end of reporting period
+Thu 18/Apr/2019 16:37:28 CAT | Evaluating Patient states based on end of reporting period
+Thu 18/Apr/2019 16:37:28 CAT | Evaluating Patients that completed Isoniazid prophylatic treatment
+Thu 18/Apr/2019 16:37:28 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 16:37:28 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 16:37:39 CAT | Generating Rendered Report....
+Thu 18/Apr/2019 16:37:44 CAT | Writing the report output to disk
+Thu 18/Apr/2019 16:37:59 CAT | Report Generation Completed in 0:06:01.347

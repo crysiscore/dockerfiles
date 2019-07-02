@@ -1,0 +1,254 @@
+Mon 04/Mar/2019 08:50:04 CAT | Report Requested by Super User
+Mon 04/Mar/2019 08:50:04 CAT | Report in queue at position 1
+Mon 04/Mar/2019 08:50:05 CAT | Starting to process report...
+Mon 04/Mar/2019 08:50:05 CAT | Evaluating Report Data....
+Mon 04/Mar/2019 08:50:05 CAT | Evaluating PEPFAR MER 2.3 Quarterly
+Mon 04/Mar/2019 08:50:05 CAT | Evaluating TX_NEW Data Set
+Mon 04/Mar/2019 08:50:05 CAT | Evaluating gender
+Mon 04/Mar/2019 08:50:05 CAT | Evaluating AllPatientsCohortDefinition[]
+Mon 04/Mar/2019 08:50:05 CAT | Evaluating FemaleCohort
+Mon 04/Mar/2019 08:50:05 CAT | Evaluating MaleCohort
+Mon 04/Mar/2019 08:50:05 CAT | Evaluating Maternity Dimension
+Mon 04/Mar/2019 08:50:05 CAT | Evaluating AllPatientsCohortDefinition[]
+Mon 04/Mar/2019 08:50:06 CAT | Evaluating CompositionCohortDefinition[compositionString=((DATAPARTO OR INICIOLACTANTE OR LACTANTEPROGRAMA OR LACTANTE) NOT GRAVIDAS) AND FEMININO,searches=DATAPARTO -> patientsWithUpdatedDepartureInART [onOrBefore -> ${onOrBefore},location -> ${location},onOrAfter -> ${onOrAfter}],LACTANTE -> has obs between dates [locationList -> ${location},onOrBefore -> ${onOrBefore},onOrAfter -> ${onOrAfter}],GRAVIDAS -> SQL Cohort Query: [Select 	p.patient_id from 	patient p inner join encounter e on p.patient_id=e.patient_id inner join obs o on e.encounter_id=o.encounter_id where p.voided=0 and e.voided=0 and o.voided=0 and concept_id=1982 and value_coded=44 and e.encounter_type in (5,6) and e.encounter_datetime between :startDate and :endDate and e.location_id=:location union Select 	p.patient_id from 	patient p inner join encounter e on p.patient_id=e.patient_id inner join obs o on e.encounter_id=o.encounter_id where 	p.voided=0 and e.voided=0 and o.voided=0 and concept_id=1279 and e.encounter_type in (5,6) and e.encounter_datetime between :startDate and :endDate and e.location_id=:location union Select p.patient_id from patient p inner join encounter e on p.patient_id=e.patient_id inner join obs o on e.encounter_id=o.encounter_id where p.voided=0 and e.voided=0 and o.voided=0 and concept_id=1600 and e.encounter_type in (5,6) and e.encounter_datetime between :startDate and :endDate and e.location_id=:location union select pp.patient_id from patient_program pp where pp.program_id=8 and pp.voided=0 and pp.date_enrolled between :startDate and :endDate and pp.location_id=:location] [endDate -> ${onOrBefore},location -> ${location},startDate -> ${onOrAfter}],INICIOLACTANTE -> has obs between dates [locationList -> ${location},onOrBefore -> ${onOrBefore},onOrAfter -> ${onOrAfter}],FEMININO -> Female,LACTANTEPROGRAMA -> SQL Cohort Query: [select 	pg.patient_id from patient p inner join patient_program pg on p.patient_id=pg.patient_id inner join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=8 and ps.state=27 and ps.end_date is null and ps.start_date between date_add(:startDate, interval -2 year) and date_add(:startDate, interval -1 day) and location_id=:location] [location -> ${location},startDate -> ${onOrAfter}]]
+Mon 04/Mar/2019 08:50:06 CAT | Evaluating patientsWithUpdatedDepartureInART
+Mon 04/Mar/2019 08:50:06 CAT | Evaluating has obs between dates
+Mon 04/Mar/2019 08:50:06 CAT | Evaluating patientsWhoGaveBirthTwoYearsAgo
+Mon 04/Mar/2019 08:50:06 CAT | Evaluating has obs between dates
+Mon 04/Mar/2019 08:50:08 CAT | Evaluating patientsPregnantEnrolledOnART
+Mon 04/Mar/2019 08:50:08 CAT | Evaluating AllPatientsCohortDefinition[]
+Mon 04/Mar/2019 08:50:08 CAT | Evaluating FemaleCohort
+Mon 04/Mar/2019 08:50:09 CAT | Evaluating patientsPregnantEnrolledOnART
+Mon 04/Mar/2019 08:50:09 CAT | Evaluating age
+Mon 04/Mar/2019 08:50:09 CAT | Evaluating AllPatientsCohortDefinition[]
+Mon 04/Mar/2019 08:50:09 CAT | Evaluating 1-4
+Mon 04/Mar/2019 08:50:09 CAT | Evaluating 10-14
+Mon 04/Mar/2019 08:50:09 CAT | Evaluating 15-19
+Mon 04/Mar/2019 08:50:09 CAT | Evaluating 20-24
+Mon 04/Mar/2019 08:50:09 CAT | Evaluating 25-29
+Mon 04/Mar/2019 08:50:09 CAT | Evaluating 30-34
+Mon 04/Mar/2019 08:50:09 CAT | Evaluating 35-39
+Mon 04/Mar/2019 08:50:09 CAT | Evaluating 40-44
+Mon 04/Mar/2019 08:50:09 CAT | Evaluating 45-49
+Mon 04/Mar/2019 08:50:09 CAT | Evaluating 5-9
+Mon 04/Mar/2019 08:50:09 CAT | Evaluating AgeCohortDefinition[Minimum Age Unit=YEARS,Maximum Age=0,Maximum Age Unit=YEARS,Also include patients whose age is unknown?=false]
+Mon 04/Mar/2019 08:50:09 CAT | Evaluating AgeCohortDefinition[Minimum Age=50,Minimum Age Unit=YEARS,Maximum Age Unit=YEARS,Also include patients whose age is unknown?=false]
+Mon 04/Mar/2019 08:50:09 CAT | Evaluating unknownAgeCohort
+Mon 04/Mar/2019 08:50:09 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Mon 04/Mar/2019 08:50:09 CAT | Evaluating patientEnrolledInARTStartedMales
+Mon 04/Mar/2019 08:50:09 CAT | Evaluating baseCohort
+Mon 04/Mar/2019 08:50:10 CAT | Evaluating TxNewUnionNumerator
+Mon 04/Mar/2019 08:50:16 CAT | Evaluating transferredFromOtherHealthFacility
+Mon 04/Mar/2019 08:50:17 CAT | Evaluating has obs between dates
+Mon 04/Mar/2019 08:50:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Mon 04/Mar/2019 08:50:17 CAT | Evaluating MaleCohort
+Mon 04/Mar/2019 08:50:17 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Mon 04/Mar/2019 08:50:17 CAT | Evaluating patientEnrolledInARTStartedMales
+Mon 04/Mar/2019 08:50:17 CAT | Evaluating baseCohort
+Mon 04/Mar/2019 08:50:17 CAT | Evaluating TxNewUnionNumerator
+Mon 04/Mar/2019 08:50:21 CAT | Evaluating transferredFromOtherHealthFacility
+Mon 04/Mar/2019 08:50:21 CAT | Evaluating has obs between dates
+Mon 04/Mar/2019 08:50:21 CAT | Evaluating AllPatientsCohortDefinition[]
+Mon 04/Mar/2019 08:50:21 CAT | Evaluating MaleCohort
+Mon 04/Mar/2019 08:50:21 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Mon 04/Mar/2019 08:50:21 CAT | Evaluating patientEnrolledInARTStartedMales
+Mon 04/Mar/2019 08:50:21 CAT | Evaluating baseCohort
+Mon 04/Mar/2019 08:50:21 CAT | Evaluating TxNewUnionNumerator
+Mon 04/Mar/2019 08:50:23 CAT | Evaluating transferredFromOtherHealthFacility
+Mon 04/Mar/2019 08:50:23 CAT | Evaluating has obs between dates
+Mon 04/Mar/2019 08:50:23 CAT | Evaluating AllPatientsCohortDefinition[]
+Mon 04/Mar/2019 08:50:23 CAT | Evaluating MaleCohort
+Mon 04/Mar/2019 08:50:23 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Mon 04/Mar/2019 08:50:23 CAT | Evaluating patientEnrolledInARTStartedMales
+Mon 04/Mar/2019 08:50:23 CAT | Evaluating baseCohort
+Mon 04/Mar/2019 08:50:23 CAT | Evaluating TxNewUnionNumerator
+Mon 04/Mar/2019 08:50:25 CAT | Evaluating transferredFromOtherHealthFacility
+Mon 04/Mar/2019 08:50:25 CAT | Evaluating has obs between dates
+Mon 04/Mar/2019 08:50:25 CAT | Evaluating AllPatientsCohortDefinition[]
+Mon 04/Mar/2019 08:50:25 CAT | Evaluating MaleCohort
+Mon 04/Mar/2019 08:50:25 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Mon 04/Mar/2019 08:50:25 CAT | Evaluating patientEnrolledInARTStartedMales
+Mon 04/Mar/2019 08:50:25 CAT | Evaluating baseCohort
+Mon 04/Mar/2019 08:50:25 CAT | Evaluating TxNewUnionNumerator
+Mon 04/Mar/2019 08:50:27 CAT | Evaluating transferredFromOtherHealthFacility
+Mon 04/Mar/2019 08:50:27 CAT | Evaluating has obs between dates
+Mon 04/Mar/2019 08:50:27 CAT | Evaluating AllPatientsCohortDefinition[]
+Mon 04/Mar/2019 08:50:27 CAT | Evaluating MaleCohort
+Mon 04/Mar/2019 08:50:27 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Mon 04/Mar/2019 08:50:27 CAT | Evaluating patientEnrolledInARTStartedMales
+Mon 04/Mar/2019 08:50:27 CAT | Evaluating baseCohort
+Mon 04/Mar/2019 08:50:27 CAT | Evaluating TxNewUnionNumerator
+Mon 04/Mar/2019 08:50:30 CAT | Evaluating transferredFromOtherHealthFacility
+Mon 04/Mar/2019 08:50:30 CAT | Evaluating has obs between dates
+Mon 04/Mar/2019 08:50:30 CAT | Evaluating AllPatientsCohortDefinition[]
+Mon 04/Mar/2019 08:50:30 CAT | Evaluating MaleCohort
+Mon 04/Mar/2019 08:50:30 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Mon 04/Mar/2019 08:50:30 CAT | Evaluating patientEnrolledInARTStartedMales
+Mon 04/Mar/2019 08:50:30 CAT | Evaluating baseCohort
+Mon 04/Mar/2019 08:50:30 CAT | Evaluating TxNewUnionNumerator
+Mon 04/Mar/2019 08:50:32 CAT | Evaluating transferredFromOtherHealthFacility
+Mon 04/Mar/2019 08:50:32 CAT | Evaluating has obs between dates
+Mon 04/Mar/2019 08:50:32 CAT | Evaluating AllPatientsCohortDefinition[]
+Mon 04/Mar/2019 08:50:32 CAT | Evaluating MaleCohort
+Mon 04/Mar/2019 08:50:32 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Mon 04/Mar/2019 08:50:32 CAT | Evaluating patientEnrolledInARTStartedMales
+Mon 04/Mar/2019 08:50:32 CAT | Evaluating baseCohort
+Mon 04/Mar/2019 08:50:32 CAT | Evaluating TxNewUnionNumerator
+Mon 04/Mar/2019 08:50:34 CAT | Evaluating transferredFromOtherHealthFacility
+Mon 04/Mar/2019 08:50:34 CAT | Evaluating has obs between dates
+Mon 04/Mar/2019 08:50:34 CAT | Evaluating AllPatientsCohortDefinition[]
+Mon 04/Mar/2019 08:50:34 CAT | Evaluating MaleCohort
+Mon 04/Mar/2019 08:50:34 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Mon 04/Mar/2019 08:50:34 CAT | Evaluating patientEnrolledInARTStartedMales
+Mon 04/Mar/2019 08:50:34 CAT | Evaluating baseCohort
+Mon 04/Mar/2019 08:50:34 CAT | Evaluating TxNewUnionNumerator
+Mon 04/Mar/2019 08:50:36 CAT | Evaluating transferredFromOtherHealthFacility
+Mon 04/Mar/2019 08:50:36 CAT | Evaluating has obs between dates
+Mon 04/Mar/2019 08:50:36 CAT | Evaluating AllPatientsCohortDefinition[]
+Mon 04/Mar/2019 08:50:36 CAT | Evaluating MaleCohort
+Mon 04/Mar/2019 08:50:36 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Mon 04/Mar/2019 08:50:36 CAT | Evaluating patientEnrolledInARTStartedMales
+Mon 04/Mar/2019 08:50:36 CAT | Evaluating baseCohort
+Mon 04/Mar/2019 08:50:36 CAT | Evaluating TxNewUnionNumerator
+Mon 04/Mar/2019 08:50:38 CAT | Evaluating transferredFromOtherHealthFacility
+Mon 04/Mar/2019 08:50:38 CAT | Evaluating has obs between dates
+Mon 04/Mar/2019 08:50:38 CAT | Evaluating AllPatientsCohortDefinition[]
+Mon 04/Mar/2019 08:50:38 CAT | Evaluating MaleCohort
+Mon 04/Mar/2019 08:50:38 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Mon 04/Mar/2019 08:50:38 CAT | Evaluating patientEnrolledInARTStartedMales
+Mon 04/Mar/2019 08:50:38 CAT | Evaluating baseCohort
+Mon 04/Mar/2019 08:50:38 CAT | Evaluating TxNewUnionNumerator
+Mon 04/Mar/2019 08:50:40 CAT | Evaluating transferredFromOtherHealthFacility
+Mon 04/Mar/2019 08:50:40 CAT | Evaluating has obs between dates
+Mon 04/Mar/2019 08:50:40 CAT | Evaluating AllPatientsCohortDefinition[]
+Mon 04/Mar/2019 08:50:40 CAT | Evaluating MaleCohort
+Mon 04/Mar/2019 08:50:40 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Mon 04/Mar/2019 08:50:40 CAT | Evaluating patientEnrolledInARTStartedMales
+Mon 04/Mar/2019 08:50:40 CAT | Evaluating baseCohort
+Mon 04/Mar/2019 08:50:40 CAT | Evaluating TxNewUnionNumerator
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating transferredFromOtherHealthFacility
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating has obs between dates
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating AllPatientsCohortDefinition[]
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating MaleCohort
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating patientEnrolledInARTStartedMales
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating baseCohort
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating TxNewUnionNumerator
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating transferredFromOtherHealthFacility
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating has obs between dates
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating AllPatientsCohortDefinition[]
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating FemaleCohort
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating patientEnrolledInARTStartedMales
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating baseCohort
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating TxNewUnionNumerator
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating transferredFromOtherHealthFacility
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating has obs between dates
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating AllPatientsCohortDefinition[]
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating FemaleCohort
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating patientEnrolledInARTStartedMales
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating baseCohort
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating TxNewUnionNumerator
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating transferredFromOtherHealthFacility
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating has obs between dates
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating AllPatientsCohortDefinition[]
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating FemaleCohort
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating patientEnrolledInARTStartedMales
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating baseCohort
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating TxNewUnionNumerator
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating transferredFromOtherHealthFacility
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating has obs between dates
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating AllPatientsCohortDefinition[]
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating FemaleCohort
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating patientEnrolledInARTStartedMales
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating baseCohort
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating TxNewUnionNumerator
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating transferredFromOtherHealthFacility
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating has obs between dates
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating AllPatientsCohortDefinition[]
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating FemaleCohort
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating patientEnrolledInARTStartedMales
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating baseCohort
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating TxNewUnionNumerator
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating transferredFromOtherHealthFacility
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating has obs between dates
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating AllPatientsCohortDefinition[]
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating FemaleCohort
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating patientEnrolledInARTStartedMales
+Mon 04/Mar/2019 08:50:41 CAT | Evaluating baseCohort
+Mon 04/Mar/2019 08:50:42 CAT | Evaluating TxNewUnionNumerator
+Mon 04/Mar/2019 08:50:42 CAT | Evaluating transferredFromOtherHealthFacility
+Mon 04/Mar/2019 08:50:42 CAT | Evaluating has obs between dates
+Mon 04/Mar/2019 08:50:42 CAT | Evaluating AllPatientsCohortDefinition[]
+Mon 04/Mar/2019 08:50:42 CAT | Evaluating FemaleCohort
+Mon 04/Mar/2019 08:50:42 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Mon 04/Mar/2019 08:50:42 CAT | Evaluating patientEnrolledInARTStartedMales
+Mon 04/Mar/2019 08:50:42 CAT | Evaluating baseCohort
+Mon 04/Mar/2019 08:50:42 CAT | Evaluating TxNewUnionNumerator
+Mon 04/Mar/2019 08:50:42 CAT | Evaluating transferredFromOtherHealthFacility
+Mon 04/Mar/2019 08:50:42 CAT | Evaluating has obs between dates
+Mon 04/Mar/2019 08:50:42 CAT | Evaluating AllPatientsCohortDefinition[]
+Mon 04/Mar/2019 08:50:42 CAT | Evaluating FemaleCohort
+Mon 04/Mar/2019 08:50:42 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Mon 04/Mar/2019 08:50:42 CAT | Evaluating patientEnrolledInARTStartedMales
+Mon 04/Mar/2019 08:50:42 CAT | Evaluating baseCohort
+Mon 04/Mar/2019 08:50:42 CAT | Evaluating TxNewUnionNumerator
+Mon 04/Mar/2019 08:50:42 CAT | Evaluating transferredFromOtherHealthFacility
+Mon 04/Mar/2019 08:50:42 CAT | Evaluating has obs between dates
+Mon 04/Mar/2019 08:50:42 CAT | Evaluating AllPatientsCohortDefinition[]
+Mon 04/Mar/2019 08:50:42 CAT | Evaluating FemaleCohort
+Mon 04/Mar/2019 08:50:42 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Mon 04/Mar/2019 08:50:42 CAT | Evaluating patientEnrolledInARTStartedMales
+Mon 04/Mar/2019 08:50:42 CAT | Evaluating baseCohort
+Mon 04/Mar/2019 08:50:42 CAT | Evaluating TxNewUnionNumerator
+Mon 04/Mar/2019 08:50:42 CAT | Evaluating transferredFromOtherHealthFacility
+Mon 04/Mar/2019 08:50:42 CAT | Evaluating has obs between dates
+Mon 04/Mar/2019 08:50:42 CAT | Evaluating AllPatientsCohortDefinition[]
+Mon 04/Mar/2019 08:50:42 CAT | Evaluating FemaleCohort
+Mon 04/Mar/2019 08:50:42 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Mon 04/Mar/2019 08:50:42 CAT | Evaluating patientEnrolledInARTStartedMales
+Mon 04/Mar/2019 08:50:42 CAT | Evaluating baseCohort
+Mon 04/Mar/2019 08:50:42 CAT | Evaluating TxNewUnionNumerator
+Mon 04/Mar/2019 08:50:42 CAT | Evaluating transferredFromOtherHealthFacility
+Mon 04/Mar/2019 08:50:42 CAT | Evaluating has obs between dates
+Mon 04/Mar/2019 08:50:42 CAT | Evaluating AllPatientsCohortDefinition[]
+Mon 04/Mar/2019 08:50:42 CAT | Evaluating FemaleCohort
+Mon 04/Mar/2019 08:50:42 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Mon 04/Mar/2019 08:50:42 CAT | Evaluating patientEnrolledInARTStartedMales
+Mon 04/Mar/2019 08:50:42 CAT | Evaluating baseCohort
+Mon 04/Mar/2019 08:50:42 CAT | Evaluating TxNewUnionNumerator
+Mon 04/Mar/2019 08:50:42 CAT | Evaluating transferredFromOtherHealthFacility
+Mon 04/Mar/2019 08:50:42 CAT | Evaluating has obs between dates
+Mon 04/Mar/2019 08:50:42 CAT | Evaluating AllPatientsCohortDefinition[]
+Mon 04/Mar/2019 08:50:42 CAT | Evaluating FemaleCohort
+Mon 04/Mar/2019 08:50:42 CAT | Evaluating patientNewlyEnrolledInHIVIndicator
+Mon 04/Mar/2019 08:50:42 CAT | Evaluating patientEnrolledInART
+Mon 04/Mar/2019 08:50:42 CAT | Evaluating baseCohort
+Mon 04/Mar/2019 08:50:42 CAT | Evaluating TxNewUnionNumerator
+Mon 04/Mar/2019 08:50:43 CAT | Evaluating transferredFromOtherHealthFacility
+Mon 04/Mar/2019 08:50:43 CAT | Evaluating has obs between dates
+Mon 04/Mar/2019 08:50:43 CAT | Evaluating AllPatientsCohortDefinition[]
+Mon 04/Mar/2019 08:50:43 CAT | Evaluating patientNewlyEnrolledInHIVIndicator
+Mon 04/Mar/2019 08:50:43 CAT | Evaluating patientEnrolledInART
+Mon 04/Mar/2019 08:50:43 CAT | Evaluating baseCohort
+Mon 04/Mar/2019 08:50:43 CAT | Evaluating TxNewUnionNumerator
+Mon 04/Mar/2019 08:50:43 CAT | Evaluating transferredFromOtherHealthFacility
+Mon 04/Mar/2019 08:50:43 CAT | Evaluating has obs between dates
+Mon 04/Mar/2019 08:50:43 CAT | Evaluating AllPatientsCohortDefinition[]
+Mon 04/Mar/2019 08:50:43 CAT | Evaluating TX_CURR Data Set
+Mon 04/Mar/2019 08:50:43 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Mon 04/Mar/2019 08:50:43 CAT | Evaluating patientEnrolledInARTStartedMales
+Mon 04/Mar/2019 08:50:43 CAT | Evaluating InARTProgram
+Mon 04/Mar/2019 08:50:43 CAT | Evaluating patientWithSTARTDRUGSObs
+Mon 04/Mar/2019 08:50:43 CAT | Evaluating patientWithHistoricalDrugStartDateObs
+Mon 04/Mar/2019 08:50:44 CAT | Evaluating patientWithFirstDrugPickupEncounter
+Mon 04/Mar/2019 08:50:45 CAT | Evaluating leftARTProgramBeforeOrOnEndDate
+Mon 04/Mar/2019 08:50:45 CAT | Evaluating patientsThatMissedNexPickup
+Mon 04/Mar/2019 08:50:50 CAT | Evaluating patientsWithNextPickupDate
+Mon 04/Mar/2019 08:51:27 CAT | Report Evaluation Failed
+Mon 04/Mar/2019 08:51:27 CAT | Writing the report error to disk

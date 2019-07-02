@@ -1,0 +1,9 @@
+Sat 13/Apr/2019 16:08:10 CAT | Report Requested by user1 user1
+Sat 13/Apr/2019 16:08:10 CAT | Report in queue at position 1
+Sat 13/Apr/2019 16:08:10 CAT | Starting to process report...
+Sat 13/Apr/2019 16:08:10 CAT | Evaluating Report Data....
+Sat 13/Apr/2019 16:08:10 CAT | Evaluating LISTA DE PACIENTES QUE ESTAO NA SEGUNDA LINHA
+Sat 13/Apr/2019 16:08:10 CAT | Evaluating SQL PARA PRODUCAO DE LISTA DE PACIENTES NA SEGUNDA LINHA
+Sat 13/Apr/2019 16:08:11 CAT | Generating Rendered Report....
+Sat 13/Apr/2019 16:08:11 CAT | Writing the report output to disk
+Sat 13/Apr/2019 16:08:11 CAT | Report Generation Completed in 0:00:00.878

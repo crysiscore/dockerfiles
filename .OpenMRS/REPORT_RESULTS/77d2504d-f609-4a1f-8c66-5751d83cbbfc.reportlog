@@ -1,0 +1,333 @@
+Thu 18/Apr/2019 20:29:41 CAT | Report Requested by Super User
+Thu 18/Apr/2019 20:29:41 CAT | Report in queue at position 1
+Thu 18/Apr/2019 20:29:41 CAT | Starting to process report...
+Thu 18/Apr/2019 20:29:41 CAT | Evaluating Report Data....
+Thu 18/Apr/2019 20:29:41 CAT | Evaluating PEPFAR MER 2.3 Quarterly
+Thu 18/Apr/2019 20:29:41 CAT | Evaluating baseCohort
+Thu 18/Apr/2019 20:29:41 CAT | Evaluating TX_NEW Data Set
+Thu 18/Apr/2019 20:29:41 CAT | Evaluating gender
+Thu 18/Apr/2019 20:29:41 CAT | Evaluating FemaleCohort
+Thu 18/Apr/2019 20:29:41 CAT | Evaluating MaleCohort
+Thu 18/Apr/2019 20:29:42 CAT | Evaluating Maternity Dimension
+Thu 18/Apr/2019 20:29:42 CAT | Evaluating CompositionCohortDefinition[compositionString=(DATAPARTO OR INICIOLACTANTE OR LACTANTEPROGRAMA OR LACTANTE) AND FEMININO,searches=DATAPARTO -> patientsWithUpdatedDepartureInART [locationList -> ${location},value2 -> ${onOrBefore},value1 -> ${onOrAfter}],LACTANTE -> has obs between dates [locationList -> ${location},onOrBefore -> ${onOrBefore},onOrAfter -> ${onOrAfter}],INICIOLACTANTE -> has obs between dates [locationList -> ${location},onOrBefore -> ${onOrBefore},onOrAfter -> ${onOrAfter}],FEMININO -> Female,LACTANTEPROGRAMA -> SQL Cohort Query: [select 	pg.patient_id from patient p inner join patient_program pg on p.patient_id=pg.patient_id inner join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=8 and ps.state=27 and ps.end_date is null and ps.start_date between :startDate and :endDate and location_id=:location] [endDate -> ${onOrBefore},location -> ${location},startDate -> ${onOrAfter}]]
+Thu 18/Apr/2019 20:29:42 CAT | Evaluating patientsWithUpdatedDepartureInART
+Thu 18/Apr/2019 20:29:42 CAT | Evaluating has obs between dates
+Thu 18/Apr/2019 20:29:42 CAT | Evaluating patientsWhoGaveBirthWithinReportingPeriod
+Thu 18/Apr/2019 20:29:42 CAT | Evaluating has obs between dates
+Thu 18/Apr/2019 20:29:42 CAT | Evaluating FemaleCohort
+Thu 18/Apr/2019 20:29:42 CAT | Evaluating patientsPregnantEnrolledOnART
+Thu 18/Apr/2019 20:29:42 CAT | Evaluating age dimension
+Thu 18/Apr/2019 20:29:42 CAT | Evaluating Age on ART start date
+Thu 18/Apr/2019 20:29:44 CAT | Evaluating Age on ART start date
+Thu 18/Apr/2019 20:29:44 CAT | Evaluating Age on ART start date
+Thu 18/Apr/2019 20:29:45 CAT | Evaluating Age on ART start date
+Thu 18/Apr/2019 20:29:45 CAT | Evaluating Age on ART start date
+Thu 18/Apr/2019 20:29:45 CAT | Evaluating Age on ART start date
+Thu 18/Apr/2019 20:29:46 CAT | Evaluating Age on ART start date
+Thu 18/Apr/2019 20:29:46 CAT | Evaluating Age on ART start date
+Thu 18/Apr/2019 20:29:46 CAT | Evaluating Age on ART start date
+Thu 18/Apr/2019 20:29:47 CAT | Evaluating Age on ART start date
+Thu 18/Apr/2019 20:29:47 CAT | Evaluating Age on ART start date
+Thu 18/Apr/2019 20:29:47 CAT | Evaluating Age on ART start date
+Thu 18/Apr/2019 20:29:48 CAT | Evaluating Age on ART start date
+Thu 18/Apr/2019 20:29:48 CAT | Evaluating Age on ART start date
+Thu 18/Apr/2019 20:29:48 CAT | Evaluating unknownAge
+Thu 18/Apr/2019 20:29:48 CAT | Evaluating patientNewlyEnrolledInHIVIndicator
+Thu 18/Apr/2019 20:29:48 CAT | Evaluating patientEnrolledInART
+Thu 18/Apr/2019 20:29:48 CAT | Evaluating Art start date
+Thu 18/Apr/2019 20:29:48 CAT | Evaluating transferredFromOtherHealthFacility
+Thu 18/Apr/2019 20:29:48 CAT | Evaluating has obs between dates
+Thu 18/Apr/2019 20:29:48 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 20:29:48 CAT | Evaluating patientNewlyEnrolledInHIVIndicator
+Thu 18/Apr/2019 20:29:48 CAT | Evaluating patientEnrolledInART
+Thu 18/Apr/2019 20:29:48 CAT | Evaluating Art start date
+Thu 18/Apr/2019 20:29:48 CAT | Evaluating transferredFromOtherHealthFacility
+Thu 18/Apr/2019 20:29:48 CAT | Evaluating has obs between dates
+Thu 18/Apr/2019 20:29:48 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 20:29:49 CAT | Evaluating TX_CURR Data Set
+Thu 18/Apr/2019 20:29:49 CAT | Evaluating gender
+Thu 18/Apr/2019 20:29:49 CAT | Evaluating FemaleCohort
+Thu 18/Apr/2019 20:29:49 CAT | Evaluating MaleCohort
+Thu 18/Apr/2019 20:29:49 CAT | Evaluating age dimension
+Thu 18/Apr/2019 20:29:49 CAT | Evaluating patients with age between 1 and 4
+Thu 18/Apr/2019 20:29:49 CAT | Evaluating patients with age between 10 and 14
+Thu 18/Apr/2019 20:29:49 CAT | Evaluating patients with age over 15
+Thu 18/Apr/2019 20:29:49 CAT | Evaluating patients with age between 15 and 19
+Thu 18/Apr/2019 20:29:49 CAT | Evaluating patients with age between 20 and 24
+Thu 18/Apr/2019 20:29:49 CAT | Evaluating patients with age between 25 and 29
+Thu 18/Apr/2019 20:29:49 CAT | Evaluating patients with age between 30 and 34
+Thu 18/Apr/2019 20:29:49 CAT | Evaluating patients with age between 35 and 39
+Thu 18/Apr/2019 20:29:49 CAT | Evaluating patients with age between 40 and 44
+Thu 18/Apr/2019 20:29:49 CAT | Evaluating patients with age between 45 and 49
+Thu 18/Apr/2019 20:29:49 CAT | Evaluating patients with age between 5 and 9
+Thu 18/Apr/2019 20:29:49 CAT | Evaluating patients with age over 50
+Thu 18/Apr/2019 20:29:49 CAT | Evaluating patients with age bellow 1
+Thu 18/Apr/2019 20:29:49 CAT | Evaluating patients with age below 15
+Thu 18/Apr/2019 20:29:49 CAT | Evaluating unknownAge
+Thu 18/Apr/2019 20:29:49 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 18/Apr/2019 20:29:49 CAT | Evaluating compositionCohort
+Thu 18/Apr/2019 20:29:49 CAT | Evaluating InARTProgram
+Thu 18/Apr/2019 20:29:49 CAT | Evaluating patientWithSTARTDRUGSObs
+Thu 18/Apr/2019 20:29:49 CAT | Evaluating patientWithHistoricalDrugStartDateObs
+Thu 18/Apr/2019 20:29:49 CAT | Evaluating patientWithFirstDrugPickupEncounter
+Thu 18/Apr/2019 20:29:49 CAT | Evaluating leftARTProgramBeforeOrOnEndDate
+Thu 18/Apr/2019 20:29:49 CAT | Evaluating patientsThatMissedNexPickup
+Thu 18/Apr/2019 20:29:49 CAT | Evaluating patientsWithNextPickupDate
+Thu 18/Apr/2019 20:29:50 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 20:29:50 CAT | Evaluating patientsThatDidNotMissNextConsultation
+Thu 18/Apr/2019 20:29:50 CAT | Evaluating patientsReportedAsAbandonmentButStillInPeriod
+Thu 18/Apr/2019 20:29:50 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 20:29:50 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 20:29:50 CAT | Evaluating patientsWithNextPickupDate
+Thu 18/Apr/2019 20:29:50 CAT | Evaluating patientsWithNextConsultationDate
+Thu 18/Apr/2019 20:29:51 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 18/Apr/2019 20:29:51 CAT | Evaluating compositionCohort
+Thu 18/Apr/2019 20:29:51 CAT | Evaluating InARTProgram
+Thu 18/Apr/2019 20:29:51 CAT | Evaluating patientWithSTARTDRUGSObs
+Thu 18/Apr/2019 20:29:51 CAT | Evaluating patientWithHistoricalDrugStartDateObs
+Thu 18/Apr/2019 20:29:51 CAT | Evaluating patientWithFirstDrugPickupEncounter
+Thu 18/Apr/2019 20:29:51 CAT | Evaluating leftARTProgramBeforeOrOnEndDate
+Thu 18/Apr/2019 20:29:51 CAT | Evaluating patientsThatMissedNexPickup
+Thu 18/Apr/2019 20:29:51 CAT | Evaluating patientsWithNextPickupDate
+Thu 18/Apr/2019 20:29:51 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 20:29:51 CAT | Evaluating patientsThatDidNotMissNextConsultation
+Thu 18/Apr/2019 20:29:51 CAT | Evaluating patientsReportedAsAbandonmentButStillInPeriod
+Thu 18/Apr/2019 20:29:51 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 20:29:51 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 20:29:51 CAT | Evaluating patientsWithNextPickupDate
+Thu 18/Apr/2019 20:29:51 CAT | Evaluating patientsWithNextConsultationDate
+Thu 18/Apr/2019 20:29:51 CAT | Evaluating Tx_Pvls Data Set
+Thu 18/Apr/2019 20:29:51 CAT | Evaluating gender
+Thu 18/Apr/2019 20:29:51 CAT | Evaluating FemaleCohort
+Thu 18/Apr/2019 20:29:51 CAT | Evaluating MaleCohort
+Thu 18/Apr/2019 20:29:51 CAT | Evaluating Maternity Dimension
+Thu 18/Apr/2019 20:29:51 CAT | Evaluating CompositionCohortDefinition[compositionString=(DATAPARTO OR INICIOLACTANTE OR LACTANTEPROGRAMA OR LACTANTE) AND FEMININO,searches=DATAPARTO -> patientsWithUpdatedDepartureInART [locationList -> ${location},value2 -> ${onOrBefore},value1 -> ${onOrAfter}],LACTANTE -> has obs between dates [locationList -> ${location},onOrBefore -> ${onOrBefore},onOrAfter -> ${onOrAfter}],INICIOLACTANTE -> has obs between dates [locationList -> ${location},onOrBefore -> ${onOrBefore},onOrAfter -> ${onOrAfter}],FEMININO -> Female,LACTANTEPROGRAMA -> SQL Cohort Query: [select 	pg.patient_id from patient p inner join patient_program pg on p.patient_id=pg.patient_id inner join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=8 and ps.state=27 and ps.end_date is null and ps.start_date between :startDate and :endDate and location_id=:location] [endDate -> ${onOrBefore},location -> ${location},startDate -> ${onOrAfter}]]
+Thu 18/Apr/2019 20:29:51 CAT | Evaluating patientsWithUpdatedDepartureInART
+Thu 18/Apr/2019 20:29:51 CAT | Evaluating has obs between dates
+Thu 18/Apr/2019 20:29:51 CAT | Evaluating patientsWhoGaveBirthWithinReportingPeriod
+Thu 18/Apr/2019 20:29:51 CAT | Evaluating has obs between dates
+Thu 18/Apr/2019 20:29:51 CAT | Evaluating FemaleCohort
+Thu 18/Apr/2019 20:29:51 CAT | Evaluating patientsPregnantEnrolledOnART
+Thu 18/Apr/2019 20:29:51 CAT | Evaluating age dimension
+Thu 18/Apr/2019 20:29:51 CAT | Evaluating patients with age between 1 and 4
+Thu 18/Apr/2019 20:29:51 CAT | Evaluating patients with age between 10 and 14
+Thu 18/Apr/2019 20:29:51 CAT | Evaluating patients with age over 15
+Thu 18/Apr/2019 20:29:51 CAT | Evaluating patients with age between 15 and 19
+Thu 18/Apr/2019 20:29:51 CAT | Evaluating patients with age between 20 and 24
+Thu 18/Apr/2019 20:29:51 CAT | Evaluating patients with age between 25 and 29
+Thu 18/Apr/2019 20:29:51 CAT | Evaluating patients with age between 30 and 34
+Thu 18/Apr/2019 20:29:51 CAT | Evaluating patients with age between 35 and 39
+Thu 18/Apr/2019 20:29:51 CAT | Evaluating patients with age between 40 and 44
+Thu 18/Apr/2019 20:29:51 CAT | Evaluating patients with age between 45 and 49
+Thu 18/Apr/2019 20:29:52 CAT | Evaluating patients with age between 5 and 9
+Thu 18/Apr/2019 20:29:52 CAT | Evaluating patients with age over 50
+Thu 18/Apr/2019 20:29:52 CAT | Evaluating patients with age bellow 1
+Thu 18/Apr/2019 20:29:52 CAT | Evaluating patients with age below 15
+Thu 18/Apr/2019 20:29:52 CAT | Evaluating unknownAge
+Thu 18/Apr/2019 20:29:52 CAT | Evaluating suppressed viral load
+Thu 18/Apr/2019 20:29:52 CAT | Evaluating CompositionCohortDefinition[compositionString=supp AND onArtLongEnough,searches=supp -> SQL Cohort Query: [SELECT ultima_carga.patient_id FROM(SELECT p.patient_id,MAX(o.obs_datetime) data_carga FROM patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13,6,9) AND  o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) and :endDate AND e.location_id=:location GROUP BY p.patient_id) ultima_carga INNER JOIN obs ON obs.person_id=ultima_carga.patient_id AND obs.obs_datetime=ultima_carga.data_carga  WHERE obs.voided=0 AND obs.concept_id=856 AND obs.location_id=:location AND obs.value_numeric < 1000] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}]]
+Thu 18/Apr/2019 20:29:52 CAT | Evaluating suppressedViralLoadWithin12Months
+Thu 18/Apr/2019 20:29:52 CAT | Evaluating On ART for at least 3 months
+Thu 18/Apr/2019 20:29:52 CAT | Evaluating Pregnant and VLS
+Thu 18/Apr/2019 20:29:52 CAT | Evaluating Get pregnant women with viral load suppression
+Thu 18/Apr/2019 20:29:52 CAT | Evaluating CompositionCohortDefinition[compositionString=supp AND onArtLongEnough,searches=supp -> SQL Cohort Query: [SELECT ultima_carga.patient_id FROM(SELECT p.patient_id,MAX(o.obs_datetime) data_carga FROM patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13,6,9) AND  o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) and :endDate AND e.location_id=:location GROUP BY p.patient_id) ultima_carga INNER JOIN obs ON obs.person_id=ultima_carga.patient_id AND obs.obs_datetime=ultima_carga.data_carga  WHERE obs.voided=0 AND obs.concept_id=856 AND obs.location_id=:location AND obs.value_numeric < 1000] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}]]
+Thu 18/Apr/2019 20:29:52 CAT | Evaluating suppressedViralLoadWithin12Months
+Thu 18/Apr/2019 20:29:52 CAT | Evaluating On ART for at least 3 months
+Thu 18/Apr/2019 20:29:52 CAT | Evaluating pregnantBreastfeeding
+Thu 18/Apr/2019 20:29:53 CAT | Evaluating Pregnant and VLR
+Thu 18/Apr/2019 20:29:53 CAT | Evaluating Get pregnant women with viral load results denominator
+Thu 18/Apr/2019 20:29:53 CAT | Evaluating CompositionCohortDefinition[compositionString=results AND onArtLongEnough,searches=results -> SQL Cohort Query: [SELECT p.patient_id FROM  patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13,6,9) AND o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) AND :endDate AND e.location_id=:location] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}]]
+Thu 18/Apr/2019 20:29:53 CAT | Evaluating viralLoadWithin12Months
+Thu 18/Apr/2019 20:29:53 CAT | Evaluating On ART for at least 3 months
+Thu 18/Apr/2019 20:29:53 CAT | Evaluating pregnantBreastfeeding
+Thu 18/Apr/2019 20:29:53 CAT | Evaluating Breastfeeding and VLS
+Thu 18/Apr/2019 20:29:53 CAT | Evaluating Breastfeeding with viral suppression
+Thu 18/Apr/2019 20:29:53 CAT | Evaluating pregnantBreastfeeding
+Thu 18/Apr/2019 20:29:53 CAT | Evaluating CompositionCohortDefinition[compositionString=supp AND onArtLongEnough,searches=supp -> SQL Cohort Query: [SELECT ultima_carga.patient_id FROM(SELECT p.patient_id,MAX(o.obs_datetime) data_carga FROM patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13,6,9) AND  o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) and :endDate AND e.location_id=:location GROUP BY p.patient_id) ultima_carga INNER JOIN obs ON obs.person_id=ultima_carga.patient_id AND obs.obs_datetime=ultima_carga.data_carga  WHERE obs.voided=0 AND obs.concept_id=856 AND obs.location_id=:location AND obs.value_numeric < 1000] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}]]
+Thu 18/Apr/2019 20:29:53 CAT | Evaluating suppressedViralLoadWithin12Months
+Thu 18/Apr/2019 20:29:53 CAT | Evaluating On ART for at least 3 months
+Thu 18/Apr/2019 20:29:53 CAT | Evaluating Breastfeeding and VLR
+Thu 18/Apr/2019 20:29:53 CAT | Evaluating Breastfeeding with viral results
+Thu 18/Apr/2019 20:29:53 CAT | Evaluating pregnantBreastfeeding
+Thu 18/Apr/2019 20:29:53 CAT | Evaluating CompositionCohortDefinition[compositionString=results AND onArtLongEnough,searches=results -> SQL Cohort Query: [SELECT p.patient_id FROM  patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13,6,9) AND o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) AND :endDate AND e.location_id=:location] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}]]
+Thu 18/Apr/2019 20:29:53 CAT | Evaluating viralLoadWithin12Months
+Thu 18/Apr/2019 20:29:53 CAT | Evaluating On ART for at least 3 months
+Thu 18/Apr/2019 20:29:53 CAT | Evaluating patients with viral load
+Thu 18/Apr/2019 20:29:53 CAT | Evaluating CompositionCohortDefinition[compositionString=results AND onArtLongEnough,searches=results -> SQL Cohort Query: [SELECT p.patient_id FROM  patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13,6,9) AND o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) AND :endDate AND e.location_id=:location] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}]]
+Thu 18/Apr/2019 20:29:53 CAT | Evaluating viralLoadWithin12Months
+Thu 18/Apr/2019 20:29:53 CAT | Evaluating On ART for at least 3 months
+Thu 18/Apr/2019 20:29:53 CAT | Evaluating breastfeedingWomenWithViralLoadSuppression routine numerator
+Thu 18/Apr/2019 20:29:53 CAT | Evaluating Breastfeeding with viral results and on routine
+Thu 18/Apr/2019 20:29:53 CAT | Evaluating Breastfeeding with viral suppression
+Thu 18/Apr/2019 20:29:53 CAT | Evaluating pregnantBreastfeeding
+Thu 18/Apr/2019 20:29:53 CAT | Evaluating CompositionCohortDefinition[compositionString=supp AND onArtLongEnough,searches=supp -> SQL Cohort Query: [SELECT ultima_carga.patient_id FROM(SELECT p.patient_id,MAX(o.obs_datetime) data_carga FROM patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13,6,9) AND  o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) and :endDate AND e.location_id=:location GROUP BY p.patient_id) ultima_carga INNER JOIN obs ON obs.person_id=ultima_carga.patient_id AND obs.obs_datetime=ultima_carga.data_carga  WHERE obs.voided=0 AND obs.concept_id=856 AND obs.location_id=:location AND obs.value_numeric < 1000] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}]]
+Thu 18/Apr/2019 20:29:53 CAT | Evaluating suppressedViralLoadWithin12Months
+Thu 18/Apr/2019 20:29:53 CAT | Evaluating On ART for at least 3 months
+Thu 18/Apr/2019 20:29:53 CAT | Evaluating Routine for all patients controlled by parameter
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating breastfeedingWomenWithViralLoadSuppression not documented numerator
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating Breastfeeding with viral results and NOT documented
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating Breastfeeding with viral suppression
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating pregnantBreastfeeding
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating CompositionCohortDefinition[compositionString=supp AND onArtLongEnough,searches=supp -> SQL Cohort Query: [SELECT ultima_carga.patient_id FROM(SELECT p.patient_id,MAX(o.obs_datetime) data_carga FROM patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13,6,9) AND  o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) and :endDate AND e.location_id=:location GROUP BY p.patient_id) ultima_carga INNER JOIN obs ON obs.person_id=ultima_carga.patient_id AND obs.obs_datetime=ultima_carga.data_carga  WHERE obs.voided=0 AND obs.concept_id=856 AND obs.location_id=:location AND obs.value_numeric < 1000] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}]]
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating suppressedViralLoadWithin12Months
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating On ART for at least 3 months
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating Routine for all patients controlled by parameter
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating pregnantWomenWithViralLoadSuppression and on routine
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating Pregnant and on Routine Numerator
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating Get pregnant women with viral load suppression
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating CompositionCohortDefinition[compositionString=supp AND onArtLongEnough,searches=supp -> SQL Cohort Query: [SELECT ultima_carga.patient_id FROM(SELECT p.patient_id,MAX(o.obs_datetime) data_carga FROM patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13,6,9) AND  o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) and :endDate AND e.location_id=:location GROUP BY p.patient_id) ultima_carga INNER JOIN obs ON obs.person_id=ultima_carga.patient_id AND obs.obs_datetime=ultima_carga.data_carga  WHERE obs.voided=0 AND obs.concept_id=856 AND obs.location_id=:location AND obs.value_numeric < 1000] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}]]
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating suppressedViralLoadWithin12Months
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating On ART for at least 3 months
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating pregnantBreastfeeding
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating Routine for all patients controlled by parameter
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating pregnantWomenWithViralLoadSuppression and NOT documented
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating Pregnant and NOT documented Numerator
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating Get pregnant women with viral load suppression
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating CompositionCohortDefinition[compositionString=supp AND onArtLongEnough,searches=supp -> SQL Cohort Query: [SELECT ultima_carga.patient_id FROM(SELECT p.patient_id,MAX(o.obs_datetime) data_carga FROM patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13,6,9) AND  o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) and :endDate AND e.location_id=:location GROUP BY p.patient_id) ultima_carga INNER JOIN obs ON obs.person_id=ultima_carga.patient_id AND obs.obs_datetime=ultima_carga.data_carga  WHERE obs.voided=0 AND obs.concept_id=856 AND obs.location_id=:location AND obs.value_numeric < 1000] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}]]
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating suppressedViralLoadWithin12Months
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating On ART for at least 3 months
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating pregnantBreastfeeding
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating Routine for all patients controlled by parameter
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating breastfeedingWomenWithViralLoad-routine denominator
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating Breastfeeding women on routine and have Viral load results
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating Breastfeeding with viral results
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating pregnantBreastfeeding
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating CompositionCohortDefinition[compositionString=results AND onArtLongEnough,searches=results -> SQL Cohort Query: [SELECT p.patient_id FROM  patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13,6,9) AND o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) AND :endDate AND e.location_id=:location] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}]]
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating viralLoadWithin12Months
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating On ART for at least 3 months
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating Routine for all patients controlled by parameter
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating breastfeedingWomenWithViralLoad-not documented denominator
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating Breastfeeding women NOT documented and have Viral load results
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating Breastfeeding with viral results
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating pregnantBreastfeeding
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating CompositionCohortDefinition[compositionString=results AND onArtLongEnough,searches=results -> SQL Cohort Query: [SELECT p.patient_id FROM  patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13,6,9) AND o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) AND :endDate AND e.location_id=:location] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}]]
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating viralLoadWithin12Months
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating On ART for at least 3 months
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating Routine for all patients controlled by parameter
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating pregnantWomenWithViralLoad and not documented denominator
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating Get pregnant women with viral load results Not documented
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating Get pregnant women with viral load results denominator
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating CompositionCohortDefinition[compositionString=results AND onArtLongEnough,searches=results -> SQL Cohort Query: [SELECT p.patient_id FROM  patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13,6,9) AND o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) AND :endDate AND e.location_id=:location] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}]]
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating viralLoadWithin12Months
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating On ART for at least 3 months
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating pregnantBreastfeeding
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating Routine for all patients controlled by parameter
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating pregnantWomenWithViralLoad results not documented denominator
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating Get pregnant women with viral load results Not documented
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating Get pregnant women with viral load results denominator
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating CompositionCohortDefinition[compositionString=results AND onArtLongEnough,searches=results -> SQL Cohort Query: [SELECT p.patient_id FROM  patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13,6,9) AND o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) AND :endDate AND e.location_id=:location] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}]]
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating viralLoadWithin12Months
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating On ART for at least 3 months
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating pregnantBreastfeeding
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating Routine for all patients controlled by parameter
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating viral load suppression on routine adults and children
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating Suppression and on routine adult and children
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating CompositionCohortDefinition[compositionString=supp AND onArtLongEnough,searches=supp -> SQL Cohort Query: [SELECT ultima_carga.patient_id FROM(SELECT p.patient_id,MAX(o.obs_datetime) data_carga FROM patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13,6,9) AND  o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) and :endDate AND e.location_id=:location GROUP BY p.patient_id) ultima_carga INNER JOIN obs ON obs.person_id=ultima_carga.patient_id AND obs.obs_datetime=ultima_carga.data_carga  WHERE obs.voided=0 AND obs.concept_id=856 AND obs.location_id=:location AND obs.value_numeric < 1000] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}]]
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating suppressedViralLoadWithin12Months
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating On ART for at least 3 months
+Thu 18/Apr/2019 20:29:54 CAT | Evaluating Routine for all patients controlled by parameter
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating viral load suppression on routine adults and children
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating Suppression and on routine adult and children
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating CompositionCohortDefinition[compositionString=supp AND onArtLongEnough,searches=supp -> SQL Cohort Query: [SELECT ultima_carga.patient_id FROM(SELECT p.patient_id,MAX(o.obs_datetime) data_carga FROM patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13,6,9) AND  o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) and :endDate AND e.location_id=:location GROUP BY p.patient_id) ultima_carga INNER JOIN obs ON obs.person_id=ultima_carga.patient_id AND obs.obs_datetime=ultima_carga.data_carga  WHERE obs.voided=0 AND obs.concept_id=856 AND obs.location_id=:location AND obs.value_numeric < 1000] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}]]
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating suppressedViralLoadWithin12Months
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating On ART for at least 3 months
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating Routine for all patients controlled by parameter
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating viral load suppression on routine adults and children
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating suppression and not documented adults and children
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating CompositionCohortDefinition[compositionString=supp AND onArtLongEnough,searches=supp -> SQL Cohort Query: [SELECT ultima_carga.patient_id FROM(SELECT p.patient_id,MAX(o.obs_datetime) data_carga FROM patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13,6,9) AND  o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) and :endDate AND e.location_id=:location GROUP BY p.patient_id) ultima_carga INNER JOIN obs ON obs.person_id=ultima_carga.patient_id AND obs.obs_datetime=ultima_carga.data_carga  WHERE obs.voided=0 AND obs.concept_id=856 AND obs.location_id=:location AND obs.value_numeric < 1000] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}]]
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating suppressedViralLoadWithin12Months
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating On ART for at least 3 months
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating Routine for all patients controlled by parameter
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating viral load suppression on routine adults and children
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating suppression and not documented adults and children
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating CompositionCohortDefinition[compositionString=supp AND onArtLongEnough,searches=supp -> SQL Cohort Query: [SELECT ultima_carga.patient_id FROM(SELECT p.patient_id,MAX(o.obs_datetime) data_carga FROM patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13,6,9) AND  o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) and :endDate AND e.location_id=:location GROUP BY p.patient_id) ultima_carga INNER JOIN obs ON obs.person_id=ultima_carga.patient_id AND obs.obs_datetime=ultima_carga.data_carga  WHERE obs.voided=0 AND obs.concept_id=856 AND obs.location_id=:location AND obs.value_numeric < 1000] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}]]
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating suppressedViralLoadWithin12Months
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating On ART for at least 3 months
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating Routine for all patients controlled by parameter
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating viral load suppression on routine adults
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating Suppression and on routine adult and children
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating CompositionCohortDefinition[compositionString=supp AND onArtLongEnough,searches=supp -> SQL Cohort Query: [SELECT ultima_carga.patient_id FROM(SELECT p.patient_id,MAX(o.obs_datetime) data_carga FROM patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13,6,9) AND  o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) and :endDate AND e.location_id=:location GROUP BY p.patient_id) ultima_carga INNER JOIN obs ON obs.person_id=ultima_carga.patient_id AND obs.obs_datetime=ultima_carga.data_carga  WHERE obs.voided=0 AND obs.concept_id=856 AND obs.location_id=:location AND obs.value_numeric < 1000] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}]]
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating suppressedViralLoadWithin12Months
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating On ART for at least 3 months
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating Routine for all patients controlled by parameter
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating viral load suppression on routine adults
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating Suppression and on routine adult and children
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating CompositionCohortDefinition[compositionString=supp AND onArtLongEnough,searches=supp -> SQL Cohort Query: [SELECT ultima_carga.patient_id FROM(SELECT p.patient_id,MAX(o.obs_datetime) data_carga FROM patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13,6,9) AND  o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) and :endDate AND e.location_id=:location GROUP BY p.patient_id) ultima_carga INNER JOIN obs ON obs.person_id=ultima_carga.patient_id AND obs.obs_datetime=ultima_carga.data_carga  WHERE obs.voided=0 AND obs.concept_id=856 AND obs.location_id=:location AND obs.value_numeric < 1000] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}]]
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating suppressedViralLoadWithin12Months
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating On ART for at least 3 months
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating Routine for all patients controlled by parameter
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating viral load suppression on routine adults
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating suppression and not documented adults and children
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating CompositionCohortDefinition[compositionString=supp AND onArtLongEnough,searches=supp -> SQL Cohort Query: [SELECT ultima_carga.patient_id FROM(SELECT p.patient_id,MAX(o.obs_datetime) data_carga FROM patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13,6,9) AND  o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) and :endDate AND e.location_id=:location GROUP BY p.patient_id) ultima_carga INNER JOIN obs ON obs.person_id=ultima_carga.patient_id AND obs.obs_datetime=ultima_carga.data_carga  WHERE obs.voided=0 AND obs.concept_id=856 AND obs.location_id=:location AND obs.value_numeric < 1000] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}]]
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating suppressedViralLoadWithin12Months
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating On ART for at least 3 months
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating Routine for all patients controlled by parameter
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating viral load suppression on routine adults
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating suppression and not documented adults and children
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating CompositionCohortDefinition[compositionString=supp AND onArtLongEnough,searches=supp -> SQL Cohort Query: [SELECT ultima_carga.patient_id FROM(SELECT p.patient_id,MAX(o.obs_datetime) data_carga FROM patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13,6,9) AND  o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) and :endDate AND e.location_id=:location GROUP BY p.patient_id) ultima_carga INNER JOIN obs ON obs.person_id=ultima_carga.patient_id AND obs.obs_datetime=ultima_carga.data_carga  WHERE obs.voided=0 AND obs.concept_id=856 AND obs.location_id=:location AND obs.value_numeric < 1000] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}]]
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating suppressedViralLoadWithin12Months
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating On ART for at least 3 months
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating Routine for all patients controlled by parameter
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating viral load results on routine adults and children
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating Viral load results with routine for children and adults denominator
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating CompositionCohortDefinition[compositionString=results AND onArtLongEnough,searches=results -> SQL Cohort Query: [SELECT p.patient_id FROM  patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13,6,9) AND o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) AND :endDate AND e.location_id=:location] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}]]
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating viralLoadWithin12Months
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating On ART for at least 3 months
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating Routine for all patients controlled by parameter
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating viral load results on routine adults and children
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating Viral load results with routine for children and adults denominator
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating CompositionCohortDefinition[compositionString=results AND onArtLongEnough,searches=results -> SQL Cohort Query: [SELECT p.patient_id FROM  patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13,6,9) AND o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) AND :endDate AND e.location_id=:location] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}]]
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating viralLoadWithin12Months
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating On ART for at least 3 months
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating Routine for all patients controlled by parameter
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating viral load suppression on routine adults
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating Viral load results with not documentation for children and adults denominator
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating CompositionCohortDefinition[compositionString=results AND onArtLongEnough,searches=results -> SQL Cohort Query: [SELECT p.patient_id FROM  patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13,6,9) AND o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) AND :endDate AND e.location_id=:location] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}]]
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating viralLoadWithin12Months
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating On ART for at least 3 months
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating Routine for all patients controlled by parameter
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating viral load suppression on routine adults
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating Viral load results with not documentation for children and adults denominator
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating CompositionCohortDefinition[compositionString=results AND onArtLongEnough,searches=results -> SQL Cohort Query: [SELECT p.patient_id FROM  patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13,6,9) AND o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) AND :endDate AND e.location_id=:location] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}]]
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating viralLoadWithin12Months
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating On ART for at least 3 months
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating Routine for all patients controlled by parameter
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating Adults denominator routine indicator
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating Viral load results with routine for children and adults denominator
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating CompositionCohortDefinition[compositionString=results AND onArtLongEnough,searches=results -> SQL Cohort Query: [SELECT p.patient_id FROM  patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13,6,9) AND o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) AND :endDate AND e.location_id=:location] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}]]
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating viralLoadWithin12Months
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating On ART for at least 3 months
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating Routine for all patients controlled by parameter
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating Adults denominator routine indicator
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating Viral load results with routine for children and adults denominator
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating CompositionCohortDefinition[compositionString=results AND onArtLongEnough,searches=results -> SQL Cohort Query: [SELECT p.patient_id FROM  patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13,6,9) AND o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) AND :endDate AND e.location_id=:location] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}]]
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating viralLoadWithin12Months
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating On ART for at least 3 months
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating Routine for all patients controlled by parameter
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating Adults denominator NOT documented indicator
+Thu 18/Apr/2019 20:29:55 CAT | Evaluating Viral load results with not documentation for children and adults denominator
+Thu 18/Apr/2019 20:29:56 CAT | Evaluating CompositionCohortDefinition[compositionString=results AND onArtLongEnough,searches=results -> SQL Cohort Query: [SELECT p.patient_id FROM  patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13,6,9) AND o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) AND :endDate AND e.location_id=:location] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}]]
+Thu 18/Apr/2019 20:29:56 CAT | Evaluating viralLoadWithin12Months
+Thu 18/Apr/2019 20:29:56 CAT | Evaluating On ART for at least 3 months
+Thu 18/Apr/2019 20:29:56 CAT | Evaluating Routine for all patients controlled by parameter
+Thu 18/Apr/2019 20:29:56 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 20:29:56 CAT | Evaluating Adults denominator NOT documented indicator
+Thu 18/Apr/2019 20:29:56 CAT | Evaluating Viral load results with not documentation for children and adults denominator
+Thu 18/Apr/2019 20:29:56 CAT | Evaluating CompositionCohortDefinition[compositionString=results AND onArtLongEnough,searches=results -> SQL Cohort Query: [SELECT p.patient_id FROM  patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13,6,9) AND o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) AND :endDate AND e.location_id=:location] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}]]
+Thu 18/Apr/2019 20:29:56 CAT | Evaluating viralLoadWithin12Months
+Thu 18/Apr/2019 20:29:56 CAT | Evaluating On ART for at least 3 months
+Thu 18/Apr/2019 20:29:56 CAT | Evaluating Routine for all patients controlled by parameter
+Thu 18/Apr/2019 20:29:56 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 18/Apr/2019 20:29:56 CAT | Generating Rendered Report....
+Thu 18/Apr/2019 20:29:57 CAT | Writing the report output to disk
+Thu 18/Apr/2019 20:29:58 CAT | Report Generation Completed in 0:00:16.958

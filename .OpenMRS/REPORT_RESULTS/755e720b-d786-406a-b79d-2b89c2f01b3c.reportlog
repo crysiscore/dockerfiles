@@ -1,0 +1,440 @@
+Thu 20/Jun/2019 11:04:12 CAT | Report Requested by Super User
+Thu 20/Jun/2019 11:04:12 CAT | Report in queue at position 1
+Thu 20/Jun/2019 11:04:12 CAT | Starting to process report...
+Thu 20/Jun/2019 11:04:12 CAT | Evaluating Report Data....
+Thu 20/Jun/2019 11:04:12 CAT | Evaluating IM-ER-Report
+Thu 20/Jun/2019 11:04:12 CAT | Evaluating baseCohort
+Thu 20/Jun/2019 11:04:13 CAT | Evaluating TX_NEW Data Set
+Thu 20/Jun/2019 11:04:13 CAT | Evaluating gender
+Thu 20/Jun/2019 11:04:13 CAT | Evaluating FemaleCohort
+Thu 20/Jun/2019 11:04:13 CAT | Evaluating MaleCohort
+Thu 20/Jun/2019 11:04:13 CAT | Evaluating Maternity Dimension
+Thu 20/Jun/2019 11:04:13 CAT | Evaluating CompositionCohortDefinition[compositionString=(DATAPARTO OR INICIOLACTANTE OR LACTANTEPROGRAMA OR LACTANTE) AND FEMININO,searches=DATAPARTO -> patientsWithUpdatedDepartureInART [locationList -> ${location},value2 -> ${onOrBefore},value1 -> ${onOrAfter}],LACTANTE -> has obs between dates [locationList -> ${location},onOrBefore -> ${onOrBefore},onOrAfter -> ${onOrAfter}],INICIOLACTANTE -> has obs between dates [locationList -> ${location},onOrBefore -> ${onOrBefore},onOrAfter -> ${onOrAfter}],FEMININO -> Female,LACTANTEPROGRAMA -> SQL Cohort Query: [select 	pg.patient_id from patient p inner join patient_program pg on p.patient_id=pg.patient_id inner join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=8 and ps.state=27 and ps.end_date is null and ps.start_date between :startDate and :endDate and location_id=:location] [endDate -> ${onOrBefore},location -> ${location},startDate -> ${onOrAfter}]]
+Thu 20/Jun/2019 11:04:13 CAT | Evaluating patientsWithUpdatedDepartureInART
+Thu 20/Jun/2019 11:04:13 CAT | Evaluating has obs between dates
+Thu 20/Jun/2019 11:04:13 CAT | Evaluating patientsWhoGaveBirthWithinReportingPeriod
+Thu 20/Jun/2019 11:04:13 CAT | Evaluating has obs between dates
+Thu 20/Jun/2019 11:04:13 CAT | Evaluating FemaleCohort
+Thu 20/Jun/2019 11:04:13 CAT | Evaluating patientsPregnantEnrolledOnART
+Thu 20/Jun/2019 11:04:13 CAT | Evaluating age dimension
+Thu 20/Jun/2019 11:04:13 CAT | Evaluating Age on ART start date
+Thu 20/Jun/2019 11:04:14 CAT | Evaluating Age on ART start date
+Thu 20/Jun/2019 11:04:14 CAT | Evaluating Age on ART start date
+Thu 20/Jun/2019 11:04:14 CAT | Evaluating Age on ART start date
+Thu 20/Jun/2019 11:04:14 CAT | Evaluating Age on ART start date
+Thu 20/Jun/2019 11:04:14 CAT | Evaluating Age on ART start date
+Thu 20/Jun/2019 11:04:15 CAT | Evaluating Age on ART start date
+Thu 20/Jun/2019 11:04:15 CAT | Evaluating Age on ART start date
+Thu 20/Jun/2019 11:04:15 CAT | Evaluating Age on ART start date
+Thu 20/Jun/2019 11:04:15 CAT | Evaluating Age on ART start date
+Thu 20/Jun/2019 11:04:15 CAT | Evaluating Age on ART start date
+Thu 20/Jun/2019 11:04:15 CAT | Evaluating Age on ART start date
+Thu 20/Jun/2019 11:04:16 CAT | Evaluating Age on ART start date
+Thu 20/Jun/2019 11:04:16 CAT | Evaluating Age on ART start date
+Thu 20/Jun/2019 11:04:16 CAT | Evaluating unknownAge
+Thu 20/Jun/2019 11:04:16 CAT | Evaluating patientNewlyEnrolledInHIVIndicator
+Thu 20/Jun/2019 11:04:16 CAT | Evaluating patientEnrolledInART
+Thu 20/Jun/2019 11:04:16 CAT | Evaluating Art start date
+Thu 20/Jun/2019 11:04:16 CAT | Evaluating transferredFromOtherHealthFacility
+Thu 20/Jun/2019 11:04:16 CAT | Evaluating has obs between dates
+Thu 20/Jun/2019 11:04:16 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:16 CAT | Evaluating patientNewlyEnrolledInHIVIndicator
+Thu 20/Jun/2019 11:04:16 CAT | Evaluating patientEnrolledInART
+Thu 20/Jun/2019 11:04:16 CAT | Evaluating Art start date
+Thu 20/Jun/2019 11:04:16 CAT | Evaluating transferredFromOtherHealthFacility
+Thu 20/Jun/2019 11:04:16 CAT | Evaluating has obs between dates
+Thu 20/Jun/2019 11:04:16 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:16 CAT | Evaluating TX_CURR Data Set
+Thu 20/Jun/2019 11:04:16 CAT | Evaluating gender
+Thu 20/Jun/2019 11:04:16 CAT | Evaluating FemaleCohort
+Thu 20/Jun/2019 11:04:16 CAT | Evaluating MaleCohort
+Thu 20/Jun/2019 11:04:16 CAT | Evaluating age dimension
+Thu 20/Jun/2019 11:04:16 CAT | Evaluating patients with age between 1 and 4
+Thu 20/Jun/2019 11:04:16 CAT | Evaluating patients with age between 10 and 14
+Thu 20/Jun/2019 11:04:16 CAT | Evaluating patients with age over 15
+Thu 20/Jun/2019 11:04:16 CAT | Evaluating patients with age between 15 and 19
+Thu 20/Jun/2019 11:04:16 CAT | Evaluating patients with age between 20 and 24
+Thu 20/Jun/2019 11:04:16 CAT | Evaluating patients with age between 25 and 29
+Thu 20/Jun/2019 11:04:16 CAT | Evaluating patients with age between 30 and 34
+Thu 20/Jun/2019 11:04:16 CAT | Evaluating patients with age between 35 and 39
+Thu 20/Jun/2019 11:04:16 CAT | Evaluating patients with age between 40 and 44
+Thu 20/Jun/2019 11:04:16 CAT | Evaluating patients with age between 45 and 49
+Thu 20/Jun/2019 11:04:16 CAT | Evaluating patients with age between 5 and 9
+Thu 20/Jun/2019 11:04:16 CAT | Evaluating patients with age over 50
+Thu 20/Jun/2019 11:04:16 CAT | Evaluating patients with age bellow 1
+Thu 20/Jun/2019 11:04:16 CAT | Evaluating patients with age below 15
+Thu 20/Jun/2019 11:04:16 CAT | Evaluating unknownAge
+Thu 20/Jun/2019 11:04:16 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 20/Jun/2019 11:04:16 CAT | Evaluating compositionCohort
+Thu 20/Jun/2019 11:04:16 CAT | Evaluating InARTProgram
+Thu 20/Jun/2019 11:04:16 CAT | Evaluating patientWithSTARTDRUGSObs
+Thu 20/Jun/2019 11:04:16 CAT | Evaluating patientWithHistoricalDrugStartDateObs
+Thu 20/Jun/2019 11:04:16 CAT | Evaluating patientWithFirstDrugPickupEncounter
+Thu 20/Jun/2019 11:04:16 CAT | Evaluating leftARTProgramBeforeOrOnEndDate
+Thu 20/Jun/2019 11:04:16 CAT | Evaluating patientsThatMissedNexPickup
+Thu 20/Jun/2019 11:04:16 CAT | Evaluating patientsWithNextPickupDate
+Thu 20/Jun/2019 11:04:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:17 CAT | Evaluating patientsThatDidNotMissNextConsultation
+Thu 20/Jun/2019 11:04:17 CAT | Evaluating patientsReportedAsAbandonmentButStillInPeriod
+Thu 20/Jun/2019 11:04:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:17 CAT | Evaluating patientsWithNextPickupDate
+Thu 20/Jun/2019 11:04:17 CAT | Evaluating patientsWithNextConsultationDate
+Thu 20/Jun/2019 11:04:17 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 20/Jun/2019 11:04:17 CAT | Evaluating compositionCohort
+Thu 20/Jun/2019 11:04:17 CAT | Evaluating InARTProgram
+Thu 20/Jun/2019 11:04:17 CAT | Evaluating patientWithSTARTDRUGSObs
+Thu 20/Jun/2019 11:04:17 CAT | Evaluating patientWithHistoricalDrugStartDateObs
+Thu 20/Jun/2019 11:04:17 CAT | Evaluating patientWithFirstDrugPickupEncounter
+Thu 20/Jun/2019 11:04:17 CAT | Evaluating leftARTProgramBeforeOrOnEndDate
+Thu 20/Jun/2019 11:04:17 CAT | Evaluating patientsThatMissedNexPickup
+Thu 20/Jun/2019 11:04:17 CAT | Evaluating patientsWithNextPickupDate
+Thu 20/Jun/2019 11:04:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:17 CAT | Evaluating patientsThatDidNotMissNextConsultation
+Thu 20/Jun/2019 11:04:17 CAT | Evaluating patientsReportedAsAbandonmentButStillInPeriod
+Thu 20/Jun/2019 11:04:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:17 CAT | Evaluating patientsWithNextPickupDate
+Thu 20/Jun/2019 11:04:17 CAT | Evaluating patientsWithNextConsultationDate
+Thu 20/Jun/2019 11:04:17 CAT | Evaluating ERI-2months Data Set
+Thu 20/Jun/2019 11:04:17 CAT | Evaluating Get patients dimensions for Eri2Months
+Thu 20/Jun/2019 11:04:17 CAT | Evaluating Patients who did not pick up drugs during their second visit
+Thu 20/Jun/2019 11:04:17 CAT | Evaluating All patients who initiated ART less transfer ins
+Thu 20/Jun/2019 11:04:17 CAT | Evaluating Art start date
+Thu 20/Jun/2019 11:04:17 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Patients who picked up drugs in 33 days
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Get deceased patients based on patient states and person object
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating deceased
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Patients who died during period
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating All patients who initiated ART less transfer ins
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Art start date
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Get deceased patients based on patient states and person object
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating deceased
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating All patients who initiated ART less transfer ins
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Art start date
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Patients who  picked up drugs during their second visit
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Patients who  picked up drugs during their second visit and had initiated ART
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating All patients who initiated ART less transfer ins
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Art start date
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Patients who picked up drugs in 33 days
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Get deceased patients based on patient states and person object
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating deceased
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Patients who suspended treatment
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating All patients who initiated ART less transfer ins
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Art start date
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Patients who transferred out during period
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating All patients who initiated ART less transfer ins
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Art start date
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating All patients
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating All patients who initiated ART less transfer ins
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Art start date
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating All patients
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating All patients who initiated ART less transfer ins
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Art start date
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Pregnant women
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Pregnant women retain on ART for more than 2 months from ART initiation date
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating All patients who initiated ART less transfer ins
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Art start date
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating patientsPregnantEnrolledOnART
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Pregnant women
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Pregnant women retain on ART for more than 2 months from ART initiation date
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating All patients who initiated ART less transfer ins
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Art start date
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating patientsPregnantEnrolledOnART
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Breastfeeding women
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Breastfeeding women retain on ART for more than 2 months from ART initiation date
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating All patients who initiated ART less transfer ins
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Art start date
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating CompositionCohortDefinition[compositionString=(DATAPARTO OR INICIOLACTANTE OR LACTANTEPROGRAMA OR LACTANTE) AND FEMININO,searches=DATAPARTO -> patientsWithUpdatedDepartureInART [locationList -> ${location},value2 -> ${onOrBefore},value1 -> ${onOrAfter}],LACTANTE -> has obs between dates [locationList -> ${location},onOrBefore -> ${onOrBefore},onOrAfter -> ${onOrAfter}],INICIOLACTANTE -> has obs between dates [locationList -> ${location},onOrBefore -> ${onOrBefore},onOrAfter -> ${onOrAfter}],FEMININO -> Female,LACTANTEPROGRAMA -> SQL Cohort Query: [select 	pg.patient_id from patient p inner join patient_program pg on p.patient_id=pg.patient_id inner join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=8 and ps.state=27 and ps.end_date is null and ps.start_date between :startDate and :endDate and location_id=:location] [endDate -> ${onOrBefore},location -> ${location},startDate -> ${onOrAfter}]]
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating patientsWithUpdatedDepartureInART
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating has obs between dates
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating patientsWhoGaveBirthWithinReportingPeriod
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating has obs between dates
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating FemaleCohort
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Pregnant women retain on ART for more than 2 months from ART initiation date
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating All patients who initiated ART less transfer ins
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Art start date
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating patientsPregnantEnrolledOnART
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Breastfeeding women
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Breastfeeding women retain on ART for more than 2 months from ART initiation date
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating All patients who initiated ART less transfer ins
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Art start date
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating CompositionCohortDefinition[compositionString=(DATAPARTO OR INICIOLACTANTE OR LACTANTEPROGRAMA OR LACTANTE) AND FEMININO,searches=DATAPARTO -> patientsWithUpdatedDepartureInART [locationList -> ${location},value2 -> ${onOrBefore},value1 -> ${onOrAfter}],LACTANTE -> has obs between dates [locationList -> ${location},onOrBefore -> ${onOrBefore},onOrAfter -> ${onOrAfter}],INICIOLACTANTE -> has obs between dates [locationList -> ${location},onOrBefore -> ${onOrBefore},onOrAfter -> ${onOrAfter}],FEMININO -> Female,LACTANTEPROGRAMA -> SQL Cohort Query: [select 	pg.patient_id from patient p inner join patient_program pg on p.patient_id=pg.patient_id inner join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=8 and ps.state=27 and ps.end_date is null and ps.start_date between :startDate and :endDate and location_id=:location] [endDate -> ${onOrBefore},location -> ${location},startDate -> ${onOrAfter}]]
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating patientsWithUpdatedDepartureInART
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating has obs between dates
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating patientsWhoGaveBirthWithinReportingPeriod
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating has obs between dates
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating FemaleCohort
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Pregnant women retain on ART for more than 2 months from ART initiation date
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating All patients who initiated ART less transfer ins
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Art start date
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating patientsPregnantEnrolledOnART
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Children
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Children having ART retention for than 2 months
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating All patients who initiated ART less transfer ins
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Art start date
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Age on ART start date
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating patientsPregnantEnrolledOnART
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating CompositionCohortDefinition[compositionString=(DATAPARTO OR INICIOLACTANTE OR LACTANTEPROGRAMA OR LACTANTE) AND FEMININO,searches=DATAPARTO -> patientsWithUpdatedDepartureInART [locationList -> ${location},value2 -> ${onOrBefore},value1 -> ${onOrAfter}],LACTANTE -> has obs between dates [locationList -> ${location},onOrBefore -> ${onOrBefore},onOrAfter -> ${onOrAfter}],INICIOLACTANTE -> has obs between dates [locationList -> ${location},onOrBefore -> ${onOrBefore},onOrAfter -> ${onOrAfter}],FEMININO -> Female,LACTANTEPROGRAMA -> SQL Cohort Query: [select 	pg.patient_id from patient p inner join patient_program pg on p.patient_id=pg.patient_id inner join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=8 and ps.state=27 and ps.end_date is null and ps.start_date between :startDate and :endDate and location_id=:location] [endDate -> ${onOrBefore},location -> ${location},startDate -> ${onOrAfter}]]
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating patientsWithUpdatedDepartureInART
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating has obs between dates
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating patientsWhoGaveBirthWithinReportingPeriod
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating has obs between dates
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating FemaleCohort
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Children
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Children having ART retention for than 2 months
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating All patients who initiated ART less transfer ins
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Art start date
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Age on ART start date
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating patientsPregnantEnrolledOnART
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating CompositionCohortDefinition[compositionString=(DATAPARTO OR INICIOLACTANTE OR LACTANTEPROGRAMA OR LACTANTE) AND FEMININO,searches=DATAPARTO -> patientsWithUpdatedDepartureInART [locationList -> ${location},value2 -> ${onOrBefore},value1 -> ${onOrAfter}],LACTANTE -> has obs between dates [locationList -> ${location},onOrBefore -> ${onOrBefore},onOrAfter -> ${onOrAfter}],INICIOLACTANTE -> has obs between dates [locationList -> ${location},onOrBefore -> ${onOrBefore},onOrAfter -> ${onOrAfter}],FEMININO -> Female,LACTANTEPROGRAMA -> SQL Cohort Query: [select 	pg.patient_id from patient p inner join patient_program pg on p.patient_id=pg.patient_id inner join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=8 and ps.state=27 and ps.end_date is null and ps.start_date between :startDate and :endDate and location_id=:location] [endDate -> ${onOrBefore},location -> ${location},startDate -> ${onOrAfter}]]
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating patientsWithUpdatedDepartureInART
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating has obs between dates
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating patientsWhoGaveBirthWithinReportingPeriod
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating has obs between dates
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating FemaleCohort
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Adults
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Adults having ART retention for than 2 months
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating All patients who initiated ART less transfer ins
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Art start date
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:18 CAT | Evaluating Age on ART start date
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating patientsPregnantEnrolledOnART
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating CompositionCohortDefinition[compositionString=(DATAPARTO OR INICIOLACTANTE OR LACTANTEPROGRAMA OR LACTANTE) AND FEMININO,searches=DATAPARTO -> patientsWithUpdatedDepartureInART [locationList -> ${location},value2 -> ${onOrBefore},value1 -> ${onOrAfter}],LACTANTE -> has obs between dates [locationList -> ${location},onOrBefore -> ${onOrBefore},onOrAfter -> ${onOrAfter}],INICIOLACTANTE -> has obs between dates [locationList -> ${location},onOrBefore -> ${onOrBefore},onOrAfter -> ${onOrAfter}],FEMININO -> Female,LACTANTEPROGRAMA -> SQL Cohort Query: [select 	pg.patient_id from patient p inner join patient_program pg on p.patient_id=pg.patient_id inner join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=8 and ps.state=27 and ps.end_date is null and ps.start_date between :startDate and :endDate and location_id=:location] [endDate -> ${onOrBefore},location -> ${location},startDate -> ${onOrAfter}]]
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating patientsWithUpdatedDepartureInART
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating has obs between dates
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating patientsWhoGaveBirthWithinReportingPeriod
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating has obs between dates
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating FemaleCohort
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating Adults
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating Adults having ART retention for than 2 months
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating All patients who initiated ART less transfer ins
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating Art start date
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating Age on ART start date
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating patientsPregnantEnrolledOnART
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating CompositionCohortDefinition[compositionString=(DATAPARTO OR INICIOLACTANTE OR LACTANTEPROGRAMA OR LACTANTE) AND FEMININO,searches=DATAPARTO -> patientsWithUpdatedDepartureInART [locationList -> ${location},value2 -> ${onOrBefore},value1 -> ${onOrAfter}],LACTANTE -> has obs between dates [locationList -> ${location},onOrBefore -> ${onOrBefore},onOrAfter -> ${onOrAfter}],INICIOLACTANTE -> has obs between dates [locationList -> ${location},onOrBefore -> ${onOrBefore},onOrAfter -> ${onOrAfter}],FEMININO -> Female,LACTANTEPROGRAMA -> SQL Cohort Query: [select 	pg.patient_id from patient p inner join patient_program pg on p.patient_id=pg.patient_id inner join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=8 and ps.state=27 and ps.end_date is null and ps.start_date between :startDate and :endDate and location_id=:location] [endDate -> ${onOrBefore},location -> ${location},startDate -> ${onOrAfter}]]
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating patientsWithUpdatedDepartureInART
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating has obs between dates
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating patientsWhoGaveBirthWithinReportingPeriod
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating has obs between dates
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating FemaleCohort
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating ERI-4months Data Set
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating Get patient states
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating Patients who are a live and on treatment
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating All patients who initiated ART less transfer ins
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating Art start date
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating Patients who had consultation between 61 to 120 days from encounter date
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating Get deceased patients based on patient states and person object
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating deceased
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating Patients who are a live and NOT treatment
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating All patients who initiated ART less transfer ins
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating Art start date
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating Patients who had consultation between 61 to 120 days from encounter date
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating Get deceased patients based on patient states and person object
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating deceased
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating Get deceased patients based on patient states and person object
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating deceased
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating All patients who initiated ART less transfer ins
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating Art start date
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating Lost to follow up patients
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating All patients who initiated ART less transfer ins
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating Art start date
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating Get lost to follow up patients within period
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating SqlCohortDefinition[query=SELECT patient_id FROM (SELECT patient_id,value_datetime FROM ( SELECT p.patient_id,MAX(encounter_datetime) AS encounter_datetime FROM patient p INNER JOIN encounter e ON e.patient_id=p.patient_id WHERE p.voided=0 AND e.voided=0 AND e.encounter_type in(18) AND e.location_id=:location AND e.encounter_datetime<=:endDate GROUP BY p.patient_id ) max_frida INNER JOIN obs o ON o.person_id=max_frida.patient_id WHERE max_frida.encounter_datetime=o.obs_datetime AND o.voided=0 AND o.concept_id=5096 AND o.location_id=:location AND encounter_datetime BETWEEN :startDate and :endDate ) final WHERE datediff(:endDate,final.value_datetime)>=60]
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating SqlCohortDefinition[query=SELECT patient_id FROM (SELECT patient_id, value_datetime FROM( SELECT p.patient_id,MAX(encounter_datetime)AS encounter_datetime FROM patient p INNER JOIN encounter e ON e.patient_id=p.patient_id WHERE p.voided=0 AND e.voided=0 AND e.encounter_type in (6, 9) AND e.location_id=:location AND e.encounter_datetime<=:endDate GROUP BY p.patient_id ) max_mov INNER JOIN obs o ON o.person_id=max_mov.patient_id WHERE max_mov.encounter_datetime=o.obs_datetime AND o.voided=0 AND o.concept_id=1410 AND o.location_id=:location AND encounter_datetime BETWEEN :startDate and :endDate ) final WHERE datediff(:endDate,final.value_datetime)>=60]
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating Get deceased patients based on patient states and person object
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating deceased
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating all patients
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating All patients who initiated ART less transfer ins
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating Art start date
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating all patients
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating All patients who initiated ART less transfer ins
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating Art start date
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating pregnant women
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating Pregnant women retain on ART for more than 2 months from ART initiation date
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating All patients who initiated ART less transfer ins
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating Art start date
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating patientsPregnantEnrolledOnART
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating pregnant women
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating Pregnant women retain on ART for more than 2 months from ART initiation date
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating All patients who initiated ART less transfer ins
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating Art start date
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating patientsPregnantEnrolledOnART
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating breastfeeding women
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating Breastfeeding women retain on ART for more than 2 months from ART initiation date
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating All patients who initiated ART less transfer ins
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating Art start date
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating CompositionCohortDefinition[compositionString=(DATAPARTO OR INICIOLACTANTE OR LACTANTEPROGRAMA OR LACTANTE) AND FEMININO,searches=DATAPARTO -> patientsWithUpdatedDepartureInART [locationList -> ${location},value2 -> ${onOrBefore},value1 -> ${onOrAfter}],LACTANTE -> has obs between dates [locationList -> ${location},onOrBefore -> ${onOrBefore},onOrAfter -> ${onOrAfter}],INICIOLACTANTE -> has obs between dates [locationList -> ${location},onOrBefore -> ${onOrBefore},onOrAfter -> ${onOrAfter}],FEMININO -> Female,LACTANTEPROGRAMA -> SQL Cohort Query: [select 	pg.patient_id from patient p inner join patient_program pg on p.patient_id=pg.patient_id inner join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=8 and ps.state=27 and ps.end_date is null and ps.start_date between :startDate and :endDate and location_id=:location] [endDate -> ${onOrBefore},location -> ${location},startDate -> ${onOrAfter}]]
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating patientsWithUpdatedDepartureInART
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating has obs between dates
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating patientsWhoGaveBirthWithinReportingPeriod
+Thu 20/Jun/2019 11:04:19 CAT | Evaluating has obs between dates
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating FemaleCohort
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating Pregnant women retain on ART for more than 2 months from ART initiation date
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating All patients who initiated ART less transfer ins
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating Art start date
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating patientsPregnantEnrolledOnART
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating breastfeeding women
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating Breastfeeding women retain on ART for more than 2 months from ART initiation date
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating All patients who initiated ART less transfer ins
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating Art start date
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating CompositionCohortDefinition[compositionString=(DATAPARTO OR INICIOLACTANTE OR LACTANTEPROGRAMA OR LACTANTE) AND FEMININO,searches=DATAPARTO -> patientsWithUpdatedDepartureInART [locationList -> ${location},value2 -> ${onOrBefore},value1 -> ${onOrAfter}],LACTANTE -> has obs between dates [locationList -> ${location},onOrBefore -> ${onOrBefore},onOrAfter -> ${onOrAfter}],INICIOLACTANTE -> has obs between dates [locationList -> ${location},onOrBefore -> ${onOrBefore},onOrAfter -> ${onOrAfter}],FEMININO -> Female,LACTANTEPROGRAMA -> SQL Cohort Query: [select 	pg.patient_id from patient p inner join patient_program pg on p.patient_id=pg.patient_id inner join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=8 and ps.state=27 and ps.end_date is null and ps.start_date between :startDate and :endDate and location_id=:location] [endDate -> ${onOrBefore},location -> ${location},startDate -> ${onOrAfter}]]
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating patientsWithUpdatedDepartureInART
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating has obs between dates
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating patientsWhoGaveBirthWithinReportingPeriod
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating has obs between dates
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating FemaleCohort
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating Pregnant women retain on ART for more than 2 months from ART initiation date
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating All patients who initiated ART less transfer ins
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating Art start date
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating patientsPregnantEnrolledOnART
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating children
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating Children having ART retention for than 2 months
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating All patients who initiated ART less transfer ins
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating Art start date
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating Age on ART start date
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating patientsPregnantEnrolledOnART
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating CompositionCohortDefinition[compositionString=(DATAPARTO OR INICIOLACTANTE OR LACTANTEPROGRAMA OR LACTANTE) AND FEMININO,searches=DATAPARTO -> patientsWithUpdatedDepartureInART [locationList -> ${location},value2 -> ${onOrBefore},value1 -> ${onOrAfter}],LACTANTE -> has obs between dates [locationList -> ${location},onOrBefore -> ${onOrBefore},onOrAfter -> ${onOrAfter}],INICIOLACTANTE -> has obs between dates [locationList -> ${location},onOrBefore -> ${onOrBefore},onOrAfter -> ${onOrAfter}],FEMININO -> Female,LACTANTEPROGRAMA -> SQL Cohort Query: [select 	pg.patient_id from patient p inner join patient_program pg on p.patient_id=pg.patient_id inner join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=8 and ps.state=27 and ps.end_date is null and ps.start_date between :startDate and :endDate and location_id=:location] [endDate -> ${onOrBefore},location -> ${location},startDate -> ${onOrAfter}]]
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating patientsWithUpdatedDepartureInART
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating has obs between dates
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating patientsWhoGaveBirthWithinReportingPeriod
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating has obs between dates
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating FemaleCohort
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating children
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating Children having ART retention for than 2 months
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating All patients who initiated ART less transfer ins
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating Art start date
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating Age on ART start date
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating patientsPregnantEnrolledOnART
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating CompositionCohortDefinition[compositionString=(DATAPARTO OR INICIOLACTANTE OR LACTANTEPROGRAMA OR LACTANTE) AND FEMININO,searches=DATAPARTO -> patientsWithUpdatedDepartureInART [locationList -> ${location},value2 -> ${onOrBefore},value1 -> ${onOrAfter}],LACTANTE -> has obs between dates [locationList -> ${location},onOrBefore -> ${onOrBefore},onOrAfter -> ${onOrAfter}],INICIOLACTANTE -> has obs between dates [locationList -> ${location},onOrBefore -> ${onOrBefore},onOrAfter -> ${onOrAfter}],FEMININO -> Female,LACTANTEPROGRAMA -> SQL Cohort Query: [select 	pg.patient_id from patient p inner join patient_program pg on p.patient_id=pg.patient_id inner join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=8 and ps.state=27 and ps.end_date is null and ps.start_date between :startDate and :endDate and location_id=:location] [endDate -> ${onOrBefore},location -> ${location},startDate -> ${onOrAfter}]]
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating patientsWithUpdatedDepartureInART
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating has obs between dates
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating patientsWhoGaveBirthWithinReportingPeriod
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating has obs between dates
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating FemaleCohort
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating adults
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating Adults having ART retention for than 2 months
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating All patients who initiated ART less transfer ins
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating Art start date
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating Age on ART start date
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating patientsPregnantEnrolledOnART
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating CompositionCohortDefinition[compositionString=(DATAPARTO OR INICIOLACTANTE OR LACTANTEPROGRAMA OR LACTANTE) AND FEMININO,searches=DATAPARTO -> patientsWithUpdatedDepartureInART [locationList -> ${location},value2 -> ${onOrBefore},value1 -> ${onOrAfter}],LACTANTE -> has obs between dates [locationList -> ${location},onOrBefore -> ${onOrBefore},onOrAfter -> ${onOrAfter}],INICIOLACTANTE -> has obs between dates [locationList -> ${location},onOrBefore -> ${onOrBefore},onOrAfter -> ${onOrAfter}],FEMININO -> Female,LACTANTEPROGRAMA -> SQL Cohort Query: [select 	pg.patient_id from patient p inner join patient_program pg on p.patient_id=pg.patient_id inner join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=8 and ps.state=27 and ps.end_date is null and ps.start_date between :startDate and :endDate and location_id=:location] [endDate -> ${onOrBefore},location -> ${location},startDate -> ${onOrAfter}]]
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating patientsWithUpdatedDepartureInART
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating has obs between dates
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating patientsWhoGaveBirthWithinReportingPeriod
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating has obs between dates
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating FemaleCohort
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating adults
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating Adults having ART retention for than 2 months
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating All patients who initiated ART less transfer ins
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating Art start date
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating Patient states based on end of reporting period
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating Age on ART start date
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating patientsPregnantEnrolledOnART
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating CompositionCohortDefinition[compositionString=(DATAPARTO OR INICIOLACTANTE OR LACTANTEPROGRAMA OR LACTANTE) AND FEMININO,searches=DATAPARTO -> patientsWithUpdatedDepartureInART [locationList -> ${location},value2 -> ${onOrBefore},value1 -> ${onOrAfter}],LACTANTE -> has obs between dates [locationList -> ${location},onOrBefore -> ${onOrBefore},onOrAfter -> ${onOrAfter}],INICIOLACTANTE -> has obs between dates [locationList -> ${location},onOrBefore -> ${onOrBefore},onOrAfter -> ${onOrAfter}],FEMININO -> Female,LACTANTEPROGRAMA -> SQL Cohort Query: [select 	pg.patient_id from patient p inner join patient_program pg on p.patient_id=pg.patient_id inner join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=8 and ps.state=27 and ps.end_date is null and ps.start_date between :startDate and :endDate and location_id=:location] [endDate -> ${onOrBefore},location -> ${location},startDate -> ${onOrAfter}]]
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating patientsWithUpdatedDepartureInART
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating has obs between dates
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating patientsWhoGaveBirthWithinReportingPeriod
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating has obs between dates
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating FemaleCohort
+Thu 20/Jun/2019 11:04:20 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 20/Jun/2019 11:04:20 CAT | Generating Rendered Report....
+Thu 20/Jun/2019 11:04:21 CAT | Writing the report output to disk
+Thu 20/Jun/2019 11:04:21 CAT | Report Generation Completed in 0:00:09.170

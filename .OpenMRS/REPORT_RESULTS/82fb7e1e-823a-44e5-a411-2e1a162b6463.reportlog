@@ -1,0 +1,9 @@
+Sat 13/Apr/2019 16:05:57 CAT | Report Requested by user2 user2
+Sat 13/Apr/2019 16:05:57 CAT | Report in queue at position 1
+Sat 13/Apr/2019 16:05:57 CAT | Starting to process report...
+Sat 13/Apr/2019 16:05:57 CAT | Evaluating Report Data....
+Sat 13/Apr/2019 16:05:57 CAT | Evaluating LISTA DE PACIENTES QUE SAIRAM DE TRATAMENTO MAS QUE CONTINUAM EM SEGUIMENTO
+Sat 13/Apr/2019 16:05:57 CAT | Evaluating SAIDAS MAS CONTINUAM EM SEGUIMENTO
+Sat 13/Apr/2019 16:05:57 CAT | Generating Rendered Report....
+Sat 13/Apr/2019 16:05:58 CAT | Writing the report output to disk
+Sat 13/Apr/2019 16:05:58 CAT | Report Generation Completed in 0:00:00.460

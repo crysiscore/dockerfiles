@@ -1,0 +1,995 @@
+Thu 28/Feb/2019 16:06:08 CAT | Report Requested by Super User
+Thu 28/Feb/2019 16:06:08 CAT | Report in queue at position 1
+Thu 28/Feb/2019 16:06:09 CAT | Starting to process report...
+Thu 28/Feb/2019 16:06:09 CAT | Evaluating Report Data....
+Thu 28/Feb/2019 16:06:09 CAT | Evaluating PEPFAR MER 2.3 Quarterly
+Thu 28/Feb/2019 16:06:09 CAT | Evaluating TX_NEW Data Set
+Thu 28/Feb/2019 16:06:09 CAT | Evaluating gender
+Thu 28/Feb/2019 16:06:09 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:09 CAT | Evaluating FemaleCohort
+Thu 28/Feb/2019 16:06:09 CAT | Evaluating MaleCohort
+Thu 28/Feb/2019 16:06:09 CAT | Evaluating Maternity Dimension
+Thu 28/Feb/2019 16:06:09 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:09 CAT | Evaluating CompositionCohortDefinition[compositionString=((DATAPARTO OR INICIOLACTANTE OR LACTANTEPROGRAMA OR LACTANTE) NOT GRAVIDAS) AND FEMININO,searches=DATAPARTO -> patientsWithUpdatedDepartureInART [onOrBefore -> ${onOrBefore},location -> ${location},onOrAfter -> ${onOrAfter}],LACTANTE -> has obs between dates [locationList -> ${location},onOrBefore -> ${onOrBefore},onOrAfter -> ${onOrAfter}],GRAVIDAS -> SQL Cohort Query: [Select 	p.patient_id from 	patient p inner join encounter e on p.patient_id=e.patient_id inner join obs o on e.encounter_id=o.encounter_id where p.voided=0 and e.voided=0 and o.voided=0 and concept_id=1982 and value_coded=44 and e.encounter_type in (5,6) and e.encounter_datetime between :startDate and :endDate and e.location_id=:location union Select 	p.patient_id from 	patient p inner join encounter e on p.patient_id=e.patient_id inner join obs o on e.encounter_id=o.encounter_id where 	p.voided=0 and e.voided=0 and o.voided=0 and concept_id=1279 and e.encounter_type in (5,6) and e.encounter_datetime between :startDate and :endDate and e.location_id=:location union Select p.patient_id from patient p inner join encounter e on p.patient_id=e.patient_id inner join obs o on e.encounter_id=o.encounter_id where p.voided=0 and e.voided=0 and o.voided=0 and concept_id=1600 and e.encounter_type in (5,6) and e.encounter_datetime between :startDate and :endDate and e.location_id=:location union select pp.patient_id from patient_program pp where pp.program_id=8 and pp.voided=0 and pp.date_enrolled between :startDate and :endDate and pp.location_id=:location] [endDate -> ${onOrBefore},location -> ${location},startDate -> ${onOrAfter}],INICIOLACTANTE -> has obs between dates [locationList -> ${location},onOrBefore -> ${onOrBefore},onOrAfter -> ${onOrAfter}],FEMININO -> Female,LACTANTEPROGRAMA -> SQL Cohort Query: [select 	pg.patient_id from patient p inner join patient_program pg on p.patient_id=pg.patient_id inner join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=8 and ps.state=27 and ps.end_date is null and ps.start_date between date_add(:startDate, interval -2 year) and date_add(:startDate, interval -1 day) and location_id=:location] [location -> ${location},startDate -> ${onOrAfter}]]
+Thu 28/Feb/2019 16:06:09 CAT | Evaluating patientsWithUpdatedDepartureInART
+Thu 28/Feb/2019 16:06:09 CAT | Evaluating has obs between dates
+Thu 28/Feb/2019 16:06:09 CAT | Evaluating patientsWhoGaveBirthTwoYearsAgo
+Thu 28/Feb/2019 16:06:09 CAT | Evaluating has obs between dates
+Thu 28/Feb/2019 16:06:09 CAT | Evaluating patientsPregnantEnrolledOnART
+Thu 28/Feb/2019 16:06:10 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:10 CAT | Evaluating FemaleCohort
+Thu 28/Feb/2019 16:06:10 CAT | Evaluating patientsPregnantEnrolledOnART
+Thu 28/Feb/2019 16:06:10 CAT | Evaluating age
+Thu 28/Feb/2019 16:06:10 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:10 CAT | Evaluating 1-4
+Thu 28/Feb/2019 16:06:10 CAT | Evaluating 10-14
+Thu 28/Feb/2019 16:06:10 CAT | Evaluating 15-19
+Thu 28/Feb/2019 16:06:10 CAT | Evaluating 20-24
+Thu 28/Feb/2019 16:06:10 CAT | Evaluating 25-29
+Thu 28/Feb/2019 16:06:10 CAT | Evaluating 30-34
+Thu 28/Feb/2019 16:06:10 CAT | Evaluating 35-39
+Thu 28/Feb/2019 16:06:10 CAT | Evaluating 40-44
+Thu 28/Feb/2019 16:06:10 CAT | Evaluating 45-49
+Thu 28/Feb/2019 16:06:10 CAT | Evaluating 5-9
+Thu 28/Feb/2019 16:06:10 CAT | Evaluating AgeCohortDefinition[Minimum Age Unit=YEARS,Maximum Age=0,Maximum Age Unit=YEARS,Also include patients whose age is unknown?=false]
+Thu 28/Feb/2019 16:06:10 CAT | Evaluating AgeCohortDefinition[Minimum Age=50,Minimum Age Unit=YEARS,Maximum Age Unit=YEARS,Also include patients whose age is unknown?=false]
+Thu 28/Feb/2019 16:06:10 CAT | Evaluating unknownAgeCohort
+Thu 28/Feb/2019 16:06:10 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 28/Feb/2019 16:06:10 CAT | Evaluating patientEnrolledInARTStartedMales
+Thu 28/Feb/2019 16:06:10 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:10 CAT | Evaluating TxNewUnionNumerator
+Thu 28/Feb/2019 16:06:10 CAT | Evaluating transferredFromOtherHealthFacility
+Thu 28/Feb/2019 16:06:10 CAT | Evaluating has obs between dates
+Thu 28/Feb/2019 16:06:10 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:10 CAT | Evaluating MaleCohort
+Thu 28/Feb/2019 16:06:10 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 28/Feb/2019 16:06:10 CAT | Evaluating patientEnrolledInARTStartedMales
+Thu 28/Feb/2019 16:06:10 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:10 CAT | Evaluating TxNewUnionNumerator
+Thu 28/Feb/2019 16:06:11 CAT | Evaluating transferredFromOtherHealthFacility
+Thu 28/Feb/2019 16:06:11 CAT | Evaluating has obs between dates
+Thu 28/Feb/2019 16:06:11 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:11 CAT | Evaluating MaleCohort
+Thu 28/Feb/2019 16:06:11 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 28/Feb/2019 16:06:11 CAT | Evaluating patientEnrolledInARTStartedMales
+Thu 28/Feb/2019 16:06:11 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:11 CAT | Evaluating TxNewUnionNumerator
+Thu 28/Feb/2019 16:06:11 CAT | Evaluating transferredFromOtherHealthFacility
+Thu 28/Feb/2019 16:06:11 CAT | Evaluating has obs between dates
+Thu 28/Feb/2019 16:06:11 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:11 CAT | Evaluating MaleCohort
+Thu 28/Feb/2019 16:06:11 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 28/Feb/2019 16:06:11 CAT | Evaluating patientEnrolledInARTStartedMales
+Thu 28/Feb/2019 16:06:11 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:11 CAT | Evaluating TxNewUnionNumerator
+Thu 28/Feb/2019 16:06:11 CAT | Evaluating transferredFromOtherHealthFacility
+Thu 28/Feb/2019 16:06:11 CAT | Evaluating has obs between dates
+Thu 28/Feb/2019 16:06:11 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:11 CAT | Evaluating MaleCohort
+Thu 28/Feb/2019 16:06:11 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 28/Feb/2019 16:06:11 CAT | Evaluating patientEnrolledInARTStartedMales
+Thu 28/Feb/2019 16:06:11 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:11 CAT | Evaluating TxNewUnionNumerator
+Thu 28/Feb/2019 16:06:12 CAT | Evaluating transferredFromOtherHealthFacility
+Thu 28/Feb/2019 16:06:12 CAT | Evaluating has obs between dates
+Thu 28/Feb/2019 16:06:12 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:12 CAT | Evaluating MaleCohort
+Thu 28/Feb/2019 16:06:12 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 28/Feb/2019 16:06:12 CAT | Evaluating patientEnrolledInARTStartedMales
+Thu 28/Feb/2019 16:06:12 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:12 CAT | Evaluating TxNewUnionNumerator
+Thu 28/Feb/2019 16:06:12 CAT | Evaluating transferredFromOtherHealthFacility
+Thu 28/Feb/2019 16:06:12 CAT | Evaluating has obs between dates
+Thu 28/Feb/2019 16:06:12 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:12 CAT | Evaluating MaleCohort
+Thu 28/Feb/2019 16:06:12 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 28/Feb/2019 16:06:12 CAT | Evaluating patientEnrolledInARTStartedMales
+Thu 28/Feb/2019 16:06:12 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:12 CAT | Evaluating TxNewUnionNumerator
+Thu 28/Feb/2019 16:06:12 CAT | Evaluating transferredFromOtherHealthFacility
+Thu 28/Feb/2019 16:06:12 CAT | Evaluating has obs between dates
+Thu 28/Feb/2019 16:06:12 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:12 CAT | Evaluating MaleCohort
+Thu 28/Feb/2019 16:06:12 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 28/Feb/2019 16:06:12 CAT | Evaluating patientEnrolledInARTStartedMales
+Thu 28/Feb/2019 16:06:12 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:12 CAT | Evaluating TxNewUnionNumerator
+Thu 28/Feb/2019 16:06:12 CAT | Evaluating transferredFromOtherHealthFacility
+Thu 28/Feb/2019 16:06:12 CAT | Evaluating has obs between dates
+Thu 28/Feb/2019 16:06:12 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:12 CAT | Evaluating MaleCohort
+Thu 28/Feb/2019 16:06:12 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 28/Feb/2019 16:06:12 CAT | Evaluating patientEnrolledInARTStartedMales
+Thu 28/Feb/2019 16:06:12 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:12 CAT | Evaluating TxNewUnionNumerator
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating transferredFromOtherHealthFacility
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating has obs between dates
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating MaleCohort
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating patientEnrolledInARTStartedMales
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating TxNewUnionNumerator
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating transferredFromOtherHealthFacility
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating has obs between dates
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating MaleCohort
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating patientEnrolledInARTStartedMales
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating TxNewUnionNumerator
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating transferredFromOtherHealthFacility
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating has obs between dates
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating MaleCohort
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating patientEnrolledInARTStartedMales
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating TxNewUnionNumerator
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating transferredFromOtherHealthFacility
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating has obs between dates
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating MaleCohort
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating patientEnrolledInARTStartedMales
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating TxNewUnionNumerator
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating transferredFromOtherHealthFacility
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating has obs between dates
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating FemaleCohort
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating patientEnrolledInARTStartedMales
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating TxNewUnionNumerator
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating transferredFromOtherHealthFacility
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating has obs between dates
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating FemaleCohort
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating patientEnrolledInARTStartedMales
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating TxNewUnionNumerator
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating transferredFromOtherHealthFacility
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating has obs between dates
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating FemaleCohort
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating patientEnrolledInARTStartedMales
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating TxNewUnionNumerator
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating transferredFromOtherHealthFacility
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating has obs between dates
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating FemaleCohort
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating patientEnrolledInARTStartedMales
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating TxNewUnionNumerator
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating transferredFromOtherHealthFacility
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating has obs between dates
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating FemaleCohort
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating patientEnrolledInARTStartedMales
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating TxNewUnionNumerator
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating transferredFromOtherHealthFacility
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating has obs between dates
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating FemaleCohort
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating patientEnrolledInARTStartedMales
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating TxNewUnionNumerator
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating transferredFromOtherHealthFacility
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating has obs between dates
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating FemaleCohort
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating patientEnrolledInARTStartedMales
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating TxNewUnionNumerator
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating transferredFromOtherHealthFacility
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating has obs between dates
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating FemaleCohort
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating patientEnrolledInARTStartedMales
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating TxNewUnionNumerator
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating transferredFromOtherHealthFacility
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating has obs between dates
+Thu 28/Feb/2019 16:06:13 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:14 CAT | Evaluating FemaleCohort
+Thu 28/Feb/2019 16:06:14 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 28/Feb/2019 16:06:14 CAT | Evaluating patientEnrolledInARTStartedMales
+Thu 28/Feb/2019 16:06:14 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:14 CAT | Evaluating TxNewUnionNumerator
+Thu 28/Feb/2019 16:06:14 CAT | Evaluating transferredFromOtherHealthFacility
+Thu 28/Feb/2019 16:06:14 CAT | Evaluating has obs between dates
+Thu 28/Feb/2019 16:06:14 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:14 CAT | Evaluating FemaleCohort
+Thu 28/Feb/2019 16:06:14 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 28/Feb/2019 16:06:14 CAT | Evaluating patientEnrolledInARTStartedMales
+Thu 28/Feb/2019 16:06:14 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:14 CAT | Evaluating TxNewUnionNumerator
+Thu 28/Feb/2019 16:06:14 CAT | Evaluating transferredFromOtherHealthFacility
+Thu 28/Feb/2019 16:06:14 CAT | Evaluating has obs between dates
+Thu 28/Feb/2019 16:06:14 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:14 CAT | Evaluating FemaleCohort
+Thu 28/Feb/2019 16:06:14 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 28/Feb/2019 16:06:14 CAT | Evaluating patientEnrolledInARTStartedMales
+Thu 28/Feb/2019 16:06:14 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:14 CAT | Evaluating TxNewUnionNumerator
+Thu 28/Feb/2019 16:06:14 CAT | Evaluating transferredFromOtherHealthFacility
+Thu 28/Feb/2019 16:06:14 CAT | Evaluating has obs between dates
+Thu 28/Feb/2019 16:06:14 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:14 CAT | Evaluating FemaleCohort
+Thu 28/Feb/2019 16:06:14 CAT | Evaluating patientNewlyEnrolledInHIVIndicator
+Thu 28/Feb/2019 16:06:14 CAT | Evaluating patientEnrolledInART
+Thu 28/Feb/2019 16:06:14 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:14 CAT | Evaluating TxNewUnionNumerator
+Thu 28/Feb/2019 16:06:14 CAT | Evaluating transferredFromOtherHealthFacility
+Thu 28/Feb/2019 16:06:14 CAT | Evaluating has obs between dates
+Thu 28/Feb/2019 16:06:14 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:14 CAT | Evaluating patientNewlyEnrolledInHIVIndicator
+Thu 28/Feb/2019 16:06:14 CAT | Evaluating patientEnrolledInART
+Thu 28/Feb/2019 16:06:14 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:14 CAT | Evaluating TxNewUnionNumerator
+Thu 28/Feb/2019 16:06:14 CAT | Evaluating transferredFromOtherHealthFacility
+Thu 28/Feb/2019 16:06:14 CAT | Evaluating has obs between dates
+Thu 28/Feb/2019 16:06:14 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:14 CAT | Evaluating TX_CURR Data Set
+Thu 28/Feb/2019 16:06:14 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 28/Feb/2019 16:06:14 CAT | Evaluating patientEnrolledInARTStartedMales
+Thu 28/Feb/2019 16:06:14 CAT | Evaluating InARTProgram
+Thu 28/Feb/2019 16:06:14 CAT | Evaluating patientWithSTARTDRUGSObs
+Thu 28/Feb/2019 16:06:14 CAT | Evaluating patientWithHistoricalDrugStartDateObs
+Thu 28/Feb/2019 16:06:14 CAT | Evaluating patientWithFirstDrugPickupEncounter
+Thu 28/Feb/2019 16:06:14 CAT | Evaluating leftARTProgramBeforeOrOnEndDate
+Thu 28/Feb/2019 16:06:14 CAT | Evaluating patientsThatMissedNexPickup
+Thu 28/Feb/2019 16:06:14 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:15 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:15 CAT | Evaluating patientsThatDidNotMissNextConsultation
+Thu 28/Feb/2019 16:06:15 CAT | Evaluating patientsReportedAsAbandonmentButStillInPeriod
+Thu 28/Feb/2019 16:06:15 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:15 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:15 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:15 CAT | Evaluating patientsWithNextConsultationDate
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating PatientBelow1Year
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating MaleCohort
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientEnrolledInARTStartedMales
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating InARTProgram
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientWithSTARTDRUGSObs
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientWithHistoricalDrugStartDateObs
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientWithFirstDrugPickupEncounter
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating leftARTProgramBeforeOrOnEndDate
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsThatMissedNexPickup
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsThatDidNotMissNextConsultation
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsReportedAsAbandonmentButStillInPeriod
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsWithNextConsultationDate
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating PatientBetween1And9Years
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating MaleCohort
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientEnrolledInARTStartedMales
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating InARTProgram
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientWithSTARTDRUGSObs
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientWithHistoricalDrugStartDateObs
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientWithFirstDrugPickupEncounter
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating leftARTProgramBeforeOrOnEndDate
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsThatMissedNexPickup
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsThatDidNotMissNextConsultation
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsReportedAsAbandonmentButStillInPeriod
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsWithNextConsultationDate
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating PatientBetween1And9Years
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating MaleCohort
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientEnrolledInARTStartedMales
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating InARTProgram
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientWithSTARTDRUGSObs
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientWithHistoricalDrugStartDateObs
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientWithFirstDrugPickupEncounter
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating leftARTProgramBeforeOrOnEndDate
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsThatMissedNexPickup
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsThatDidNotMissNextConsultation
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsReportedAsAbandonmentButStillInPeriod
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsWithNextConsultationDate
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating PatientBetween10And14Years
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating MaleCohort
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientEnrolledInARTStartedMales
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating InARTProgram
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientWithSTARTDRUGSObs
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientWithHistoricalDrugStartDateObs
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientWithFirstDrugPickupEncounter
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating leftARTProgramBeforeOrOnEndDate
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsThatMissedNexPickup
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsThatDidNotMissNextConsultation
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsReportedAsAbandonmentButStillInPeriod
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsWithNextConsultationDate
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating PatientBetween15And19Years
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating MaleCohort
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientEnrolledInARTStartedMales
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating InARTProgram
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientWithSTARTDRUGSObs
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientWithHistoricalDrugStartDateObs
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientWithFirstDrugPickupEncounter
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating leftARTProgramBeforeOrOnEndDate
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsThatMissedNexPickup
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsThatDidNotMissNextConsultation
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsReportedAsAbandonmentButStillInPeriod
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsWithNextConsultationDate
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating PatientBetween20And24Years
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating MaleCohort
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientEnrolledInARTStartedMales
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating InARTProgram
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientWithSTARTDRUGSObs
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientWithHistoricalDrugStartDateObs
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientWithFirstDrugPickupEncounter
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating leftARTProgramBeforeOrOnEndDate
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsThatMissedNexPickup
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsThatDidNotMissNextConsultation
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsReportedAsAbandonmentButStillInPeriod
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsWithNextConsultationDate
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating PatientBetween25And29Years
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating MaleCohort
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientEnrolledInARTStartedMales
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating InARTProgram
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientWithSTARTDRUGSObs
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientWithHistoricalDrugStartDateObs
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientWithFirstDrugPickupEncounter
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating leftARTProgramBeforeOrOnEndDate
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsThatMissedNexPickup
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsThatDidNotMissNextConsultation
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsReportedAsAbandonmentButStillInPeriod
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsWithNextConsultationDate
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating PatientBetween30And34Years
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating MaleCohort
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientEnrolledInARTStartedMales
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating InARTProgram
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientWithSTARTDRUGSObs
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientWithHistoricalDrugStartDateObs
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientWithFirstDrugPickupEncounter
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating leftARTProgramBeforeOrOnEndDate
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsThatMissedNexPickup
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsThatDidNotMissNextConsultation
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsReportedAsAbandonmentButStillInPeriod
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsWithNextConsultationDate
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating PatientBetween35And39Years
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating MaleCohort
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientEnrolledInARTStartedMales
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating InARTProgram
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientWithSTARTDRUGSObs
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientWithHistoricalDrugStartDateObs
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientWithFirstDrugPickupEncounter
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating leftARTProgramBeforeOrOnEndDate
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsThatMissedNexPickup
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsThatDidNotMissNextConsultation
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsReportedAsAbandonmentButStillInPeriod
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsWithNextConsultationDate
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating PatientBetween40And49Years
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating MaleCohort
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientEnrolledInARTStartedMales
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating InARTProgram
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientWithSTARTDRUGSObs
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientWithHistoricalDrugStartDateObs
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientWithFirstDrugPickupEncounter
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating leftARTProgramBeforeOrOnEndDate
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsThatMissedNexPickup
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsThatDidNotMissNextConsultation
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsReportedAsAbandonmentButStillInPeriod
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsWithNextConsultationDate
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating PatientBetween40And49Years
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating MaleCohort
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientEnrolledInARTStartedMales
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating InARTProgram
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientWithSTARTDRUGSObs
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientWithHistoricalDrugStartDateObs
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientWithFirstDrugPickupEncounter
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating leftARTProgramBeforeOrOnEndDate
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsThatMissedNexPickup
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsThatDidNotMissNextConsultation
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsReportedAsAbandonmentButStillInPeriod
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsWithNextConsultationDate
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating PatientBetween50YearsAndAbove
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating MaleCohort
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientEnrolledInARTStartedFemales
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating InARTProgram
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientWithSTARTDRUGSObs
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientWithHistoricalDrugStartDateObs
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientWithFirstDrugPickupEncounter
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating leftARTProgramBeforeOrOnEndDate
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsThatMissedNexPickup
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsThatDidNotMissNextConsultation
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsReportedAsAbandonmentButStillInPeriod
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientsWithNextConsultationDate
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating PatientBelow1Year
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating FemaleCohort
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating patientEnrolledInARTStartedFemales
+Thu 28/Feb/2019 16:06:16 CAT | Evaluating InARTProgram
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientWithSTARTDRUGSObs
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientWithHistoricalDrugStartDateObs
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientWithFirstDrugPickupEncounter
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating leftARTProgramBeforeOrOnEndDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsThatMissedNexPickup
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsThatDidNotMissNextConsultation
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsReportedAsAbandonmentButStillInPeriod
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsWithNextConsultationDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating PatientBetween1And9Years
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating FemaleCohort
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientEnrolledInARTStartedFemales
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating InARTProgram
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientWithSTARTDRUGSObs
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientWithHistoricalDrugStartDateObs
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientWithFirstDrugPickupEncounter
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating leftARTProgramBeforeOrOnEndDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsThatMissedNexPickup
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsThatDidNotMissNextConsultation
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsReportedAsAbandonmentButStillInPeriod
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsWithNextConsultationDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating PatientBetween1And9Years
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating FemaleCohort
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientEnrolledInARTStartedFemales
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating InARTProgram
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientWithSTARTDRUGSObs
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientWithHistoricalDrugStartDateObs
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientWithFirstDrugPickupEncounter
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating leftARTProgramBeforeOrOnEndDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsThatMissedNexPickup
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsThatDidNotMissNextConsultation
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsReportedAsAbandonmentButStillInPeriod
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsWithNextConsultationDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating PatientBetween10And14Years
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating FemaleCohort
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientEnrolledInARTStartedFemales
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating InARTProgram
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientWithSTARTDRUGSObs
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientWithHistoricalDrugStartDateObs
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientWithFirstDrugPickupEncounter
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating leftARTProgramBeforeOrOnEndDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsThatMissedNexPickup
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsThatDidNotMissNextConsultation
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsReportedAsAbandonmentButStillInPeriod
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsWithNextConsultationDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating PatientBetween15And19Years
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating FemaleCohort
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientEnrolledInARTStartedFemales
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating InARTProgram
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientWithSTARTDRUGSObs
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientWithHistoricalDrugStartDateObs
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientWithFirstDrugPickupEncounter
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating leftARTProgramBeforeOrOnEndDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsThatMissedNexPickup
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsThatDidNotMissNextConsultation
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsReportedAsAbandonmentButStillInPeriod
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsWithNextConsultationDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating PatientBetween20And24Years
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating FemaleCohort
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientEnrolledInARTStartedFemales
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating InARTProgram
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientWithSTARTDRUGSObs
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientWithHistoricalDrugStartDateObs
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientWithFirstDrugPickupEncounter
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating leftARTProgramBeforeOrOnEndDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsThatMissedNexPickup
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsThatDidNotMissNextConsultation
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsReportedAsAbandonmentButStillInPeriod
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsWithNextConsultationDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating PatientBetween25And29Years
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating FemaleCohort
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientEnrolledInARTStartedFemales
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating InARTProgram
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientWithSTARTDRUGSObs
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientWithHistoricalDrugStartDateObs
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientWithFirstDrugPickupEncounter
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating leftARTProgramBeforeOrOnEndDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsThatMissedNexPickup
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsThatDidNotMissNextConsultation
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsReportedAsAbandonmentButStillInPeriod
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsWithNextConsultationDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating PatientBetween30And34Years
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating FemaleCohort
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientEnrolledInARTStartedFemales
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating InARTProgram
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientWithSTARTDRUGSObs
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientWithHistoricalDrugStartDateObs
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientWithFirstDrugPickupEncounter
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating leftARTProgramBeforeOrOnEndDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsThatMissedNexPickup
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsThatDidNotMissNextConsultation
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsReportedAsAbandonmentButStillInPeriod
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsWithNextConsultationDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating PatientBetween35And39Years
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating FemaleCohort
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientEnrolledInARTStartedFemales
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating InARTProgram
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientWithSTARTDRUGSObs
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientWithHistoricalDrugStartDateObs
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientWithFirstDrugPickupEncounter
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating leftARTProgramBeforeOrOnEndDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsThatMissedNexPickup
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsThatDidNotMissNextConsultation
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsReportedAsAbandonmentButStillInPeriod
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsWithNextConsultationDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating PatientBetween40And49Years
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating FemaleCohort
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientEnrolledInARTStartedFemales
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating InARTProgram
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientWithSTARTDRUGSObs
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientWithHistoricalDrugStartDateObs
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientWithFirstDrugPickupEncounter
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating leftARTProgramBeforeOrOnEndDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsThatMissedNexPickup
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsThatDidNotMissNextConsultation
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsReportedAsAbandonmentButStillInPeriod
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsWithNextConsultationDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating PatientBetween40And49Years
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating FemaleCohort
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientInYearRangeEnrolledInHIVStartedARTIndicator
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientEnrolledInARTStartedFemales
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating InARTProgram
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientWithSTARTDRUGSObs
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientWithHistoricalDrugStartDateObs
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientWithFirstDrugPickupEncounter
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating leftARTProgramBeforeOrOnEndDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsThatMissedNexPickup
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsThatDidNotMissNextConsultation
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsReportedAsAbandonmentButStillInPeriod
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsWithNextConsultationDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating PatientBetween50YearsAndAbove
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating FemaleCohort
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientNewlyEnrolledInHIVIndicator
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating allPatientsCurrentlyInART
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating InARTProgram
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientWithSTARTDRUGSObs
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientWithHistoricalDrugStartDateObs
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientWithFirstDrugPickupEncounter
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating leftARTProgramBeforeOrOnEndDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsThatMissedNexPickup
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsThatDidNotMissNextConsultation
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsReportedAsAbandonmentButStillInPeriod
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsWithNextConsultationDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating unknownAgeCohort
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating MaleCohort
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientNewlyEnrolledInHIVIndicator
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating allPatientsCurrentlyInART
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating InARTProgram
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientWithSTARTDRUGSObs
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientWithHistoricalDrugStartDateObs
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientWithFirstDrugPickupEncounter
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating leftARTProgramBeforeOrOnEndDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsThatMissedNexPickup
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsThatDidNotMissNextConsultation
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsReportedAsAbandonmentButStillInPeriod
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsWithNextConsultationDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating unknownAgeCohort
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating FemaleCohort
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientNewlyEnrolledInHIVIndicator
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating allPatientsCurrentlyInART
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating InARTProgram
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientWithSTARTDRUGSObs
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientWithHistoricalDrugStartDateObs
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientWithFirstDrugPickupEncounter
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating leftARTProgramBeforeOrOnEndDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsThatMissedNexPickup
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsThatDidNotMissNextConsultation
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsReportedAsAbandonmentButStillInPeriod
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsWithNextPickupDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsWithNextConsultationDate
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating Tx_Pvls Data Set
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating gender
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating FemaleCohort
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating MaleCohort
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating Maternity Dimension
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating CompositionCohortDefinition[compositionString=((DATAPARTO OR INICIOLACTANTE OR LACTANTEPROGRAMA OR LACTANTE) NOT GRAVIDAS) AND FEMININO,searches=DATAPARTO -> patientsWithUpdatedDepartureInART [onOrBefore -> ${onOrBefore},location -> ${location},onOrAfter -> ${onOrAfter}],LACTANTE -> has obs between dates [locationList -> ${location},onOrBefore -> ${onOrBefore},onOrAfter -> ${onOrAfter}],GRAVIDAS -> SQL Cohort Query: [Select 	p.patient_id from 	patient p inner join encounter e on p.patient_id=e.patient_id inner join obs o on e.encounter_id=o.encounter_id where p.voided=0 and e.voided=0 and o.voided=0 and concept_id=1982 and value_coded=44 and e.encounter_type in (5,6) and e.encounter_datetime between :startDate and :endDate and e.location_id=:location union Select 	p.patient_id from 	patient p inner join encounter e on p.patient_id=e.patient_id inner join obs o on e.encounter_id=o.encounter_id where 	p.voided=0 and e.voided=0 and o.voided=0 and concept_id=1279 and e.encounter_type in (5,6) and e.encounter_datetime between :startDate and :endDate and e.location_id=:location union Select p.patient_id from patient p inner join encounter e on p.patient_id=e.patient_id inner join obs o on e.encounter_id=o.encounter_id where p.voided=0 and e.voided=0 and o.voided=0 and concept_id=1600 and e.encounter_type in (5,6) and e.encounter_datetime between :startDate and :endDate and e.location_id=:location union select pp.patient_id from patient_program pp where pp.program_id=8 and pp.voided=0 and pp.date_enrolled between :startDate and :endDate and pp.location_id=:location] [endDate -> ${onOrBefore},location -> ${location},startDate -> ${onOrAfter}],INICIOLACTANTE -> has obs between dates [locationList -> ${location},onOrBefore -> ${onOrBefore},onOrAfter -> ${onOrAfter}],FEMININO -> Female,LACTANTEPROGRAMA -> SQL Cohort Query: [select 	pg.patient_id from patient p inner join patient_program pg on p.patient_id=pg.patient_id inner join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=8 and ps.state=27 and ps.end_date is null and ps.start_date between date_add(:startDate, interval -2 year) and date_add(:startDate, interval -1 day) and location_id=:location] [location -> ${location},startDate -> ${onOrAfter}]]
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsWithUpdatedDepartureInART
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating has obs between dates
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsWhoGaveBirthTwoYearsAgo
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating has obs between dates
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsPregnantEnrolledOnART
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating FemaleCohort
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating patientsPregnantEnrolledOnART
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating pvls ages
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating aged between age brackets
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating aged between age brackets
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating aged between age brackets
+Thu 28/Feb/2019 16:06:17 CAT | Evaluating aged between age brackets
+Thu 28/Feb/2019 16:06:18 CAT | Evaluating aged between age brackets
+Thu 28/Feb/2019 16:06:18 CAT | Evaluating aged between age brackets
+Thu 28/Feb/2019 16:06:18 CAT | Evaluating aged between age brackets
+Thu 28/Feb/2019 16:06:18 CAT | Evaluating aged between age brackets
+Thu 28/Feb/2019 16:06:18 CAT | Evaluating aged between age brackets
+Thu 28/Feb/2019 16:06:18 CAT | Evaluating aged between age brackets
+Thu 28/Feb/2019 16:06:18 CAT | Evaluating aged between age brackets
+Thu 28/Feb/2019 16:06:18 CAT | Evaluating aged between age brackets
+Thu 28/Feb/2019 16:06:18 CAT | Evaluating unknownAge
+Thu 28/Feb/2019 16:06:18 CAT | Evaluating suppressed viral load
+Thu 28/Feb/2019 16:06:18 CAT | Evaluating CompositionCohortDefinition[compositionString=supp AND baseCohort AND onArtLongEnough,searches=supp -> SQL Cohort Query: [SELECT ultima_carga.patient_id FROM(SELECT p.patient_id,MAX(o.obs_datetime) data_carga FROM patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13) AND  o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) and :endDate AND e.location_id=:location GROUP BY p.patient_id) ultima_carga INNER JOIN obs ON obs.person_id=ultima_carga.patient_id AND obs.obs_datetime=ultima_carga.data_carga  WHERE obs.voided=0 AND obs.concept_id=856 AND obs.location_id=:location AND obs.value_numeric < 1000] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}],baseCohort -> SQL Cohort Query: [select p.patient_id from patient p join encounter e on e.patient_id=p.patient_id where e.voided=0 and p.voided=0 and e.encounter_type in (5,7) and e.encounter_datetime<=:endDate and e.location_id = :location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id where pg.voided=0 and p.voided=0 and program_id=1 and date_enrolled<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=1 and ps.state=28 and ps.start_date=pg.date_enrolled and ps.start_date<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=2 and ps.state=29 and ps.start_date<=:endDate and location_id=:location ] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}]]
+Thu 28/Feb/2019 16:06:18 CAT | Evaluating suppressedViralLoadWithin12Months
+Thu 28/Feb/2019 16:06:18 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:18 CAT | Evaluating On ART for at least 3 months
+Thu 28/Feb/2019 16:06:20 CAT | Evaluating patients with viral load
+Thu 28/Feb/2019 16:06:20 CAT | Evaluating CompositionCohortDefinition[compositionString=results AND baseCohort AND onArtLongEnough,searches=results -> SQL Cohort Query: [SELECT p.patient_id FROM  patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13) AND o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) AND :endDate AND e.location_id=:location] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}],baseCohort -> SQL Cohort Query: [select p.patient_id from patient p join encounter e on e.patient_id=p.patient_id where e.voided=0 and p.voided=0 and e.encounter_type in (5,7) and e.encounter_datetime<=:endDate and e.location_id = :location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id where pg.voided=0 and p.voided=0 and program_id=1 and date_enrolled<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=1 and ps.state=28 and ps.start_date=pg.date_enrolled and ps.start_date<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=2 and ps.state=29 and ps.start_date<=:endDate and location_id=:location ] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}]]
+Thu 28/Feb/2019 16:06:20 CAT | Evaluating viralLoadWithin12Months
+Thu 28/Feb/2019 16:06:20 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:20 CAT | Evaluating On ART for at least 3 months
+Thu 28/Feb/2019 16:06:20 CAT | Evaluating breastfeedingWomenWithViralLoadSuppression routine numerator
+Thu 28/Feb/2019 16:06:20 CAT | Evaluating Breastfeeding with viral results and on routine
+Thu 28/Feb/2019 16:06:20 CAT | Evaluating Breastfeeding with viral suppression
+Thu 28/Feb/2019 16:06:20 CAT | Evaluating CompositionCohortDefinition[compositionString=((DATAPARTO OR INICIOLACTANTE OR LACTANTEPROGRAMA OR LACTANTE) NOT GRAVIDAS) AND FEMININO,searches=DATAPARTO -> patientsWithUpdatedDepartureInART [onOrBefore -> ${onOrBefore},location -> ${location},onOrAfter -> ${onOrAfter}],LACTANTE -> has obs between dates [locationList -> ${location},onOrBefore -> ${onOrBefore},onOrAfter -> ${onOrAfter}],GRAVIDAS -> SQL Cohort Query: [Select 	p.patient_id from 	patient p inner join encounter e on p.patient_id=e.patient_id inner join obs o on e.encounter_id=o.encounter_id where p.voided=0 and e.voided=0 and o.voided=0 and concept_id=1982 and value_coded=44 and e.encounter_type in (5,6) and e.encounter_datetime between :startDate and :endDate and e.location_id=:location union Select 	p.patient_id from 	patient p inner join encounter e on p.patient_id=e.patient_id inner join obs o on e.encounter_id=o.encounter_id where 	p.voided=0 and e.voided=0 and o.voided=0 and concept_id=1279 and e.encounter_type in (5,6) and e.encounter_datetime between :startDate and :endDate and e.location_id=:location union Select p.patient_id from patient p inner join encounter e on p.patient_id=e.patient_id inner join obs o on e.encounter_id=o.encounter_id where p.voided=0 and e.voided=0 and o.voided=0 and concept_id=1600 and e.encounter_type in (5,6) and e.encounter_datetime between :startDate and :endDate and e.location_id=:location union select pp.patient_id from patient_program pp where pp.program_id=8 and pp.voided=0 and pp.date_enrolled between :startDate and :endDate and pp.location_id=:location] [endDate -> ${onOrBefore},location -> ${location},startDate -> ${onOrAfter}],INICIOLACTANTE -> has obs between dates [locationList -> ${location},onOrBefore -> ${onOrBefore},onOrAfter -> ${onOrAfter}],FEMININO -> Female,LACTANTEPROGRAMA -> SQL Cohort Query: [select 	pg.patient_id from patient p inner join patient_program pg on p.patient_id=pg.patient_id inner join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=8 and ps.state=27 and ps.end_date is null and ps.start_date between date_add(:startDate, interval -2 year) and date_add(:startDate, interval -1 day) and location_id=:location] [location -> ${location},startDate -> ${onOrAfter}]]
+Thu 28/Feb/2019 16:06:20 CAT | Evaluating patientsWithUpdatedDepartureInART
+Thu 28/Feb/2019 16:06:20 CAT | Evaluating has obs between dates
+Thu 28/Feb/2019 16:06:20 CAT | Evaluating patientsWhoGaveBirthTwoYearsAgo
+Thu 28/Feb/2019 16:06:20 CAT | Evaluating has obs between dates
+Thu 28/Feb/2019 16:06:20 CAT | Evaluating patientsPregnantEnrolledOnART
+Thu 28/Feb/2019 16:06:20 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:20 CAT | Evaluating FemaleCohort
+Thu 28/Feb/2019 16:06:20 CAT | Evaluating CompositionCohortDefinition[compositionString=supp AND baseCohort AND onArtLongEnough,searches=supp -> SQL Cohort Query: [SELECT ultima_carga.patient_id FROM(SELECT p.patient_id,MAX(o.obs_datetime) data_carga FROM patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13) AND  o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) and :endDate AND e.location_id=:location GROUP BY p.patient_id) ultima_carga INNER JOIN obs ON obs.person_id=ultima_carga.patient_id AND obs.obs_datetime=ultima_carga.data_carga  WHERE obs.voided=0 AND obs.concept_id=856 AND obs.location_id=:location AND obs.value_numeric < 1000] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}],baseCohort -> SQL Cohort Query: [select p.patient_id from patient p join encounter e on e.patient_id=p.patient_id where e.voided=0 and p.voided=0 and e.encounter_type in (5,7) and e.encounter_datetime<=:endDate and e.location_id = :location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id where pg.voided=0 and p.voided=0 and program_id=1 and date_enrolled<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=1 and ps.state=28 and ps.start_date=pg.date_enrolled and ps.start_date<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=2 and ps.state=29 and ps.start_date<=:endDate and location_id=:location ] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}]]
+Thu 28/Feb/2019 16:06:20 CAT | Evaluating suppressedViralLoadWithin12Months
+Thu 28/Feb/2019 16:06:20 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:20 CAT | Evaluating On ART for at least 3 months
+Thu 28/Feb/2019 16:06:20 CAT | Evaluating Routine for breastfeeding and pregnant
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating breastfeedingWomenWithViralLoadSuppression not documented numerator
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating Breastfeeding with viral results and NOT documented
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating Breastfeeding with viral suppression
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating CompositionCohortDefinition[compositionString=((DATAPARTO OR INICIOLACTANTE OR LACTANTEPROGRAMA OR LACTANTE) NOT GRAVIDAS) AND FEMININO,searches=DATAPARTO -> patientsWithUpdatedDepartureInART [onOrBefore -> ${onOrBefore},location -> ${location},onOrAfter -> ${onOrAfter}],LACTANTE -> has obs between dates [locationList -> ${location},onOrBefore -> ${onOrBefore},onOrAfter -> ${onOrAfter}],GRAVIDAS -> SQL Cohort Query: [Select 	p.patient_id from 	patient p inner join encounter e on p.patient_id=e.patient_id inner join obs o on e.encounter_id=o.encounter_id where p.voided=0 and e.voided=0 and o.voided=0 and concept_id=1982 and value_coded=44 and e.encounter_type in (5,6) and e.encounter_datetime between :startDate and :endDate and e.location_id=:location union Select 	p.patient_id from 	patient p inner join encounter e on p.patient_id=e.patient_id inner join obs o on e.encounter_id=o.encounter_id where 	p.voided=0 and e.voided=0 and o.voided=0 and concept_id=1279 and e.encounter_type in (5,6) and e.encounter_datetime between :startDate and :endDate and e.location_id=:location union Select p.patient_id from patient p inner join encounter e on p.patient_id=e.patient_id inner join obs o on e.encounter_id=o.encounter_id where p.voided=0 and e.voided=0 and o.voided=0 and concept_id=1600 and e.encounter_type in (5,6) and e.encounter_datetime between :startDate and :endDate and e.location_id=:location union select pp.patient_id from patient_program pp where pp.program_id=8 and pp.voided=0 and pp.date_enrolled between :startDate and :endDate and pp.location_id=:location] [endDate -> ${onOrBefore},location -> ${location},startDate -> ${onOrAfter}],INICIOLACTANTE -> has obs between dates [locationList -> ${location},onOrBefore -> ${onOrBefore},onOrAfter -> ${onOrAfter}],FEMININO -> Female,LACTANTEPROGRAMA -> SQL Cohort Query: [select 	pg.patient_id from patient p inner join patient_program pg on p.patient_id=pg.patient_id inner join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=8 and ps.state=27 and ps.end_date is null and ps.start_date between date_add(:startDate, interval -2 year) and date_add(:startDate, interval -1 day) and location_id=:location] [location -> ${location},startDate -> ${onOrAfter}]]
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating patientsWithUpdatedDepartureInART
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating has obs between dates
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating patientsWhoGaveBirthTwoYearsAgo
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating has obs between dates
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating patientsPregnantEnrolledOnART
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating FemaleCohort
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating CompositionCohortDefinition[compositionString=supp AND baseCohort AND onArtLongEnough,searches=supp -> SQL Cohort Query: [SELECT ultima_carga.patient_id FROM(SELECT p.patient_id,MAX(o.obs_datetime) data_carga FROM patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13) AND  o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) and :endDate AND e.location_id=:location GROUP BY p.patient_id) ultima_carga INNER JOIN obs ON obs.person_id=ultima_carga.patient_id AND obs.obs_datetime=ultima_carga.data_carga  WHERE obs.voided=0 AND obs.concept_id=856 AND obs.location_id=:location AND obs.value_numeric < 1000] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}],baseCohort -> SQL Cohort Query: [select p.patient_id from patient p join encounter e on e.patient_id=p.patient_id where e.voided=0 and p.voided=0 and e.encounter_type in (5,7) and e.encounter_datetime<=:endDate and e.location_id = :location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id where pg.voided=0 and p.voided=0 and program_id=1 and date_enrolled<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=1 and ps.state=28 and ps.start_date=pg.date_enrolled and ps.start_date<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=2 and ps.state=29 and ps.start_date<=:endDate and location_id=:location ] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}]]
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating suppressedViralLoadWithin12Months
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating On ART for at least 3 months
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating Routine for breastfeeding and pregnant
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating pregnantWomenWithViralLoadSuppression and on routine
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating Pregnant and on Routine Numerator
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating Get pregnant women with viral load suppression
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating CompositionCohortDefinition[compositionString=supp AND baseCohort AND onArtLongEnough,searches=supp -> SQL Cohort Query: [SELECT ultima_carga.patient_id FROM(SELECT p.patient_id,MAX(o.obs_datetime) data_carga FROM patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13) AND  o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) and :endDate AND e.location_id=:location GROUP BY p.patient_id) ultima_carga INNER JOIN obs ON obs.person_id=ultima_carga.patient_id AND obs.obs_datetime=ultima_carga.data_carga  WHERE obs.voided=0 AND obs.concept_id=856 AND obs.location_id=:location AND obs.value_numeric < 1000] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}],baseCohort -> SQL Cohort Query: [select p.patient_id from patient p join encounter e on e.patient_id=p.patient_id where e.voided=0 and p.voided=0 and e.encounter_type in (5,7) and e.encounter_datetime<=:endDate and e.location_id = :location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id where pg.voided=0 and p.voided=0 and program_id=1 and date_enrolled<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=1 and ps.state=28 and ps.start_date=pg.date_enrolled and ps.start_date<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=2 and ps.state=29 and ps.start_date<=:endDate and location_id=:location ] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}]]
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating suppressedViralLoadWithin12Months
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating On ART for at least 3 months
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating patientsPregnantEnrolledOnART
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating Routine for breastfeeding and pregnant
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating pregnantWomenWithViralLoadSuppression and NOT documented
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating Pregnant and NOT documented Numerator
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating Get pregnant women with viral load suppression
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating CompositionCohortDefinition[compositionString=supp AND baseCohort AND onArtLongEnough,searches=supp -> SQL Cohort Query: [SELECT ultima_carga.patient_id FROM(SELECT p.patient_id,MAX(o.obs_datetime) data_carga FROM patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13) AND  o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) and :endDate AND e.location_id=:location GROUP BY p.patient_id) ultima_carga INNER JOIN obs ON obs.person_id=ultima_carga.patient_id AND obs.obs_datetime=ultima_carga.data_carga  WHERE obs.voided=0 AND obs.concept_id=856 AND obs.location_id=:location AND obs.value_numeric < 1000] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}],baseCohort -> SQL Cohort Query: [select p.patient_id from patient p join encounter e on e.patient_id=p.patient_id where e.voided=0 and p.voided=0 and e.encounter_type in (5,7) and e.encounter_datetime<=:endDate and e.location_id = :location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id where pg.voided=0 and p.voided=0 and program_id=1 and date_enrolled<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=1 and ps.state=28 and ps.start_date=pg.date_enrolled and ps.start_date<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=2 and ps.state=29 and ps.start_date<=:endDate and location_id=:location ] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}]]
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating suppressedViralLoadWithin12Months
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating On ART for at least 3 months
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating patientsPregnantEnrolledOnART
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating Routine for breastfeeding and pregnant
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating breastfeedingWomenWithViralLoad-routine denominator
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating Breastfeeding women on routine and have Viral load results
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating Breastfeeding with viral results
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating CompositionCohortDefinition[compositionString=((DATAPARTO OR INICIOLACTANTE OR LACTANTEPROGRAMA OR LACTANTE) NOT GRAVIDAS) AND FEMININO,searches=DATAPARTO -> patientsWithUpdatedDepartureInART [onOrBefore -> ${onOrBefore},location -> ${location},onOrAfter -> ${onOrAfter}],LACTANTE -> has obs between dates [locationList -> ${location},onOrBefore -> ${onOrBefore},onOrAfter -> ${onOrAfter}],GRAVIDAS -> SQL Cohort Query: [Select 	p.patient_id from 	patient p inner join encounter e on p.patient_id=e.patient_id inner join obs o on e.encounter_id=o.encounter_id where p.voided=0 and e.voided=0 and o.voided=0 and concept_id=1982 and value_coded=44 and e.encounter_type in (5,6) and e.encounter_datetime between :startDate and :endDate and e.location_id=:location union Select 	p.patient_id from 	patient p inner join encounter e on p.patient_id=e.patient_id inner join obs o on e.encounter_id=o.encounter_id where 	p.voided=0 and e.voided=0 and o.voided=0 and concept_id=1279 and e.encounter_type in (5,6) and e.encounter_datetime between :startDate and :endDate and e.location_id=:location union Select p.patient_id from patient p inner join encounter e on p.patient_id=e.patient_id inner join obs o on e.encounter_id=o.encounter_id where p.voided=0 and e.voided=0 and o.voided=0 and concept_id=1600 and e.encounter_type in (5,6) and e.encounter_datetime between :startDate and :endDate and e.location_id=:location union select pp.patient_id from patient_program pp where pp.program_id=8 and pp.voided=0 and pp.date_enrolled between :startDate and :endDate and pp.location_id=:location] [endDate -> ${onOrBefore},location -> ${location},startDate -> ${onOrAfter}],INICIOLACTANTE -> has obs between dates [locationList -> ${location},onOrBefore -> ${onOrBefore},onOrAfter -> ${onOrAfter}],FEMININO -> Female,LACTANTEPROGRAMA -> SQL Cohort Query: [select 	pg.patient_id from patient p inner join patient_program pg on p.patient_id=pg.patient_id inner join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=8 and ps.state=27 and ps.end_date is null and ps.start_date between date_add(:startDate, interval -2 year) and date_add(:startDate, interval -1 day) and location_id=:location] [location -> ${location},startDate -> ${onOrAfter}]]
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating patientsWithUpdatedDepartureInART
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating has obs between dates
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating patientsWhoGaveBirthTwoYearsAgo
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating has obs between dates
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating patientsPregnantEnrolledOnART
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating FemaleCohort
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating CompositionCohortDefinition[compositionString=results AND baseCohort AND onArtLongEnough,searches=results -> SQL Cohort Query: [SELECT p.patient_id FROM  patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13) AND o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) AND :endDate AND e.location_id=:location] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}],baseCohort -> SQL Cohort Query: [select p.patient_id from patient p join encounter e on e.patient_id=p.patient_id where e.voided=0 and p.voided=0 and e.encounter_type in (5,7) and e.encounter_datetime<=:endDate and e.location_id = :location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id where pg.voided=0 and p.voided=0 and program_id=1 and date_enrolled<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=1 and ps.state=28 and ps.start_date=pg.date_enrolled and ps.start_date<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=2 and ps.state=29 and ps.start_date<=:endDate and location_id=:location ] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}]]
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating viralLoadWithin12Months
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating On ART for at least 3 months
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating Routine for breastfeeding and pregnant
+Thu 28/Feb/2019 16:06:22 CAT | Evaluating breastfeedingWomenWithViralLoad-not documented denominator
+Thu 28/Feb/2019 16:06:23 CAT | Evaluating Breastfeeding women NOT documented and have Viral load results
+Thu 28/Feb/2019 16:06:23 CAT | Evaluating Breastfeeding with viral results
+Thu 28/Feb/2019 16:06:23 CAT | Evaluating CompositionCohortDefinition[compositionString=((DATAPARTO OR INICIOLACTANTE OR LACTANTEPROGRAMA OR LACTANTE) NOT GRAVIDAS) AND FEMININO,searches=DATAPARTO -> patientsWithUpdatedDepartureInART [onOrBefore -> ${onOrBefore},location -> ${location},onOrAfter -> ${onOrAfter}],LACTANTE -> has obs between dates [locationList -> ${location},onOrBefore -> ${onOrBefore},onOrAfter -> ${onOrAfter}],GRAVIDAS -> SQL Cohort Query: [Select 	p.patient_id from 	patient p inner join encounter e on p.patient_id=e.patient_id inner join obs o on e.encounter_id=o.encounter_id where p.voided=0 and e.voided=0 and o.voided=0 and concept_id=1982 and value_coded=44 and e.encounter_type in (5,6) and e.encounter_datetime between :startDate and :endDate and e.location_id=:location union Select 	p.patient_id from 	patient p inner join encounter e on p.patient_id=e.patient_id inner join obs o on e.encounter_id=o.encounter_id where 	p.voided=0 and e.voided=0 and o.voided=0 and concept_id=1279 and e.encounter_type in (5,6) and e.encounter_datetime between :startDate and :endDate and e.location_id=:location union Select p.patient_id from patient p inner join encounter e on p.patient_id=e.patient_id inner join obs o on e.encounter_id=o.encounter_id where p.voided=0 and e.voided=0 and o.voided=0 and concept_id=1600 and e.encounter_type in (5,6) and e.encounter_datetime between :startDate and :endDate and e.location_id=:location union select pp.patient_id from patient_program pp where pp.program_id=8 and pp.voided=0 and pp.date_enrolled between :startDate and :endDate and pp.location_id=:location] [endDate -> ${onOrBefore},location -> ${location},startDate -> ${onOrAfter}],INICIOLACTANTE -> has obs between dates [locationList -> ${location},onOrBefore -> ${onOrBefore},onOrAfter -> ${onOrAfter}],FEMININO -> Female,LACTANTEPROGRAMA -> SQL Cohort Query: [select 	pg.patient_id from patient p inner join patient_program pg on p.patient_id=pg.patient_id inner join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=8 and ps.state=27 and ps.end_date is null and ps.start_date between date_add(:startDate, interval -2 year) and date_add(:startDate, interval -1 day) and location_id=:location] [location -> ${location},startDate -> ${onOrAfter}]]
+Thu 28/Feb/2019 16:06:23 CAT | Evaluating patientsWithUpdatedDepartureInART
+Thu 28/Feb/2019 16:06:23 CAT | Evaluating has obs between dates
+Thu 28/Feb/2019 16:06:23 CAT | Evaluating patientsWhoGaveBirthTwoYearsAgo
+Thu 28/Feb/2019 16:06:23 CAT | Evaluating has obs between dates
+Thu 28/Feb/2019 16:06:23 CAT | Evaluating patientsPregnantEnrolledOnART
+Thu 28/Feb/2019 16:06:23 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:23 CAT | Evaluating FemaleCohort
+Thu 28/Feb/2019 16:06:23 CAT | Evaluating CompositionCohortDefinition[compositionString=results AND baseCohort AND onArtLongEnough,searches=results -> SQL Cohort Query: [SELECT p.patient_id FROM  patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13) AND o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) AND :endDate AND e.location_id=:location] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}],baseCohort -> SQL Cohort Query: [select p.patient_id from patient p join encounter e on e.patient_id=p.patient_id where e.voided=0 and p.voided=0 and e.encounter_type in (5,7) and e.encounter_datetime<=:endDate and e.location_id = :location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id where pg.voided=0 and p.voided=0 and program_id=1 and date_enrolled<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=1 and ps.state=28 and ps.start_date=pg.date_enrolled and ps.start_date<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=2 and ps.state=29 and ps.start_date<=:endDate and location_id=:location ] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}]]
+Thu 28/Feb/2019 16:06:23 CAT | Evaluating viralLoadWithin12Months
+Thu 28/Feb/2019 16:06:23 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:23 CAT | Evaluating On ART for at least 3 months
+Thu 28/Feb/2019 16:06:23 CAT | Evaluating Routine for breastfeeding and pregnant
+Thu 28/Feb/2019 16:06:23 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:23 CAT | Evaluating pregnantWomenWithViralLoad and not documented denominator
+Thu 28/Feb/2019 16:06:23 CAT | Evaluating Get pregnant women with viral load results Not documented
+Thu 28/Feb/2019 16:06:23 CAT | Evaluating Get pregnant women with viral load results denominator
+Thu 28/Feb/2019 16:06:23 CAT | Evaluating CompositionCohortDefinition[compositionString=results AND baseCohort AND onArtLongEnough,searches=results -> SQL Cohort Query: [SELECT p.patient_id FROM  patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13) AND o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) AND :endDate AND e.location_id=:location] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}],baseCohort -> SQL Cohort Query: [select p.patient_id from patient p join encounter e on e.patient_id=p.patient_id where e.voided=0 and p.voided=0 and e.encounter_type in (5,7) and e.encounter_datetime<=:endDate and e.location_id = :location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id where pg.voided=0 and p.voided=0 and program_id=1 and date_enrolled<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=1 and ps.state=28 and ps.start_date=pg.date_enrolled and ps.start_date<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=2 and ps.state=29 and ps.start_date<=:endDate and location_id=:location ] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}]]
+Thu 28/Feb/2019 16:06:23 CAT | Evaluating viralLoadWithin12Months
+Thu 28/Feb/2019 16:06:23 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:23 CAT | Evaluating On ART for at least 3 months
+Thu 28/Feb/2019 16:06:23 CAT | Evaluating patientsPregnantEnrolledOnART
+Thu 28/Feb/2019 16:06:23 CAT | Evaluating Routine for breastfeeding and pregnant
+Thu 28/Feb/2019 16:06:23 CAT | Evaluating pregnantWomenWithViralLoad results not documented denominator
+Thu 28/Feb/2019 16:06:23 CAT | Evaluating Get pregnant women with viral load results Not documented
+Thu 28/Feb/2019 16:06:23 CAT | Evaluating Get pregnant women with viral load results denominator
+Thu 28/Feb/2019 16:06:23 CAT | Evaluating CompositionCohortDefinition[compositionString=results AND baseCohort AND onArtLongEnough,searches=results -> SQL Cohort Query: [SELECT p.patient_id FROM  patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13) AND o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) AND :endDate AND e.location_id=:location] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}],baseCohort -> SQL Cohort Query: [select p.patient_id from patient p join encounter e on e.patient_id=p.patient_id where e.voided=0 and p.voided=0 and e.encounter_type in (5,7) and e.encounter_datetime<=:endDate and e.location_id = :location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id where pg.voided=0 and p.voided=0 and program_id=1 and date_enrolled<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=1 and ps.state=28 and ps.start_date=pg.date_enrolled and ps.start_date<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=2 and ps.state=29 and ps.start_date<=:endDate and location_id=:location ] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}]]
+Thu 28/Feb/2019 16:06:23 CAT | Evaluating viralLoadWithin12Months
+Thu 28/Feb/2019 16:06:23 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:23 CAT | Evaluating On ART for at least 3 months
+Thu 28/Feb/2019 16:06:23 CAT | Evaluating patientsPregnantEnrolledOnART
+Thu 28/Feb/2019 16:06:23 CAT | Evaluating Routine for breastfeeding and pregnant
+Thu 28/Feb/2019 16:06:23 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:23 CAT | Evaluating viral load suppression on routine adults and children
+Thu 28/Feb/2019 16:06:23 CAT | Evaluating Suppression and on routine adult and children
+Thu 28/Feb/2019 16:06:23 CAT | Evaluating CompositionCohortDefinition[compositionString=supp AND baseCohort AND onArtLongEnough,searches=supp -> SQL Cohort Query: [SELECT ultima_carga.patient_id FROM(SELECT p.patient_id,MAX(o.obs_datetime) data_carga FROM patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13) AND  o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) and :endDate AND e.location_id=:location GROUP BY p.patient_id) ultima_carga INNER JOIN obs ON obs.person_id=ultima_carga.patient_id AND obs.obs_datetime=ultima_carga.data_carga  WHERE obs.voided=0 AND obs.concept_id=856 AND obs.location_id=:location AND obs.value_numeric < 1000] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}],baseCohort -> SQL Cohort Query: [select p.patient_id from patient p join encounter e on e.patient_id=p.patient_id where e.voided=0 and p.voided=0 and e.encounter_type in (5,7) and e.encounter_datetime<=:endDate and e.location_id = :location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id where pg.voided=0 and p.voided=0 and program_id=1 and date_enrolled<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=1 and ps.state=28 and ps.start_date=pg.date_enrolled and ps.start_date<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=2 and ps.state=29 and ps.start_date<=:endDate and location_id=:location ] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}]]
+Thu 28/Feb/2019 16:06:23 CAT | Evaluating suppressedViralLoadWithin12Months
+Thu 28/Feb/2019 16:06:23 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:23 CAT | Evaluating On ART for at least 3 months
+Thu 28/Feb/2019 16:06:23 CAT | Evaluating Routine for adults and children
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating viral load suppression on routine adults and children
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating Suppression and on routine adult and children
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating CompositionCohortDefinition[compositionString=supp AND baseCohort AND onArtLongEnough,searches=supp -> SQL Cohort Query: [SELECT ultima_carga.patient_id FROM(SELECT p.patient_id,MAX(o.obs_datetime) data_carga FROM patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13) AND  o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) and :endDate AND e.location_id=:location GROUP BY p.patient_id) ultima_carga INNER JOIN obs ON obs.person_id=ultima_carga.patient_id AND obs.obs_datetime=ultima_carga.data_carga  WHERE obs.voided=0 AND obs.concept_id=856 AND obs.location_id=:location AND obs.value_numeric < 1000] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}],baseCohort -> SQL Cohort Query: [select p.patient_id from patient p join encounter e on e.patient_id=p.patient_id where e.voided=0 and p.voided=0 and e.encounter_type in (5,7) and e.encounter_datetime<=:endDate and e.location_id = :location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id where pg.voided=0 and p.voided=0 and program_id=1 and date_enrolled<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=1 and ps.state=28 and ps.start_date=pg.date_enrolled and ps.start_date<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=2 and ps.state=29 and ps.start_date<=:endDate and location_id=:location ] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}]]
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating suppressedViralLoadWithin12Months
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating On ART for at least 3 months
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating Routine for adults and children
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating viral load suppression on routine adults and children
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating suppression and not documented adults and children
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating CompositionCohortDefinition[compositionString=supp AND baseCohort AND onArtLongEnough,searches=supp -> SQL Cohort Query: [SELECT ultima_carga.patient_id FROM(SELECT p.patient_id,MAX(o.obs_datetime) data_carga FROM patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13) AND  o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) and :endDate AND e.location_id=:location GROUP BY p.patient_id) ultima_carga INNER JOIN obs ON obs.person_id=ultima_carga.patient_id AND obs.obs_datetime=ultima_carga.data_carga  WHERE obs.voided=0 AND obs.concept_id=856 AND obs.location_id=:location AND obs.value_numeric < 1000] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}],baseCohort -> SQL Cohort Query: [select p.patient_id from patient p join encounter e on e.patient_id=p.patient_id where e.voided=0 and p.voided=0 and e.encounter_type in (5,7) and e.encounter_datetime<=:endDate and e.location_id = :location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id where pg.voided=0 and p.voided=0 and program_id=1 and date_enrolled<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=1 and ps.state=28 and ps.start_date=pg.date_enrolled and ps.start_date<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=2 and ps.state=29 and ps.start_date<=:endDate and location_id=:location ] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}]]
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating suppressedViralLoadWithin12Months
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating On ART for at least 3 months
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating Routine for adults and children
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating viral load suppression on routine adults and children
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating suppression and not documented adults and children
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating CompositionCohortDefinition[compositionString=supp AND baseCohort AND onArtLongEnough,searches=supp -> SQL Cohort Query: [SELECT ultima_carga.patient_id FROM(SELECT p.patient_id,MAX(o.obs_datetime) data_carga FROM patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13) AND  o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) and :endDate AND e.location_id=:location GROUP BY p.patient_id) ultima_carga INNER JOIN obs ON obs.person_id=ultima_carga.patient_id AND obs.obs_datetime=ultima_carga.data_carga  WHERE obs.voided=0 AND obs.concept_id=856 AND obs.location_id=:location AND obs.value_numeric < 1000] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}],baseCohort -> SQL Cohort Query: [select p.patient_id from patient p join encounter e on e.patient_id=p.patient_id where e.voided=0 and p.voided=0 and e.encounter_type in (5,7) and e.encounter_datetime<=:endDate and e.location_id = :location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id where pg.voided=0 and p.voided=0 and program_id=1 and date_enrolled<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=1 and ps.state=28 and ps.start_date=pg.date_enrolled and ps.start_date<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=2 and ps.state=29 and ps.start_date<=:endDate and location_id=:location ] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}]]
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating suppressedViralLoadWithin12Months
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating On ART for at least 3 months
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating Routine for adults and children
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating viral load suppression on routine adults and children
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating Suppression and on routine adult and children
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating CompositionCohortDefinition[compositionString=supp AND baseCohort AND onArtLongEnough,searches=supp -> SQL Cohort Query: [SELECT ultima_carga.patient_id FROM(SELECT p.patient_id,MAX(o.obs_datetime) data_carga FROM patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13) AND  o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) and :endDate AND e.location_id=:location GROUP BY p.patient_id) ultima_carga INNER JOIN obs ON obs.person_id=ultima_carga.patient_id AND obs.obs_datetime=ultima_carga.data_carga  WHERE obs.voided=0 AND obs.concept_id=856 AND obs.location_id=:location AND obs.value_numeric < 1000] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}],baseCohort -> SQL Cohort Query: [select p.patient_id from patient p join encounter e on e.patient_id=p.patient_id where e.voided=0 and p.voided=0 and e.encounter_type in (5,7) and e.encounter_datetime<=:endDate and e.location_id = :location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id where pg.voided=0 and p.voided=0 and program_id=1 and date_enrolled<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=1 and ps.state=28 and ps.start_date=pg.date_enrolled and ps.start_date<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=2 and ps.state=29 and ps.start_date<=:endDate and location_id=:location ] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}]]
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating suppressedViralLoadWithin12Months
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating On ART for at least 3 months
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating Routine for adults and children
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating viral load suppression on routine adults and children
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating Suppression and on routine adult and children
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating CompositionCohortDefinition[compositionString=supp AND baseCohort AND onArtLongEnough,searches=supp -> SQL Cohort Query: [SELECT ultima_carga.patient_id FROM(SELECT p.patient_id,MAX(o.obs_datetime) data_carga FROM patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13) AND  o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) and :endDate AND e.location_id=:location GROUP BY p.patient_id) ultima_carga INNER JOIN obs ON obs.person_id=ultima_carga.patient_id AND obs.obs_datetime=ultima_carga.data_carga  WHERE obs.voided=0 AND obs.concept_id=856 AND obs.location_id=:location AND obs.value_numeric < 1000] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}],baseCohort -> SQL Cohort Query: [select p.patient_id from patient p join encounter e on e.patient_id=p.patient_id where e.voided=0 and p.voided=0 and e.encounter_type in (5,7) and e.encounter_datetime<=:endDate and e.location_id = :location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id where pg.voided=0 and p.voided=0 and program_id=1 and date_enrolled<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=1 and ps.state=28 and ps.start_date=pg.date_enrolled and ps.start_date<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=2 and ps.state=29 and ps.start_date<=:endDate and location_id=:location ] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}]]
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating suppressedViralLoadWithin12Months
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating On ART for at least 3 months
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating Routine for adults and children
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating viral load suppression on routine adults and children
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating suppression and not documented adults and children
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating CompositionCohortDefinition[compositionString=supp AND baseCohort AND onArtLongEnough,searches=supp -> SQL Cohort Query: [SELECT ultima_carga.patient_id FROM(SELECT p.patient_id,MAX(o.obs_datetime) data_carga FROM patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13) AND  o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) and :endDate AND e.location_id=:location GROUP BY p.patient_id) ultima_carga INNER JOIN obs ON obs.person_id=ultima_carga.patient_id AND obs.obs_datetime=ultima_carga.data_carga  WHERE obs.voided=0 AND obs.concept_id=856 AND obs.location_id=:location AND obs.value_numeric < 1000] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}],baseCohort -> SQL Cohort Query: [select p.patient_id from patient p join encounter e on e.patient_id=p.patient_id where e.voided=0 and p.voided=0 and e.encounter_type in (5,7) and e.encounter_datetime<=:endDate and e.location_id = :location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id where pg.voided=0 and p.voided=0 and program_id=1 and date_enrolled<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=1 and ps.state=28 and ps.start_date=pg.date_enrolled and ps.start_date<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=2 and ps.state=29 and ps.start_date<=:endDate and location_id=:location ] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}]]
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating suppressedViralLoadWithin12Months
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating On ART for at least 3 months
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating Routine for adults and children
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating viral load suppression on routine adults and children
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating suppression and not documented adults and children
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating CompositionCohortDefinition[compositionString=supp AND baseCohort AND onArtLongEnough,searches=supp -> SQL Cohort Query: [SELECT ultima_carga.patient_id FROM(SELECT p.patient_id,MAX(o.obs_datetime) data_carga FROM patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13) AND  o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) and :endDate AND e.location_id=:location GROUP BY p.patient_id) ultima_carga INNER JOIN obs ON obs.person_id=ultima_carga.patient_id AND obs.obs_datetime=ultima_carga.data_carga  WHERE obs.voided=0 AND obs.concept_id=856 AND obs.location_id=:location AND obs.value_numeric < 1000] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}],baseCohort -> SQL Cohort Query: [select p.patient_id from patient p join encounter e on e.patient_id=p.patient_id where e.voided=0 and p.voided=0 and e.encounter_type in (5,7) and e.encounter_datetime<=:endDate and e.location_id = :location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id where pg.voided=0 and p.voided=0 and program_id=1 and date_enrolled<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=1 and ps.state=28 and ps.start_date=pg.date_enrolled and ps.start_date<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=2 and ps.state=29 and ps.start_date<=:endDate and location_id=:location ] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}]]
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating suppressedViralLoadWithin12Months
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating On ART for at least 3 months
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating Routine for adults and children
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating viral load results on routine adults and children
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating Viral load results with routine for children and adults denominator
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating CompositionCohortDefinition[compositionString=results AND baseCohort AND onArtLongEnough,searches=results -> SQL Cohort Query: [SELECT p.patient_id FROM  patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13) AND o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) AND :endDate AND e.location_id=:location] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}],baseCohort -> SQL Cohort Query: [select p.patient_id from patient p join encounter e on e.patient_id=p.patient_id where e.voided=0 and p.voided=0 and e.encounter_type in (5,7) and e.encounter_datetime<=:endDate and e.location_id = :location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id where pg.voided=0 and p.voided=0 and program_id=1 and date_enrolled<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=1 and ps.state=28 and ps.start_date=pg.date_enrolled and ps.start_date<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=2 and ps.state=29 and ps.start_date<=:endDate and location_id=:location ] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}]]
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating viralLoadWithin12Months
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating On ART for at least 3 months
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating Routine for adults and children
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating viral load results on routine adults and children
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating Viral load results with routine for children and adults denominator
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating CompositionCohortDefinition[compositionString=results AND baseCohort AND onArtLongEnough,searches=results -> SQL Cohort Query: [SELECT p.patient_id FROM  patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13) AND o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) AND :endDate AND e.location_id=:location] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}],baseCohort -> SQL Cohort Query: [select p.patient_id from patient p join encounter e on e.patient_id=p.patient_id where e.voided=0 and p.voided=0 and e.encounter_type in (5,7) and e.encounter_datetime<=:endDate and e.location_id = :location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id where pg.voided=0 and p.voided=0 and program_id=1 and date_enrolled<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=1 and ps.state=28 and ps.start_date=pg.date_enrolled and ps.start_date<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=2 and ps.state=29 and ps.start_date<=:endDate and location_id=:location ] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}]]
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating viralLoadWithin12Months
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating On ART for at least 3 months
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating Routine for adults and children
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating viral load results on routine adults and children
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating Viral load results with not documentation for children and adults denominator
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating CompositionCohortDefinition[compositionString=results AND baseCohort AND onArtLongEnough,searches=results -> SQL Cohort Query: [SELECT p.patient_id FROM  patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13) AND o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) AND :endDate AND e.location_id=:location] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}],baseCohort -> SQL Cohort Query: [select p.patient_id from patient p join encounter e on e.patient_id=p.patient_id where e.voided=0 and p.voided=0 and e.encounter_type in (5,7) and e.encounter_datetime<=:endDate and e.location_id = :location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id where pg.voided=0 and p.voided=0 and program_id=1 and date_enrolled<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=1 and ps.state=28 and ps.start_date=pg.date_enrolled and ps.start_date<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=2 and ps.state=29 and ps.start_date<=:endDate and location_id=:location ] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}]]
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating viralLoadWithin12Months
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating On ART for at least 3 months
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating Routine for adults and children
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating viral load results on routine adults and children
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating Viral load results with not documentation for children and adults denominator
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating CompositionCohortDefinition[compositionString=results AND baseCohort AND onArtLongEnough,searches=results -> SQL Cohort Query: [SELECT p.patient_id FROM  patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13) AND o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) AND :endDate AND e.location_id=:location] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}],baseCohort -> SQL Cohort Query: [select p.patient_id from patient p join encounter e on e.patient_id=p.patient_id where e.voided=0 and p.voided=0 and e.encounter_type in (5,7) and e.encounter_datetime<=:endDate and e.location_id = :location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id where pg.voided=0 and p.voided=0 and program_id=1 and date_enrolled<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=1 and ps.state=28 and ps.start_date=pg.date_enrolled and ps.start_date<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=2 and ps.state=29 and ps.start_date<=:endDate and location_id=:location ] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}]]
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating viralLoadWithin12Months
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating On ART for at least 3 months
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating Routine for adults and children
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating viral load results on routine adults and children
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating Viral load results with routine for children and adults denominator
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating CompositionCohortDefinition[compositionString=results AND baseCohort AND onArtLongEnough,searches=results -> SQL Cohort Query: [SELECT p.patient_id FROM  patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13) AND o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) AND :endDate AND e.location_id=:location] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}],baseCohort -> SQL Cohort Query: [select p.patient_id from patient p join encounter e on e.patient_id=p.patient_id where e.voided=0 and p.voided=0 and e.encounter_type in (5,7) and e.encounter_datetime<=:endDate and e.location_id = :location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id where pg.voided=0 and p.voided=0 and program_id=1 and date_enrolled<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=1 and ps.state=28 and ps.start_date=pg.date_enrolled and ps.start_date<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=2 and ps.state=29 and ps.start_date<=:endDate and location_id=:location ] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}]]
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating viralLoadWithin12Months
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating On ART for at least 3 months
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating Routine for adults and children
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating viral load results on routine adults and children
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating Viral load results with routine for children and adults denominator
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating CompositionCohortDefinition[compositionString=results AND baseCohort AND onArtLongEnough,searches=results -> SQL Cohort Query: [SELECT p.patient_id FROM  patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13) AND o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) AND :endDate AND e.location_id=:location] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}],baseCohort -> SQL Cohort Query: [select p.patient_id from patient p join encounter e on e.patient_id=p.patient_id where e.voided=0 and p.voided=0 and e.encounter_type in (5,7) and e.encounter_datetime<=:endDate and e.location_id = :location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id where pg.voided=0 and p.voided=0 and program_id=1 and date_enrolled<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=1 and ps.state=28 and ps.start_date=pg.date_enrolled and ps.start_date<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=2 and ps.state=29 and ps.start_date<=:endDate and location_id=:location ] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}]]
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating viralLoadWithin12Months
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating On ART for at least 3 months
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating Routine for adults and children
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating viral load results on routine adults and children
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating Viral load results with not documentation for children and adults denominator
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating CompositionCohortDefinition[compositionString=results AND baseCohort AND onArtLongEnough,searches=results -> SQL Cohort Query: [SELECT p.patient_id FROM  patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13) AND o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) AND :endDate AND e.location_id=:location] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}],baseCohort -> SQL Cohort Query: [select p.patient_id from patient p join encounter e on e.patient_id=p.patient_id where e.voided=0 and p.voided=0 and e.encounter_type in (5,7) and e.encounter_datetime<=:endDate and e.location_id = :location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id where pg.voided=0 and p.voided=0 and program_id=1 and date_enrolled<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=1 and ps.state=28 and ps.start_date=pg.date_enrolled and ps.start_date<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=2 and ps.state=29 and ps.start_date<=:endDate and location_id=:location ] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}]]
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating viralLoadWithin12Months
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating On ART for at least 3 months
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating Routine for adults and children
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating viral load results on routine adults and children
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating Viral load results with not documentation for children and adults denominator
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating CompositionCohortDefinition[compositionString=results AND baseCohort AND onArtLongEnough,searches=results -> SQL Cohort Query: [SELECT p.patient_id FROM  patient p INNER JOIN encounter e ON p.patient_id=e.patient_id INNER JOIN obs o ON e.encounter_id=o.encounter_id WHERE p.voided=0 AND e.voided=0 AND o.voided=0 AND e.encounter_type IN (13) AND o.concept_id=856 AND o.value_numeric IS NOT NULL AND e.encounter_datetime BETWEEN date_add(:endDate, interval -12 MONTH) AND :endDate AND e.location_id=:location] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}],onArtLongEnough -> On ART for at least 3 months [onDate -> ${endDate},location -> ${location}],baseCohort -> SQL Cohort Query: [select p.patient_id from patient p join encounter e on e.patient_id=p.patient_id where e.voided=0 and p.voided=0 and e.encounter_type in (5,7) and e.encounter_datetime<=:endDate and e.location_id = :location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id where pg.voided=0 and p.voided=0 and program_id=1 and date_enrolled<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=1 and ps.state=28 and ps.start_date=pg.date_enrolled and ps.start_date<=:endDate and location_id=:location union select pg.patient_id from patient p join patient_program pg on p.patient_id=pg.patient_id join patient_state ps on pg.patient_program_id=ps.patient_program_id where pg.voided=0 and ps.voided=0 and p.voided=0 and pg.program_id=2 and ps.state=29 and ps.start_date<=:endDate and location_id=:location ] [endDate -> ${endDate},location -> ${location},startDate -> ${startDate}]]
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating viralLoadWithin12Months
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating baseCohort
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating On ART for at least 3 months
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating Routine for adults and children
+Thu 28/Feb/2019 16:06:24 CAT | Evaluating AllPatientsCohortDefinition[]
+Thu 28/Feb/2019 16:06:25 CAT | Generating Rendered Report....
+Thu 28/Feb/2019 16:06:27 CAT | Writing the report output to disk
+Thu 28/Feb/2019 16:06:28 CAT | Report Generation Completed in 0:00:19.250

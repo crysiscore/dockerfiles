@@ -1,0 +1,9 @@
+Thu 28/Feb/2019 17:13:04 CAT | Report Requested by Super User
+Thu 28/Feb/2019 17:13:04 CAT | Report in queue at position 1
+Thu 28/Feb/2019 17:13:04 CAT | Starting to process report...
+Thu 28/Feb/2019 17:13:04 CAT | Evaluating Report Data....
+Thu 28/Feb/2019 17:13:04 CAT | Evaluating LISTA DE PACIENTES NA COORTE DE TARV
+Thu 28/Feb/2019 17:13:04 CAT | Evaluating SQL PARA PRODUCAO DE LISTA DE COORTES
+Thu 28/Feb/2019 17:13:05 CAT | Generating Rendered Report....
+Thu 28/Feb/2019 17:13:05 CAT | Writing the report output to disk
+Thu 28/Feb/2019 17:13:05 CAT | Report Generation Completed in 0:00:01.596
