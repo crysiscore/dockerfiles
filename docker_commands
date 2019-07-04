@@ -1,0 +1,60 @@
+
+# build image from DockerFile
+docker build -t openmrs .
+
+# Run cointainer (--rm to remove container on exit)
+docker run --rm --name test -it -p 8080:8080 <container-name>
+
+# publish a container port
+docker run --publish=hostport:containerport ...
+
+
+# remove docker image or container
+docker image/container rm <container-id>/<container-name>
+
+# execute a command in running container
+docker exec -it d395e423268d  /bin/bash
+
+# Docker attach and detach
+docker attach  --detach-keys="<sequence>"  --name pandorafms
+docker attach  --detach-keys="ctrl-a"
+<sequence> -- ctrl-a
+# Container log
+docker logs -f <CONTAINER>
+docker logs --follow  <CONTAINER>
+
+# get os listening ports
+netstat -ltnpa | grep -i --colour LISTEN
+
+
+#create index epts_obs_concept_person on obs (concept_id,person_id);
+
+### creating containers for openmrs databases ###
+# parameters -d for detach mode
+#            -it for stdin 
+docker exec -it maundene  /bin/bash && \ 
+apt-get install -y vim && vim /root/.OpenMRS/openmrs-runtime.properties
+#################################################
+docker run --name mabil      -d -p 8080:8080 openmrs    url http://192.168.40.249:8080/openmrs/
+docker run --name maxixe     -d -p 8081:8080 openmrs    url http://192.168.40.249:8081/openmrs/ 
+docker run --name zandamela  -d -p 8082:8080 openmrs    url http://192.168.40.249:8082/openmrs/ 
+docker run --name quissico   -d -p 8083:8080 openmrs    url http://192.168.40.249:8083/openmrs/
+docker run --name panda      -d -p 8084:8080 openmrs    url http://192.168.40.249:8084/openmrs/
+docker run --name inharrime  -d -p 8085:8080 openmrs    url http://192.168.40.249:8085/openmrs/
+docker run --name chongola   -d -p 8086:8080 openmrs    url http://192.168.40.249:8086/openmrs/
+docker run --name chacane    -d -p 8087:8080 openmrs    url http://192.168.40.249:8087/openmrs/
+docker run --name cumbana    -d -p 8088:8080 openmrs    url http://192.168.40.249:8088/openmrs/
+docker run --name jangamo    -d -p 8089:8080 openmrs    url http://192.168.40.249:8089/openmrs/
+docker run --name muele      -d -p 8090:8080 openmrs    url http://192.168.40.249:8090/openmrs/
+docker run --name hpi        -d -p 8091:8080 openmrs    url http://192.168.40.249:8091/openmrs/
+docker run --name urbano     -d -p 8092:8080 openmrs    url http://192.168.40.249:8092/openmrs/
+docker run --name salela     -d -p 8093:8080 openmrs    url http://192.168.40.249:8093/openmrs/
+docker run --name agostinhoneto -d -p 8094:8080 openmrs url http://192.168.40.249:8094/openmrs/
+docker run --name homoine    -d -p 8095:8080 openmrs    url  http://192.168.40.249:8095/openmrs/
+docker run --name morrumbene -d -p 8096:8080 openmrs    url http://192.168.40.249:8096/openmrs/
+docker run --name massinga   -d -p 8097:8080 openmrs    url http://192.168.40.249:8097/openmrs/  
+docker run --name funhalouro -d -p 8098:8080 openmrs    url http://192.168.40.249:8098/openmrs/ --
+docker run --name mapinhane  -d -p 8099:8080 openmrs    url http://192.168.40.249:8099/openmrs/  --
+docker run --name mabote     -d -p 8100:8080 openmrs    url http://192.168.40.249:8100/openmrs/
+docker run --name chicuque   -d -p 8101:8080 openmrs    url http://192.168.40.249:8101/openmrs/
+docker run --name maundene   -d -p 8102:8080 openmrs    url http://192.168.40.249:8102/openmrs/
