@@ -1,3 +1,4 @@
+#Base image for openmrs
 #Download base image ubuntu 16.04
 FROM ubuntu:16.04
 
@@ -24,7 +25,7 @@ RUN wget https://www.dropbox.com/s/0xyouhzfgwfsz3g/jdk-7u79-linux-x64.tar.gz?dl=
     mkdir /opt/jdk && \
     tar -zxf jdk-7u79-linux-x64.tar.gz -C /opt/jdk && \
     rm jdk-7u79-linux-x64.tar.gz && \
-    update-alternatives --install /usr/bin/java  java  /opt/jdk/jdk1.7.0_79/bin/java 100 && \ 
+    update-alternatives --install /usr/bin/java  java  /opt/jdk/jdk1.7.0_79/bin/java 100 && \
     update-alternatives --install /usr/bin/javac javac /opt/jdk/jdk1.7.0_79/bin/javac 100 && \
     update-alternatives --install /usr/bin/jar   jar   /opt/jdk/jdk1.7.0_79/bin/jar 100
 
@@ -41,6 +42,7 @@ RUN chmod -R 777 /root/.OpenMRS/
 
 ENV CATALINA_HOME /usr/local/tomcat7
 ENV PATH $PATH:$CATALINA_HOME/bin
+
 
 VOLUME ["/usr/local/tomcat7/webapps","/root/"]
 
