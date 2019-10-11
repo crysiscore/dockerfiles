@@ -32,7 +32,7 @@ RUN wget https://www.dropbox.com/s/0xyouhzfgwfsz3g/jdk-7u79-linux-x64.tar.gz?dl=
 RUN apt-get clean && rm -rf  /tmp/* /var/tmp/*
 
 
-COPY openmrs.war   /usr/local/tomcat7/webapps/
+COPY openmrs.war   /usr/local/tomcat7/webps/
 COPY setenv.sh    /usr/local/tomcat7/bin/
 
 RUN  mkdir /root/.OpenMRS

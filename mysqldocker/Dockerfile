@@ -7,36 +7,14 @@ LABEL mantainer="Agnaldo Samuel  <asamuel@pedaids.org>"
 
 # Update Ubuntu Software repository
 # Install dependencies
-RUN apt-get update && \
-apt-get install -y curl wget apt-utils net-tools
 
-# Download and install Apache tomcat 7
-RUN wget https://www-eu.apache.org/dist/tomcat/tomcat-7/v7.0.94/bin/apache-tomcat-7.0.94.tar.gz  && \
-tar -xzf apache-tomcat-7.0.94.tar.gz -C /usr/local/  && \
-mv /usr/local/apache-tomcat-7.0.94  /usr/local/tomcat7 && \
-rm -rf /usr/local/tomcat7/webapps/examples && \
-rm -rf /usr/local/tomcat7/webapps/docs && \
-rm -rf /usr/local/tomcat7/webapps/ROOT && \
-rm -f apache-tomcat-7.0.94.tar.gz
+RUN add-apt-repository 'deb http://archive.ubuntu.com/ubuntu trusty universe' && \
+apt-get update && \
+apt-get install -y curl wget apt-utils net-tools mysql-server-5.6 mysql-client-5.6
 
-# Install Oracle JDK
-RUN wget https://www.dropbox.com/s/0xyouhzfgwfsz3g/jdk-7u79-linux-x64.tar.gz?dl=0 && \
-    mv jdk-7u79-linux-x64.tar.gz?dl=0  jdk-7u79-linux-x64.tar.gz && \
-    mkdir /opt/jdk && \
-    tar -zxf jdk-7u79-linux-x64.tar.gz -C /opt/jdk && \
-    rm jdk-7u79-linux-x64.tar.gz && \
-    update-alternatives --install /usr/bin/java  java  /opt/jdk/jdk1.7.0_79/bin/java 100 && \
-    update-alternatives --install /usr/bin/javac javac /opt/jdk/jdk1.7.0_79/bin/javac 100 && \
-    update-alternatives --install /usr/bin/jar   jar   /opt/jdk/jdk1.7.0_79/bin/jar 100
+RUN mv /etc/mysql/my.cnf.fallback  /etc/mysql/my.cnf
 
-RUN apt-get clean && rm -rf  /tmp/* /var/tmp/*
-
-
-COPY openmrs.war   /usr/local/tomcat7/webapps/
-COPY setenv.sh    /usr/local/tomcat7/bin/
-
-RUN  mkdir /root/.OpenMRS
-COPY .OpenMRS /root/.OpenMRS
+COPY my.cnf  /etc/mysql/my.cnf
 RUN ls -la /root/
 RUN chmod -R 777 /root/.OpenMRS/
 

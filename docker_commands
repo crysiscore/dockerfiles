@@ -32,7 +32,7 @@ netstat -ltnpa | grep -i --colour LISTEN
 ### creating containers for openmrs databases ###
 # parameters -d for detach mode
 #            -it for stdin 
-docker exec -it inhassoro  /bin/bash && \ 
+docker exec -it clean  /bin/bash && \ 
 apt-get install -y vim && vim /root/.OpenMRS/openmrs-runtime.properties
 #################################################
 docker run --name mabil      -d -p 8080:8080 openmrs    url http://192.168.40.249:8080/openmrs/
@@ -63,3 +63,6 @@ docker run --name bembe      -d -p 8104:8080 openmrs:v1.11.5    url http://192.1
 docker run --name chibuene   -d -p 8105:8080 openmrs    url http://192.168.40.249:8105/openmrs/
 docker run --name hrv        -d -p 8106:8080 openmrs    url http://192.168.40.249:8106/openmrs/
 docker run --name inhassoro  -d -p 8107:8080 openmrs    url http://192.168.40.249:8107/openmrs/
+docker run --name mangunguemete  -d -p 8108:8080 openmrs    url http://192.168.40.249:8108/openmrs/
+docker run --name maluvane  -d -p 8109:8080 openmrs    url http://192.168.40.249:8109/openmrs/
+docker run --name clean      -d -p 8110:8080 openmrs:v1.11.5   http://192.168.40.249:8110/openmrs/
