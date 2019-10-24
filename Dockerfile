@@ -11,7 +11,7 @@ RUN apt-get update && \
 apt-get install -y curl wget apt-utils net-tools
 
 # Download and install Apache tomcat 7
-RUN wget https://www-eu.apache.org/dist/tomcat/tomcat-7/v7.0.94/bin/apache-tomcat-7.0.94.tar.gz  && \
+RUN wget https://archive.apache.org/dist/tomcat/tomcat-7/v7.0.94/bin/apache-tomcat-7.0.94.tar.gz  && \
 tar -xzf apache-tomcat-7.0.94.tar.gz -C /usr/local/  && \
 mv /usr/local/apache-tomcat-7.0.94  /usr/local/tomcat7 && \
 rm -rf /usr/local/tomcat7/webapps/examples && \
