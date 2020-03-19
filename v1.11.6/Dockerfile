@@ -8,7 +8,7 @@ LABEL mantainer="Agnaldo Samuel  <asamuel@pedaids.org>"
 # Update Ubuntu Software repository
 # Install dependencies
 RUN apt-get update && \
-apt-get install -y curl wget apt-utils net-tools
+apt-get install -y curl wget apt-utils net-tools inetutils-ping
 
 # Download and install Apache tomcat 7
 RUN wget https://archive.apache.org/dist/tomcat/tomcat-7/v7.0.94/bin/apache-tomcat-7.0.94.tar.gz  && \
@@ -20,7 +20,7 @@ rm -rf /usr/local/tomcat7/webapps/ROOT && \
 rm -f apache-tomcat-7.0.94.tar.gz
 
 # Install Oracle JDK
-RUN wget https://www.dropbox.com/s/0xyouhzfgwfsz3g/jdk-7u79-linux-x64.tar.gz?dl=0 && \
+RUN wget https://www.dropbox.com/s/9wd0vj4cd0x203d/jdk-7u79-linux-x64.tar.gz?dl=0  && \
     mv jdk-7u79-linux-x64.tar.gz?dl=0  jdk-7u79-linux-x64.tar.gz && \
     mkdir /opt/jdk && \
     tar -zxf jdk-7u79-linux-x64.tar.gz -C /opt/jdk && \

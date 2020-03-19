@@ -47,7 +47,6 @@ docker run --name doane      -d -p 8103:8080 openmrs:v1.11.6    url http://192.1
 docker run --name morrumbene -d -p 8096:8080 openmrs:v1.11.6    url http://192.168.40.249:8096/openmrs/
 docker run --name funhalouro -d -p 8098:8080 openmrs:v1.11.6    url http://192.168.40.249:8098/openmrs/ 
 docker run --name mapinhane  -d -p 8099:8080 openmrs:v1.11.6    url http://192.168.40.249:8099/openmrs/  
-
 docker run --name zandamela  -d -p 8082:8080 openmrs:v1.11.6    url http://192.168.40.249:8082/openmrs/ 
 docker run --name panda      -d -p 8084:8080 openmrs:v1.11.6    url http://192.168.40.249:8084/openmrs/
 docker run --name chongola   -d -p 8086:8080 openmrs:v1.11.6    url http://192.168.40.249:8086/openmrs/
@@ -62,9 +61,10 @@ docker run --name homoine    -d -p 8095:8080 openmrs:v1.11.6    url  http://192.
 docker run --name mabote     -d -p 8100:8080 openmrs:v1.11.6    url http://192.168.40.249:8100/openmrs/
 docker run --name chicuque   -d -p 8101:8080 openmrs:v1.11.6    url http://192.168.40.249:8101/openmrs/
 docker run --name maundene   -d -p 8102:8080 openmrs:v1.11.6    url http://192.168.40.249:8102/openmrs/
-docker run --name bembe      -d -p 8104:8080 openmrs:v1.11.6:v1.11.5    url http://192.168.40.249:8104/openmrs/
+docker run --name bembe      -d -p 8104:8080 openmrs:v1.11.6    url http://192.168.40.249:8104/openmrs/
 docker run --name chibuene   -d -p 8105:8080 openmrs:v1.11.6    url http://192.168.40.249:8105/openmrs/
 docker run --name mangunguemete  -d -p 8108:8080 openmrs:v1.11.6    url http://192.168.40.249:8108/openmrs/
-docker run --name maluvane  -d -p 8109:8080 openmrs:v1.11.5    url http://192.168.40.249:8109/openmrs/
-docker run --name cala      -d -p 8111:8080 openmrs:v1.11.5    url http://192.168.40.249:8111/openmrs/
-docker run --name clean      -d -p 8110:8080 openmrs:v1.11.5   http://192.168.40.249:8110/openmrs/
+docker run --name maluvane  -d -p 8109:8080 openmrs:v1.11.5     url http://192.168.40.249:8109/openmrs/
+docker run --name cala      -d -p 8111:8080 openmrs:v1.11.5     url http://192.168.40.249:8111/openmrs/
+docker run --name cambine     -d -p 8111:8080 openmrs:v1.11.5   url http://192.168.40.249:8110/openmrs/
+docker run --name muane     -d -p 8111:8080 openmrs:v1.11.5   url http://192.168.40.249:8110/openmrs/
